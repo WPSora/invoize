@@ -1,0 +1,1 @@
+import{j as o}from"./skeleton-edf9cf6d.js";import{aA as r}from"./settings-store-9c8686e2.js";function u(){return{elements:{root:o("label",{action:t=>({destroy:r(t,"mousedown",e=>{!e.defaultPrevented&&e.detail>1&&e.preventDefault()})})})}}}export{u as c};
