@@ -27,7 +27,6 @@ final class Assets
         return new self;
     }
 
-    // add type module to <script>
     public function addTypeAttribute($tag, $handle, $src)
     {
         if ('invoize-admin-js' == $handle) {

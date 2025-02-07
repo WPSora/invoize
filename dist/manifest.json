@@ -7,10 +7,10 @@
     "file": "assets/Options-7b78f89d.css",
     "src": "Options.css"
   },
-  "_App-260dd1f5.js": {
+  "_App-32a3c631.js": {
     "dynamicImports": [
       "src/routes/dashboard/Dashboard.svelte",
-      "_Setting-898fd4c3.js",
+      "_Setting-2c8dff6a.js",
       "src/routes/invoice/InvoiceList.svelte",
       "src/routes/invoice/create/CreateInvoice.svelte",
       "src/routes/invoice/edit/EditInvoice.svelte",
@@ -27,7 +27,7 @@
       "src/routes/product/product.svelte",
       "src/routes/misc/NotFound.svelte"
     ],
-    "file": "assets/App-260dd1f5.js",
+    "file": "assets/App-32a3c631.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_skeleton-edf9cf6d.js",
@@ -37,11 +37,11 @@
     ],
     "isDynamicEntry": true
   },
-  "_BaseCreateInvoice-d60c422d.js": {
+  "_BaseCreateInvoice-7dd3226e.js": {
     "dynamicImports": [
       "src/lib/components/invoice/send-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateInvoice-d60c422d.js",
+    "file": "assets/BaseCreateInvoice-7dd3226e.js",
     "imports": [
       "src/main.js",
       "_settings-store-9c8686e2.js",
@@ -63,11 +63,11 @@
       "_send-0bcf614a.js"
     ]
   },
-  "_BaseCreateRecurring-6ca8a215.js": {
+  "_BaseCreateRecurring-a6c710b7.js": {
     "dynamicImports": [
       "src/lib/components/recurring/create-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateRecurring-6ca8a215.js",
+    "file": "assets/BaseCreateRecurring-a6c710b7.js",
     "imports": [
       "src/main.js",
       "_settings-store-9c8686e2.js",
@@ -232,7 +232,7 @@
       "_label-d084e2b4.js"
     ]
   },
-  "_Setting-898fd4c3.js": {
+  "_Setting-2c8dff6a.js": {
     "dynamicImports": [
       "src/lib/components/settings/invoices/invoices.svelte",
       "src/lib/components/settings/payment/payment.svelte",
@@ -240,7 +240,7 @@
       "src/lib/components/settings/receipt/receipt.svelte",
       "src/lib/components/settings/integration/integration.svelte"
     ],
-    "file": "assets/Setting-898fd4c3.js",
+    "file": "assets/Setting-2c8dff6a.js",
     "imports": [
       "src/main.js",
       "_settings-store-9c8686e2.js",
@@ -248,7 +248,7 @@
       "_index-c120ee9c.js",
       "_index-cda57843.js",
       "_styles-e7e55f44.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_PageTitle-cb7e6efa.js",
       "_Breadcrumb-62fc8c08.js",
       "_index-6c7ffc9c.js",
@@ -268,14 +268,14 @@
     ],
     "isDynamicEntry": true
   },
-  "_Tab-4b4e5cdf.js": {
-    "file": "assets/Tab-4b4e5cdf.js",
+  "_Tab-5841d59a.js": {
+    "file": "assets/Tab-5841d59a.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_Pagination-2c143e4c.js",
       "_table-row-6a78e972.js",
       "_skeleton-edf9cf6d.js",
-      "_App-260dd1f5.js"
+      "_App-32a3c631.js"
     ]
   },
   "_Trash-817f4c51.js": {
@@ -588,12 +588,12 @@
       "_settings-store-9c8686e2.js"
     ]
   },
-  "_invoice-all-tab-table-column-809589fc.js": {
-    "file": "assets/invoice-all-tab-table-column-809589fc.js",
+  "_invoice-all-tab-table-column-6ea1cce2.js": {
+    "file": "assets/invoice-all-tab-table-column-6ea1cce2.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_Pagination-2c143e4c.js",
-      "_Tab-4b4e5cdf.js",
+      "_Tab-5841d59a.js",
       "_moment-a9aaa855.js",
       "_Check-9df93018.js",
       "_skeleton-edf9cf6d.js",
@@ -1085,11 +1085,11 @@
       "src/lib/components/settings/invoices/reminder.svelte",
       "src/lib/components/settings/invoices/tax.svelte"
     ],
-    "file": "assets/invoices-4d2a93e6.js",
+    "file": "assets/invoices-c44f655c.js",
     "imports": [
       "src/main.js",
       "_settings-store-9c8686e2.js",
-      "_Setting-898fd4c3.js",
+      "_Setting-2c8dff6a.js",
       "_card-content-dcfe47df.js",
       "_card-description-7df76888.js",
       "_card-title-0b899c1a.js",
@@ -1098,7 +1098,7 @@
       "_skeleton-edf9cf6d.js",
       "_index-c120ee9c.js",
       "_separator-f399de31.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_options-0c96a228.js",
       "_index-41c590ae.js",
       "_PageTitle-cb7e6efa.js",
@@ -1275,9 +1275,9 @@
       "src/routes/invoice/preview/Preview.svelte",
       "src/routes/misc/PaymentSuccess.svelte",
       "src/routes/misc/PaymentFailed.svelte",
-      "_App-260dd1f5.js"
+      "_App-32a3c631.js"
     ],
-    "file": "assets/main-81bff534.js",
+    "file": "assets/main-cfbb1d1f.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -1324,7 +1324,7 @@
     "dynamicImports": [
       "node_modules/.pnpm/svelte-apexcharts@1.0.2_apexcharts@3.48.0/node_modules/svelte-apexcharts/src/index.js"
     ],
-    "file": "assets/Dashboard-d08cadc9.js",
+    "file": "assets/Dashboard-a598112f.js",
     "imports": [
       "src/main.js",
       "_settings-store-9c8686e2.js",
@@ -1348,7 +1348,7 @@
     "src": "src/routes/dashboard/Dashboard.svelte"
   },
   "src/routes/invoice/InvoiceList.svelte": {
-    "file": "assets/InvoiceList-746ec3dd.js",
+    "file": "assets/InvoiceList-aaff0a9e.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_invoice-list-store-7ca49bd9.js",
@@ -1358,9 +1358,9 @@
       "_Plus-b1e3a29e.js",
       "_enum-1271ce69.js",
       "_Pagination-2c143e4c.js",
-      "_invoice-all-tab-table-column-809589fc.js",
+      "_invoice-all-tab-table-column-6ea1cce2.js",
       "_id-cell-eaebd285.js",
-      "_Tab-4b4e5cdf.js",
+      "_Tab-5841d59a.js",
       "_Breadcrumb-62fc8c08.js",
       "_PageTitle-cb7e6efa.js",
       "_skeleton-edf9cf6d.js",
@@ -1385,7 +1385,7 @@
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
       "_table-row-6a78e972.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_options-0c96a228.js",
       "_index-41c590ae.js",
       "src/main.js"
@@ -1394,7 +1394,7 @@
     "src": "src/routes/invoice/InvoiceList.svelte"
   },
   "src/routes/invoice/create/CreateInvoice.svelte": {
-    "file": "assets/CreateInvoice-447656a5.js",
+    "file": "assets/CreateInvoice-a1a862d6.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_triggerTabUpdateHelper-15fccee5.js",
@@ -1402,7 +1402,7 @@
       "_invoice-store-a65abc6f.js",
       "_invoiceErrorHelper-82a51f58.js",
       "_Options-2a8ab38f.js",
-      "_BaseCreateInvoice-d60c422d.js",
+      "_BaseCreateInvoice-7dd3226e.js",
       "_moment-a9aaa855.js",
       "_invoice-list-store-7ca49bd9.js",
       "_skeleton-edf9cf6d.js",
@@ -1457,7 +1457,7 @@
     "src": "src/routes/invoice/create/CreateInvoice.svelte"
   },
   "src/routes/invoice/edit/EditInvoice.svelte": {
-    "file": "assets/EditInvoice-585e2986.js",
+    "file": "assets/EditInvoice-5861b090.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_invoice-store-a65abc6f.js",
@@ -1466,7 +1466,7 @@
       "_Options-2a8ab38f.js",
       "_triggerTabUpdateHelper-15fccee5.js",
       "_invoiceErrorHelper-82a51f58.js",
-      "_BaseCreateInvoice-d60c422d.js",
+      "_BaseCreateInvoice-7dd3226e.js",
       "_moment-a9aaa855.js",
       "_skeleton-edf9cf6d.js",
       "_table-row-6a78e972.js",
@@ -1645,14 +1645,14 @@
     "src": "src/routes/product/product.svelte"
   },
   "src/routes/receipt/ReceiptList.svelte": {
-    "file": "assets/ReceiptList-2d9de0fd.js",
+    "file": "assets/ReceiptList-dc2c76e6.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_styles-e7e55f44.js",
       "_index-cda57843.js",
       "_index-0098572b.js",
       "_Pagination-2c143e4c.js",
-      "_Tab-4b4e5cdf.js",
+      "_Tab-5841d59a.js",
       "_moment-a9aaa855.js",
       "_enum-1271ce69.js",
       "_Breadcrumb-62fc8c08.js",
@@ -1667,7 +1667,7 @@
       "_search-d211f86c.js",
       "_refresh-ccw-b5457c9d.js",
       "_table-row-6a78e972.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_options-0c96a228.js",
       "_index-41c590ae.js",
       "src/main.js"
@@ -1676,7 +1676,7 @@
     "src": "src/routes/receipt/ReceiptList.svelte"
   },
   "src/routes/recurring/RecurringClientList.svelte": {
-    "file": "assets/RecurringClientList-63e008a1.js",
+    "file": "assets/RecurringClientList-9c63068c.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_table-row-6a78e972.js",
@@ -1689,7 +1689,7 @@
       "_Breadcrumb-62fc8c08.js",
       "_PageTitle-cb7e6efa.js",
       "_upgrade-to-pro-db835cb2.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_plus-66ca668e.js",
       "_frown-21877610.js",
       "_input-96b35056.js",
@@ -1711,7 +1711,7 @@
     "src": "src/routes/recurring/RecurringClientList.svelte"
   },
   "src/routes/recurring/create/CreateRecurring.svelte": {
-    "file": "assets/CreateRecurring-23801d29.js",
+    "file": "assets/CreateRecurring-24714153.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_triggerTabUpdateHelper-15fccee5.js",
@@ -1720,7 +1720,7 @@
       "_recurring-store-29805c93.js",
       "_invoiceErrorHelper-82a51f58.js",
       "_Options-2a8ab38f.js",
-      "_BaseCreateRecurring-6ca8a215.js",
+      "_BaseCreateRecurring-a6c710b7.js",
       "_moment-a9aaa855.js",
       "_index-41c590ae.js",
       "_invoice-list-store-7ca49bd9.js",
@@ -1776,7 +1776,7 @@
     "src": "src/routes/recurring/create/CreateRecurring.svelte"
   },
   "src/routes/recurring/detail/RecurringList.svelte": {
-    "file": "assets/RecurringList-4f06cc16.js",
+    "file": "assets/RecurringList-8bb5c085.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_index-cda57843.js",
@@ -1784,7 +1784,7 @@
       "_invoice-store-a65abc6f.js",
       "_styles-e7e55f44.js",
       "_Pagination-2c143e4c.js",
-      "_invoice-all-tab-table-column-809589fc.js",
+      "_invoice-all-tab-table-column-6ea1cce2.js",
       "_index-6c7ffc9c.js",
       "_actionHelper-f4ce013e.js",
       "_enum-1271ce69.js",
@@ -1798,7 +1798,7 @@
       "_moment-a9aaa855.js",
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
-      "_Tab-4b4e5cdf.js",
+      "_Tab-5841d59a.js",
       "_Breadcrumb-62fc8c08.js",
       "_PageTitle-cb7e6efa.js",
       "_skeleton-edf9cf6d.js",
@@ -1817,7 +1817,7 @@
       "_id-cell-eaebd285.js",
       "_invoice-list-store-7ca49bd9.js",
       "_table-row-6a78e972.js",
-      "_App-260dd1f5.js",
+      "_App-32a3c631.js",
       "_index-41c590ae.js",
       "src/main.js"
     ],
@@ -1859,11 +1859,11 @@
     "src": "src/routes/recurring/detail/preview/RecurringPreview.svelte"
   },
   "src/routes/recurring/edit/EditRecurring.svelte": {
-    "file": "assets/EditRecurring-88b9c422.js",
+    "file": "assets/EditRecurring-e91a4d9b.js",
     "imports": [
       "_settings-store-9c8686e2.js",
       "_options-0c96a228.js",
-      "_BaseCreateRecurring-6ca8a215.js",
+      "_BaseCreateRecurring-a6c710b7.js",
       "_invoice-store-a65abc6f.js",
       "_recurring-store-29805c93.js",
       "_enum-1271ce69.js",

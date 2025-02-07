@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --base=/wp-content/plugins/invoize/dist",
-    "build": "vite build --base=/wp-content/plugins/invoize/dist",
+    "dev": "vite --base=/wp-debug/wp-content/plugins/invoize/dist",
+    "build": "vite build --base=/wp-debug/wp-content/plugins/invoize/dist",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
