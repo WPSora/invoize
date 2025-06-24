@@ -1,0 +1,58 @@
+{
+  "name": "wpsora/invoize",
+  "type": "wordpress-plugin",
+  "autoload": {
+    "psr-4": {
+      "Invoize\\": "src/"
+    },
+    "files": [
+      "src/Helpers/helper.php",
+      "src/Helpers/wc.php",
+      "src/Helpers/permission.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Dede Nugroho",
+      "email": "this.nugroho@gmail.com"
+    },
+    {
+      "name": "Rahman Ramsi",
+      "email": "rahmanramsi19@gmail.com"
+    },
+    {
+      "name": "Ramadhani Adjar Mustaqim",
+      "email": "dhani.a.mm@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^8.83",
+    "symfony/var-dumper": "^5.4",
+    "plank/laravel-metable": "^5.4",
+    "mustache/mustache": "^2.14",
+    "illuminate/events": "^8.83",
+    "chillerlan/php-qrcode": "^5.0",
+    "devaly/wordpress-routes": "^0.0.8",
+    "dompdf/dompdf": "^3.0",
+    "freemius/wordpress-sdk": "^2.8",
+    "pelago/emogrifier": "^7.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "freemius/wordpress-sdk",
+        "version": "2.11.0",
+        "dist": {
+          "type": "zip",
+          "url": "./wordpress-sdk.zip"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+import{P as e}from"./Toaster.svelte_svelte_type_style_lang-3086cbd0.js";import{s as a}from"./saveToStoreHelper-e7988ee0.js";const i=async()=>{const t=await e("settings/retrieve?tab=invoice");a(t.data.data)};export{i as l};
