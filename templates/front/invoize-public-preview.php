@@ -26,10 +26,10 @@ if (!is_user_logged_in()) {
     auth_redirect();
 }
 
-global $params;
-invoizeValidateNonce($params['nonce'] ?? null);
+global $invoizeGlobalParam;
+invoizeValidateNonce($invoizeGlobalParam['nonce'] ?? null);
 
-$token = $params['token'] ?? null;
+$token = $invoizeGlobalParam['token'] ?? null;
 $invoice = Invoice::whereHas('metas', function ($metas) use ($token) {
     $metas->where('meta_key', 'token')->where('meta_value', $token);
 })->first();

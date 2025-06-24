@@ -2,10 +2,10 @@
 Contributors: WPSora, Opensynergic, Dede Nugroho, dhani, rahman ramsi, ghazi pradana, freemius
 Tags: finance, invoice, receipt, report, accounting,
 Requires at least: 5.3
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv3
-Stable tag: 1.6.0
+Stable tag: 1.11.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Invoize is an intuitive and user-friendly WordPress plugin designed for effortless invoice creation. With a focus on ease of use.
@@ -28,6 +28,9 @@ Invoize is an intuitive and user-friendly WordPress plugin designed for effortle
 - **Xendit Integration**: Accept payments conveniently via [Xendit](https://www.xendit.co/en-id/), a payment gateway popular in Indonesia that supports various payment methods. Learn more by reviewing their [Terms of Service](https://www.xendit.co/en-id/terms-and-conditions/) and [Privacy Policy](https://www.xendit.co/en-id/privacy-policy/).
 
 == Changelog ==
+
+= 1.11.0 | 24 June 2025 =
+* Added support for wordpress version 6.8
 
 = 1.10.4 | 24 June 2025 =
 * Fixed fatal error

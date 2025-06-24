@@ -8,8 +8,8 @@ use Invoize\Models\Invoice;
 use Invoize\Models\States\Invoice\PaymentState\InvoicePaidState;
 use Invoize\Models\States\Invoice\PaymentState\InvoiceUnpaidState;
 
-global $params;
-invoizeValidateNonce($params['nonce'] ?? null);
+global $invoizeGlobalParam;
+invoizeValidateNonce($invoizeGlobalParam['nonce'] ?? null);
 
 // This will be your Webhook Verification Token you can obtain from the dashboard.
 // Make sure to keep this confidential and not to reveal to anyone.
