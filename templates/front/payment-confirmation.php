@@ -19,8 +19,8 @@ $custom_css = "
   }
 ";
 
-global $params;
-invoizeValidateNonce($params['nonce'] ?? null);
+global $invoizeGlobalParam;
+invoizeValidateNonce($invoizeGlobalParam['nonce'] ?? null);
 
 wp_add_inline_style('invoize-payment-confirmation', $custom_css);
 \Invoize\Classes\Assets::getInstance()->load();

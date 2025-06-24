@@ -27,10 +27,10 @@ if (!is_user_logged_in()) {
     auth_redirect();
 }
 
-global $params;
-invoizeValidateNonce($params['nonce'] ?? null);
+global $invoizeGlobalParam;
+invoizeValidateNonce($invoizeGlobalParam['nonce'] ?? null);
 
-$token      = $params['token'] ?? null;
+$token      = $invoizeGlobalParam['token'] ?? null;
 $quotation  = Quotation::findByToken($token);
 
 if (!$quotation) {

@@ -41,7 +41,7 @@ class Dashboard extends BasePage
         $prefix = add_submenu_page(
             $this->plugin->getSlug(),
             'Quotation',
-            'Quotation',
+            invoize()->can_use_premium_code() ? 'Quotation' : 'Quotation (Pro Only)',
             'manage_options',
             $this->plugin->getSlug() . '#/quotations',
             [$this, 'render'],

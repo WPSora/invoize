@@ -23,8 +23,9 @@ class Log
         $user    = wp_get_current_user();
         $logDir  = InvoizePlugin::getInstance()->getPluginDir() . 'logs' . DIRECTORY_SEPARATOR;
 
-        if (!is_dir($logDir)) {
-            if (!mkdir($logDir, 0755, true)) {
+        global $wp_filesystem;
+        if (!$wp_filesystem->is_dir($logDir)) {
+            if (!$wp_filesystem->mkdir($logDir)) {
                 error_log('Failed to create Invoize log directory: ' . $logDir);
                 return;
             }
@@ -41,15 +42,12 @@ class Log
     protected static function writeLog($fileName, $text)
     {
         try {
-            if (!file_exists($fileName)) {
-                $file = fopen($fileName, 'a');
-                fclose($file);
-                chmod($fileName, 0644);
+            global $wp_filesystem;
+            if (!$wp_filesystem->exists($fileName)) {
+                $wp_filesystem->put_contents($fileName, '', 0644);
             }
-
-            $file = fopen($fileName, 'a');
-            fwrite($file, $text);
-            fclose($file);
+            $existing_content = $wp_filesystem->get_contents($fileName);
+            $wp_filesystem->put_contents($fileName, $existing_content . $text, 0644);
         } catch (Exception $e) {
             error_log('Failed to write invoize log file. ' . $e->getMessage());
         }
@@ -112,14 +110,15 @@ class Log
         $actionLogFile = $logDir . $month . '-' . static::ACTION_LOG . '.log';
         $mailLogFile   = $logDir . $month . '-' . static::EMAIL_LOG . '.log';
 
-        if (file_exists($errorLogFile)) {
-            unlink($errorLogFile);
+        global $wp_filesystem;
+        if ($wp_filesystem->exists($errorLogFile)) {
+            wp_delete_file($errorLogFile);
         }
-        if (file_exists($actionLogFile)) {
-            unlink($actionLogFile);
+        if ($wp_filesystem->exists($actionLogFile)) {
+            wp_delete_file($actionLogFile);
         }
-        if (file_exists($mailLogFile)) {
-            unlink($mailLogFile);
+        if ($wp_filesystem->exists($mailLogFile)) {
+            wp_delete_file($mailLogFile);
         }
     }
 
