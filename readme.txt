@@ -21,25 +21,19 @@ Invoize is an intuitive and user-friendly WordPress plugin designed for effortle
 - **Multi-Currency Support**: Create invoices in multiple currencies and accept payments in your preferred currency.
 - **Discount and Tax**: Add discounts and taxes to your invoices to reflect the accurate amount.
 
+
 == Integrations ==
 - **WooCommerce Integration**: Seamlessly create invoices for your WooCommerce orders automatically.  
 - **PayPal Integration**: Enable clients to pay invoices directly through [Paypal](https://www.paypal.com). For details, see [Privacy Policy](https://www.paypal.com/us/legalhub/paypal/privacy-full) and [User Agreement](https://www.paypal.com/us/legalhub/paypal/useragreement-full).  
 - **Xendit Integration**: Accept payments conveniently via [Xendit](https://www.xendit.co/en-id/), a payment gateway popular in Indonesia that supports various payment methods. Learn more by reviewing their [Terms of Service](https://www.xendit.co/en-id/terms-and-conditions/) and [Privacy Policy](https://www.xendit.co/en-id/privacy-policy/).
 
-== How to Contribute ==
-You can contribute or creating issue to report a problem, or feature request through our [GitHub repository](https://github.com/WPSora/invoize).
-
-Install Packages
-```
-composer install
-```
-
-Compile Assets
-```
-cd ./views && npm install && npm run build
-```
-
 == Changelog ==
+
+= 1.11.2 | 09 July 2025 =
+* Fixed error on edit recurring
+
+= 1.11.1 | 01 July 2025 =
+* Fixed Paypal direct payment link in payment page
 
 = 1.11.0 | 24 June 2025 =
 * Added support for wordpress version 6.8

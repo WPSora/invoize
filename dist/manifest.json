@@ -15,10 +15,10 @@
     "file": "assets/Toaster-3a6d0da3.css",
     "src": "Toaster.css"
   },
-  "_App-136ad1cd.js": {
+  "_App-e17b8008.js": {
     "dynamicImports": [
       "src/routes/dashboard/Dashboard.svelte",
-      "_Setting-5d2c9782.js",
+      "_Setting-047ba447.js",
       "src/routes/invoice/InvoiceList.svelte",
       "src/routes/quotation/QuotationList.svelte",
       "src/routes/quotation/CreateQuotation.svelte",
@@ -38,7 +38,7 @@
       "src/routes/product/product.svelte",
       "src/routes/misc/NotFound.svelte"
     ],
-    "file": "assets/App-136ad1cd.js",
+    "file": "assets/App-e17b8008.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_options-89ca2928.js",
@@ -52,11 +52,11 @@
     ],
     "isDynamicEntry": true
   },
-  "_BaseCreateInvoice-b6432958.js": {
+  "_BaseCreateInvoice-4c87c416.js": {
     "dynamicImports": [
       "src/lib/components/invoice/send-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateInvoice-b6432958.js",
+    "file": "assets/BaseCreateInvoice-4c87c416.js",
     "imports": [
       "src/main.js",
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
@@ -78,11 +78,11 @@
       "_send-e1cefc13.js"
     ]
   },
-  "_BaseCreateRecurring-c77a39ac.js": {
+  "_BaseCreateRecurring-121bc85d.js": {
     "dynamicImports": [
       "src/lib/components/recurring/create-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateRecurring-c77a39ac.js",
+    "file": "assets/BaseCreateRecurring-121bc85d.js",
     "imports": [
       "src/main.js",
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
@@ -280,7 +280,7 @@
       "_separator-d7b15c7c.js"
     ]
   },
-  "_Setting-5d2c9782.js": {
+  "_Setting-047ba447.js": {
     "dynamicImports": [
       "src/lib/components/settings/quotation/quotation.svelte",
       "src/lib/components/settings/invoices/invoices.svelte",
@@ -290,7 +290,7 @@
       "src/lib/components/settings/integration/integration.svelte",
       "src/lib/components/settings/other/other.svelte"
     ],
-    "file": "assets/Setting-5d2c9782.js",
+    "file": "assets/Setting-047ba447.js",
     "imports": [
       "src/main.js",
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
@@ -299,7 +299,7 @@
       "_index-fcd26607.js",
       "_styles-e7e55f44.js",
       "_errorHelper-eef9e97b.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_PageTitle-5aeb5b6f.js",
       "_Breadcrumb-8a216a28.js",
       "_index-e2de6100.js",
@@ -319,15 +319,15 @@
     ],
     "isDynamicEntry": true
   },
-  "_Tab-1c6d2c57.js": {
-    "file": "assets/Tab-1c6d2c57.js",
+  "_Tab-da9e114e.js": {
+    "file": "assets/Tab-da9e114e.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_Pagination-325e8fb0.js",
       "_table-row-9bf80d0a.js",
       "_errorHelper-eef9e97b.js",
       "_index-2f32262e.js",
-      "_App-136ad1cd.js"
+      "_App-e17b8008.js"
     ]
   },
   "_Toaster-907ac0b8.js": {
@@ -727,12 +727,12 @@
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
     ]
   },
-  "_invoice-all-tab-table-column-7274db3a.js": {
-    "file": "assets/invoice-all-tab-table-column-7274db3a.js",
+  "_invoice-all-tab-table-column-a3f5cb21.js": {
+    "file": "assets/invoice-all-tab-table-column-a3f5cb21.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_Pagination-325e8fb0.js",
-      "_Tab-1c6d2c57.js",
+      "_Tab-da9e114e.js",
       "_errorHelper-eef9e97b.js",
       "_moment-a9aaa855.js",
       "_Check-fa20f0eb.js",
@@ -968,7 +968,7 @@
     "src": "node_modules/.pnpm/svelte-apexcharts@1.0.2_apexcharts@3.54.1/node_modules/svelte-apexcharts/src/index.js"
   },
   "src/PaymentPage.svelte": {
-    "file": "assets/PaymentPage-5155f92f.js",
+    "file": "assets/PaymentPage-720db3a2.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_label-7d3a217f.js",
@@ -1250,11 +1250,11 @@
       "src/lib/components/settings/invoices/reminder.svelte",
       "src/lib/components/settings/invoices/tax.svelte"
     ],
-    "file": "assets/invoices-ce68b528.js",
+    "file": "assets/invoices-2cb19f4c.js",
     "imports": [
       "src/main.js",
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Setting-5d2c9782.js",
+      "_Setting-047ba447.js",
       "_errorHelper-eef9e97b.js",
       "_card-description-e849d062.js",
       "_index-2f32262e.js",
@@ -1265,7 +1265,7 @@
       "_x-e55b9835.js",
       "_index-4f0b7d19.js",
       "_arrays-9d05857f.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_ProBadge-35078e4e.js",
       "_Toaster-907ac0b8.js",
       "_index-0984da6d.js",
@@ -1500,9 +1500,9 @@
       "src/routes/invoice/preview/Preview.svelte",
       "src/routes/misc/PaymentSuccess.svelte",
       "src/routes/misc/PaymentFailed.svelte",
-      "_App-136ad1cd.js"
+      "_App-e17b8008.js"
     ],
-    "file": "assets/main-2325799b.js",
+    "file": "assets/main-236b23fb.js",
     "isEntry": true,
     "src": "src/main.js"
   },
@@ -1558,7 +1558,7 @@
     "dynamicImports": [
       "node_modules/.pnpm/svelte-apexcharts@1.0.2_apexcharts@3.54.1/node_modules/svelte-apexcharts/src/index.js"
     ],
-    "file": "assets/Dashboard-88d4b41d.js",
+    "file": "assets/Dashboard-8f28d2aa.js",
     "imports": [
       "src/main.js",
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
@@ -1585,7 +1585,7 @@
     "src": "src/routes/dashboard/Dashboard.svelte"
   },
   "src/routes/invoice/InvoiceList.svelte": {
-    "file": "assets/InvoiceList-47fb9ca6.js",
+    "file": "assets/InvoiceList-85032b1d.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_invoice-list-store-3ca58dd7.js",
@@ -1595,9 +1595,9 @@
       "_index-7095afc4.js",
       "_Plus-e1a813d4.js",
       "_enum-9d62bdc6.js",
-      "_invoice-all-tab-table-column-7274db3a.js",
+      "_invoice-all-tab-table-column-a3f5cb21.js",
       "_id-cell-05587cea.js",
-      "_Tab-1c6d2c57.js",
+      "_Tab-da9e114e.js",
       "_errorHelper-eef9e97b.js",
       "_Breadcrumb-8a216a28.js",
       "_PageTitle-5aeb5b6f.js",
@@ -1630,7 +1630,7 @@
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
       "_table-row-9bf80d0a.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_ProBadge-35078e4e.js",
       "_card-description-e849d062.js",
       "src/main.js",
@@ -1642,7 +1642,7 @@
     "src": "src/routes/invoice/InvoiceList.svelte"
   },
   "src/routes/invoice/create/CreateInvoice.svelte": {
-    "file": "assets/CreateInvoice-2bbc38b4.js",
+    "file": "assets/CreateInvoice-5d7500e2.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_triggerTabUpdateHelper-54f25315.js",
@@ -1651,7 +1651,7 @@
       "_invoice-store-89da11de.js",
       "_invoiceErrorHelper-13369b1f.js",
       "_Options-60264e68.js",
-      "_BaseCreateInvoice-b6432958.js",
+      "_BaseCreateInvoice-4c87c416.js",
       "_moment-a9aaa855.js",
       "_invoice-list-store-3ca58dd7.js",
       "_index-2f32262e.js",
@@ -1708,7 +1708,7 @@
     "src": "src/routes/invoice/create/CreateInvoice.svelte"
   },
   "src/routes/invoice/edit/EditInvoice.svelte": {
-    "file": "assets/EditInvoice-8b5f86dd.js",
+    "file": "assets/EditInvoice-5c7067a8.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_errorHelper-eef9e97b.js",
@@ -1718,7 +1718,7 @@
       "_Options-60264e68.js",
       "_triggerTabUpdateHelper-54f25315.js",
       "_invoiceErrorHelper-13369b1f.js",
-      "_BaseCreateInvoice-b6432958.js",
+      "_BaseCreateInvoice-4c87c416.js",
       "_moment-a9aaa855.js",
       "_updater-cbd8223a.js",
       "_index-2f32262e.js",
@@ -1927,7 +1927,7 @@
     "dynamicImports": [
       "src/lib/components/invoice/send-invoice-modal.svelte"
     ],
-    "file": "assets/CreateQuotation-716e50b7.js",
+    "file": "assets/CreateQuotation-4debdb4c.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_triggerTabUpdateHelper-54f25315.js",
@@ -2030,12 +2030,12 @@
     "src": "src/routes/quotation/PreviewQuotation.svelte"
   },
   "src/routes/quotation/QuotationList.svelte": {
-    "file": "assets/QuotationList-c0b9f647.js",
+    "file": "assets/QuotationList-d5041f41.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_Breadcrumb-8a216a28.js",
       "_PageTitle-5aeb5b6f.js",
-      "_Tab-1c6d2c57.js",
+      "_Tab-da9e114e.js",
       "_Pagination-325e8fb0.js",
       "_index-dac4cf97.js",
       "_errorHelper-eef9e97b.js",
@@ -2057,7 +2057,7 @@
       "_updater-cbd8223a.js",
       "_table-row-9bf80d0a.js",
       "_index-2f32262e.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_options-89ca2928.js",
       "_x-e55b9835.js",
       "_card-description-e849d062.js",
@@ -2075,14 +2075,14 @@
     "src": "src/routes/quotation/QuotationList.svelte"
   },
   "src/routes/receipt/ReceiptList.svelte": {
-    "file": "assets/ReceiptList-de091cbc.js",
+    "file": "assets/ReceiptList-687a2184.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_styles-e7e55f44.js",
       "_index-fcd26607.js",
       "_index-7095afc4.js",
       "_Pagination-325e8fb0.js",
-      "_Tab-1c6d2c57.js",
+      "_Tab-da9e114e.js",
       "_errorHelper-eef9e97b.js",
       "_moment-a9aaa855.js",
       "_enum-9d62bdc6.js",
@@ -2099,7 +2099,7 @@
       "_helpers-9268112f.js",
       "_create-e552ce8d.js",
       "_table-row-9bf80d0a.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_ProBadge-35078e4e.js",
       "_card-description-e849d062.js",
       "src/main.js",
@@ -2114,7 +2114,7 @@
     "src": "src/routes/receipt/ReceiptList.svelte"
   },
   "src/routes/recurring/RecurringClientList.svelte": {
-    "file": "assets/RecurringClientList-ccd33c4b.js",
+    "file": "assets/RecurringClientList-181ca7be.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_table-row-9bf80d0a.js",
@@ -2130,7 +2130,7 @@
       "_SearchBar-139f3fc2.js",
       "_upgrade-to-pro-699224b4.js",
       "_enum-9d62bdc6.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_plus-a3b54817.js",
       "_frown-a83b243b.js",
       "_index-7095afc4.js",
@@ -2156,7 +2156,7 @@
     "src": "src/routes/recurring/RecurringClientList.svelte"
   },
   "src/routes/recurring/create/CreateRecurring.svelte": {
-    "file": "assets/CreateRecurring-73d7f83f.js",
+    "file": "assets/CreateRecurring-155a170f.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_triggerTabUpdateHelper-54f25315.js",
@@ -2166,7 +2166,7 @@
       "_invoiceErrorHelper-13369b1f.js",
       "_Options-60264e68.js",
       "_errorHelper-eef9e97b.js",
-      "_BaseCreateRecurring-c77a39ac.js",
+      "_BaseCreateRecurring-121bc85d.js",
       "_setDefaultRecurring-f1d67430.js",
       "_invoice-list-store-3ca58dd7.js",
       "_index-2f32262e.js",
@@ -2225,7 +2225,7 @@
     "src": "src/routes/recurring/create/CreateRecurring.svelte"
   },
   "src/routes/recurring/detail/RecurringList.svelte": {
-    "file": "assets/RecurringList-46c80e7e.js",
+    "file": "assets/RecurringList-c2f037b7.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_index-fcd26607.js",
@@ -2250,8 +2250,8 @@
       "_moment-a9aaa855.js",
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
-      "_invoice-all-tab-table-column-7274db3a.js",
-      "_Tab-1c6d2c57.js",
+      "_invoice-all-tab-table-column-a3f5cb21.js",
+      "_Tab-da9e114e.js",
       "_Breadcrumb-8a216a28.js",
       "_PageTitle-5aeb5b6f.js",
       "_SearchBar-139f3fc2.js",
@@ -2274,7 +2274,7 @@
       "_circle-dollar-sign-0af52bca.js",
       "_id-cell-05587cea.js",
       "_table-row-9bf80d0a.js",
-      "_App-136ad1cd.js",
+      "_App-e17b8008.js",
       "_ProBadge-35078e4e.js",
       "src/main.js",
       "_Toaster-907ac0b8.js",
@@ -2321,11 +2321,11 @@
     "src": "src/routes/recurring/detail/preview/RecurringPreview.svelte"
   },
   "src/routes/recurring/edit/EditRecurring.svelte": {
-    "file": "assets/EditRecurring-f2400eda.js",
+    "file": "assets/EditRecurring-e7f67cfa.js",
     "imports": [
       "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
       "_options-89ca2928.js",
-      "_BaseCreateRecurring-c77a39ac.js",
+      "_BaseCreateRecurring-121bc85d.js",
       "_errorHelper-eef9e97b.js",
       "_invoice-store-89da11de.js",
       "_recurring-store-e654427c.js",
