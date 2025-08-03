@@ -5,7 +5,7 @@ Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv3
-Stable tag: 1.11.3
+Stable tag: 1.11.4
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Invoize is an intuitive and user-friendly WordPress plugin designed for effortless invoice creation. With a focus on ease of use.
@@ -29,8 +29,8 @@ Invoize is an intuitive and user-friendly WordPress plugin designed for effortle
 
 == Changelog ==
 
-= 1.11.3 | 09 July 2025 =
-* Improvement on Email Template
+= 1.11.3 | 13 July 2025 =
+* Fixed paypal direct link in payment page
 
 = 1.11.2 | 09 July 2025 =
 * Fixed error on edit recurring
