@@ -4,7 +4,6 @@ use Invoize\Features\Admin\Admin;
 use Invoize\Features\Front\Front;
 use Invoize\Features\Payment\Payment;
 use Invoize\InvoizePlugin;
-
 /**
  * The plugin bootstrap file
  *
@@ -17,7 +16,7 @@ use Invoize\InvoizePlugin;
  * Plugin Name:       Invoize
  * Plugin URI:        https://wpsora.com
  * Description:       Simplifies the process of creating, managing, and sending professional invoice
- * Version:           1.11.4
+ * Version:           1.11.5
  * Author:            WP Sora
  * Author URI:        https://wpsora.com/
  * License:           GPLv3
@@ -26,10 +25,10 @@ use Invoize\InvoizePlugin;
  *
  */
 // If this file is called directly, abort.
-if (!defined('WPINC')) {
+if ( !defined( 'WPINC' ) ) {
     die;
 }
-if (!defined('ABSPATH')) {
+if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 /*
@@ -42,15 +41,14 @@ if (!defined('ABSPATH')) {
 | into the script here so we don't need to manually load our classes.
 |
 */
-require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
-if (!function_exists('invoize')) {
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+if ( !function_exists( 'invoize' ) ) {
     // Create a helper function for easy SDK access.
-    function invoize()
-    {
+    function invoize() {
         global $invoize;
-        if (!isset($invoize)) {
-            require_once dirname(__FILE__) . '/vendor/freemius/wordpress-sdk/start.php';
-            $invoize = fs_dynamic_init(array(
+        if ( !isset( $invoize ) ) {
+            require_once dirname( __FILE__ ) . '/vendor/freemius/wordpress-sdk/start.php';
+            $invoize = fs_dynamic_init( array(
                 'id'               => '16134',
                 'slug'             => 'invoize',
                 'premium_slug'     => 'invoize-pro',
@@ -64,8 +62,12 @@ if (!function_exists('invoize')) {
                     'first-path' => 'admin.php?page=invoize-welcome',
                     'pricing'    => true,
                 ),
+                'trial'            => array(
+                    'days'               => 14,
+                    'is_require_payment' => false,
+                ),
                 'is_live'          => true,
-            ));
+            ) );
         }
         return $invoize;
     }
@@ -73,14 +75,14 @@ if (!function_exists('invoize')) {
     // Init Freemius.
     invoize();
     // Signal that SDK was initiated.
-    do_action('invoize_loaded');
+    do_action( 'invoize_loaded' );
 }
 $pluginName = 'Invoize';
 $databaseVersion = 0.2;
 // Database Structure Version;
-$pluginVersion = get_plugin_data(__FILE__)['Version'];
+$pluginVersion = get_plugin_data( __FILE__ )['Version'];
 $pluginDirectory = __DIR__;
-$pluginUrl = plugin_dir_url(__FILE__);
+$pluginUrl = plugin_dir_url( __FILE__ );
 $plugin = new InvoizePlugin(
     $pluginName,
     $pluginVersion,
@@ -89,9 +91,9 @@ $plugin = new InvoizePlugin(
     $pluginUrl
 );
 $features = [Admin::class, Front::class, Payment::class];
-if (invoize_is_wc_actived()) {
+if ( invoize_is_wc_actived() ) {
     $features[] = \Invoize\Features\Integrations\Woocommerce\Woocommerce::class;
 }
-$plugin->registerFeatures($features)->run();
-register_activation_hook(__FILE__, [$plugin, 'onPluginActivated']);
-register_deactivation_hook(__FILE__, [$plugin, 'onPluginDeactivated']);
+$plugin->registerFeatures( $features )->run();
+register_activation_hook( __FILE__, [$plugin, 'onPluginActivated'] );
+register_deactivation_hook( __FILE__, [$plugin, 'onPluginDeactivated'] );

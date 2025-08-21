@@ -20,47 +20,27 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
 ?>
 <!DOCTYPE html>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-
-  td {
-    padding: 0;
-    margin: 0;
-  }
-</style>
 <html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-    }
-
-    td {
-      padding: 0;
-      margin: 0;
-    }
-  </style>
 </head>
 
-<body>
+<body style="font-family: 'Arial', sans-serif;">
   <div style="min-height: 900px;">
     <!-- Header -->
     <table style="width: 100%;">
       <tr>
         <!-- Logo -->
-        <td rowspan="2" style="width: 50%;">
+        <td rowspan="2" style="width: 50%; padding: 0; margin: 0;">
           <?php if ($business['logo'] != 'false') : ?>
-            <img src="<?php echo esc_url($business['logo']) ?>" alt="logo" height="70px" />
+            <img src="<?php echo esc_url($business['logo']) ?>" alt="logo" height="70px" style="padding: 0; margin: 0;" />
           <?php endif ?>
         </td>
         <!-- Title -->
-        <td style="width: 50%; text-align: right; font-size: 32px; font-weight: bold;">
+        <td style="width: 50%; text-align: right; font-size: 32px; font-weight: bold; padding: 0; margin: 0;">
           <?php echo esc_html(strtoupper($page)) ?>
         </td>
       </tr>
@@ -68,19 +48,19 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
       <!-- Invoice number -->
       <?php if ($page == Invoice::INVOICE) : ?>
         <tr>
-          <td style="text-align: right; font-size: 20px;">
+          <td style="text-align: right; font-size: 20px; padding: 0; margin: 0; padding: 0; margin: 0;">
             <?php echo esc_html($record->getInvoiceNumber()) ?>
           </td>
         </tr>
 
       <?php elseif ($page == 'quotation'): ?>
         <tr>
-          <td style="text-align: right; font-size: 20px;">
+          <td style="text-align: right; font-size: 20px; padding: 0; margin: 0;">
             <?php echo esc_html($record->post_title) ?>
           </td>
         </tr>
         <tr>
-          <td style="text-align: right; font-size: 14px;">
+          <td style="text-align: right; font-size: 14px; padding: 0; margin: 0;">
             <?php echo esc_html($record->getQuotationNumber()) ?>
           </td>
         </tr>
@@ -88,12 +68,12 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
         <!-- Invoice number & Receipt number -->
       <?php elseif ($page == Invoice::RECEIPT) : ?>
         <tr>
-          <td style="text-align: right; font-size: 20px;">
+          <td style="text-align: right; font-size: 20px; padding: 0; margin: 0;">
             <?php echo esc_html($record->receipt->getReceiptNumber()); ?>
           </td>
         </tr>
         <tr>
-          <td colspan="3" style="text-align: right; font-size: 14px;">
+          <td colspan="3" style="text-align: right; font-size: 14px; padding: 0; margin: 0;">
             <?php echo esc_html($record->getInvoiceNumber()) ?>
           </td>
         </tr>
@@ -105,29 +85,29 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
     <!-- Content Top -->
     <table style="width: 100%; font-size: 14px; margin-bottom: 8px;">
       <tr>
-        <td style="width: 50%; font-size: 14px; font-weight: bold;">Issued by</td>
+        <td style="width: 50%; font-size: 14px; font-weight: bold; padding: 0; margin: 0;">Issued by</td>
       </tr>
 
       <tr>
-        <td style="width: 50%; font-size: 14px;"><?php echo esc_html($business['business_name']) ?></td>
+        <td style="width: 50%; font-size: 14px; padding: 0; margin: 0;"><?php echo esc_html($business['business_name']) ?></td>
       </tr>
 
       <tr>
-        <td style="width: 50%; font-size: 12px; color: #64748b;"><?php echo esc_html($business['email']) ?></td>
+        <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;"><?php echo esc_html($business['email']) ?></td>
         <!-- Status -->
-        <td style="width: 7.5%;"></td>
-        <td style="width: 17.5%; font-size: 14px;">Status</td>
-        <td style="width: 2%; text-align: center;">:</td>
-        <td style="width: 23%; text-align: right;">
+        <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+        <td style="width: 17.5%; font-size: 14px; padding: 0; margin: 0;">Status</td>
+        <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+        <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
-              <td style="width: 30%;"></td>
+              <td style="width: 30%; padding: 0; margin: 0;"></td>
               <?php if ($isQuotation): ?>
-                <td style="width: 70%; border-radius: 5px; color: white; background-color: <?php echo esc_attr($paymentStatus != 'active' ?  'gray;' : '#16a34a;') ?> font-weight: bold; text-align: center;">
+                <td style="width: 70%; border-radius: 5px; color: white; background-color: <?php echo esc_attr($paymentStatus != 'active' ?  'gray;' : '#16a34a;') ?> font-weight: bold; text-align: center; padding: 0; margin: 0;">
                   <?php echo esc_html(strtoupper($paymentStatus)) ?>
                 </td>
               <?php else: ?>
-                <td style="width: 70%; border-radius: 5px; color: white; background-color: <?php echo esc_attr($paymentStatus == Invoice::UNPAID ?  '#ef4444;' : '#16a34a;') ?> font-weight: bold; text-align: center;">
+                <td style="width: 70%; border-radius: 5px; color: white; background-color: <?php echo esc_attr($paymentStatus == Invoice::UNPAID ?  '#ef4444;' : '#16a34a;') ?> font-weight: bold; text-align: center; padding: 0; margin: 0;">
                   <?php echo esc_html(strtoupper($paymentStatus)) ?>
                 </td>
               <?php endif; ?>
@@ -138,18 +118,18 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
       <?php if (!$isQuotation) : ?>
         <tr>
-          <td style="width: 50%; font-size: 12px; color: #64748b;">
+          <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
             <?php echo esc_html($business['phone_number']) ?>
           </td>
           <!-- Type -->
-          <td style="width: 7.5%;"></td>
-          <td style="width: 17.5%;">Type</td>
-          <td style="width: 2%; text-align: center;">:</td>
-          <td style="width: 23%; text-align: right;">
+          <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+          <td style="width: 17.5%; padding: 0; margin: 0;">Type</td>
+          <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+          <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
             <table style="width: 100%; border-collapse: collapse;">
               <tr>
-                <td style="width: 30%;"></td>
-                <td style="width: 70%; font-weight: bold; <?php echo esc_attr($isRecurring ? 'color: #3b82f6;' : 'color: #f59e0b;') ?> text-align: center;">
+                <td style="width: 30%; padding: 0; margin: 0;"></td>
+                <td style="width: 70%; font-weight: bold; <?php echo esc_attr($isRecurring ? 'color: #3b82f6;' : 'color: #f59e0b;') ?> text-align: center; padding: 0; margin: 0;">
                   <?php echo esc_html($isRecurring ? 'Recurring' : 'One-time') ?>
                 </td>
               </tr>
@@ -160,7 +140,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
       <?php if (isset($business['website'])) : ?>
         <tr>
-          <td style="width: 50%; font-size: 12px; color: #64748b;">
+          <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
             <?php echo esc_html($business['website']) ?>
           </td>
         </tr>
@@ -168,7 +148,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
       <?php if (isset($business['address'])) : ?>
         <tr>
-          <td style="width: 50%; font-size: 12px; color: #64748b;">
+          <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
             <?php echo wp_kses_post(nl2br($business['address'])) ?>
           </td>
         </tr>
@@ -178,7 +158,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
     <?php $customer = $record->getClient(); ?>
     <table style="width: 100%; font-size: 14px;margin-bottom:14px;">
       <tr>
-        <td style="width: 50%; font-size: 14px; font-weight: bold;">
+        <td style="width: 50%; font-size: 14px; font-weight: bold; padding: 0; margin: 0;">
           <?php if ($record->isBilledToSameAsClient()): ?>
             Customer
           <?php else: ?>
@@ -187,17 +167,17 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
         </td>
         <?php if (!$isQuotation): ?>
           <!-- Order date -->
-          <td style="width: 7.5%;"></td>
-          <td style="width: 17.5%;">Order date</td>
-          <td style="width: 2%; text-align: center;">:</td>
-          <td style="width: 23%; text-align: right;">
+          <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+          <td style="width: 17.5%; padding: 0; margin: 0;">Order date</td>
+          <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+          <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
             <?php echo esc_html(invoizeFormatDate($record->getOrderDate(), $dateFormat)); ?>
           </td>
         <?php endif; ?>
       </tr>
 
       <tr>
-        <td style="width: 50%; font-size: 14px;">
+        <td style="width: 50%; font-size: 14px; padding: 0; margin: 0;">
           <?php if ($record->isBilledToSameAsClient()): ?>
             <?php echo esc_html($customer['name']) ?>
           <?php else: ?>
@@ -205,16 +185,16 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
           <?php endif; ?>
         </td>
         <!-- Invoice date -->
-        <td style="width: 7.5%;"></td>
-        <td style="width: 17.5%;">
+        <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+        <td style="width: 17.5%; padding: 0; margin: 0;">
           <?php if ($isQuotation): ?>
             Quotation Date
           <?php else: ?>
             Invoice date
           <?php endif; ?>
         </td>
-        <td style="width: 2%; text-align: center;">:</td>
-        <td style="width: 23%; text-align: right;">
+        <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+        <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
           <?php if ($isQuotation): ?>
             <?php echo esc_html(invoizeFormatDate($record->getQuotationDate(), $dateFormat)) ?>
           <?php else: ?>
@@ -224,7 +204,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
       </tr>
 
       <tr>
-        <td style="width: 50%; font-size: 12px; color: #64748b;">
+        <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
           <?php if ($record->isBilledToSameAsClient()): ?>
             <?php echo esc_html($customer['email']) ?>
           <?php else: ?>
@@ -232,16 +212,16 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
           <?php endif; ?>
         </td>
         <!-- Due date -->
-        <td style="width: 7.5%;"></td>
-        <td style="width: 12.5%;">Due date</td>
-        <td style="width: 2%; text-align: center;">:</td>
-        <td style="width: 23%; text-align: right;">
+        <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+        <td style="width: 12.5%; padding: 0; margin: 0;">Due date</td>
+        <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+        <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
           <?php echo esc_html(invoizeFormatDate($record->getDueDate(), $dateFormat)) ?>
         </td>
       </tr>
 
       <tr>
-        <td style="width: 50%; font-size: 12px; color: #64748b;">
+        <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
           <?php if ($record->isBilledToSameAsClient()): ?>
             <?php echo wp_kses_post(isset($customer['customAddress'])
               ? nl2br($customer['customAddress'])
@@ -250,10 +230,10 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
         </td>
         <?php if ($paymentStatus == Invoice::PAID) : ?>
           <!-- Paid date -->
-          <td style="width: 7.5%;"></td>
-          <td style="width: 17.5%;">Paid on</td>
-          <td style="width: 2%; text-align: center;">:</td>
-          <td style="width: 23%; text-align: right;">
+          <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+          <td style="width: 17.5%; padding: 0; margin: 0;">Paid on</td>
+          <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+          <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
             <?php echo esc_html(invoizeFormatDate($record->getPaidDate(), $dateFormat)); ?>
           </td>
         <?php endif ?>
@@ -266,35 +246,35 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
     <table style="width: 100%; margin: 36px 0 0; border-collapse: collapse;">
       <!-- This is used to maintain the size of each cell -->
       <tr>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
-        <td style="width: 8.3%;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
+        <td style="width: 8.3%; padding: 0; margin: 0;"></td>
       </tr>
 
       <thead>
         <tr style="background-color: #f1f5f9;">
-          <th style="font-size: 14px; text-align: center; height: 40px; color: #64748b;">
+          <th style="font-size: 14px; text-align: center; height: 40px; color: #64748b; padding: 0; margin: 0;">
             #
           </th>
-          <th style="font-size: 14px; color: #64748b;" colspan="6">
+          <th style="font-size: 14px; color: #64748b; padding: 0; margin: 0;" colspan="6">
             Products
           </th>
-          <th style="font-size: 14px; text-align: center; color: #64748b;" colspan="2">
+          <th style="font-size: 14px; text-align: center; color: #64748b; padding: 0; margin: 0;" colspan="2">
             Unit Price
             </th=>
-          <th style="font-size: 14px; text-align: center; color: #64748b;">
+          <th style="font-size: 14px; text-align: center; color: #64748b; padding: 0; margin: 0;">
             Qty
           </th>
-          <th style="font-size: 14px; text-align: right; color: #64748b;" colspan="2">
+          <th style="font-size: 14px; text-align: right; color: #64748b; padding: 0 10px 0 0; margin: 0;" colspan="2">
             Amount
           </th>
         </tr>
@@ -303,10 +283,10 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
       <tbody>
         <?php foreach ($products as $index => $product) : ?>
           <tr>
-            <td style="text-align: center; vertical-align: baseline; height: 36px; font-size: 14px;">
+            <td style="text-align: center; vertical-align: baseline; height: 36px; font-size: 14px; padding: 0; margin: 0;">
               <?php echo esc_html($index + 1) ?>
             </td>
-            <td style="padding-left: 8px; font-size: 14px; vertical-align: baseline;" colspan="6">
+            <td style="padding-left: 8px; font-size: 14px; vertical-align: baseline; padding-right: 0; margin: 0;" colspan="6">
               <?php if (isset($product['note'])) : ?>
                 <table style="border-collapse: collapse; width: 100%;">
                   <tr>
@@ -314,32 +294,32 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                       Sometimes the product name is like this:
                       \xe2\x80\x8b OJS Hosting Package\xe2\x80\x8b 
                       so we remove the weird syntax -->
-                    <td><?php echo esc_html(str_replace("\u{200B}", "", $product['name'])) ?></td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html(str_replace("\u{200B}", "", $product['name'])) ?></td>
                   </tr>
                   <tr>
-                    <td style="font-size: 12px; color: #64748b;"><?php echo wp_kses_post(nl2br($product['note'])) ?></td>
+                    <td style="font-size: 12px; color: #64748b; padding: 0; margin: 0;"><?php echo wp_kses_post(nl2br($product['note'])) ?></td>
                   </tr>
                 </table>
               <?php elseif (isset($product['description'])) : ?>
                 <table style="border-collapse: collapse; width: 100%;">
                   <tr>
-                    <td><?php echo esc_html(str_replace("\u{200B}", "", $product['name'])) ?></td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html(str_replace("\u{200B}", "", $product['name'])) ?></td>
                   </tr>
                   <tr>
-                    <td style="font-size: 12px; color: #64748b;"><?php echo wp_kses_post(nl2br($product['description'])) ?></td>
+                    <td style="font-size: 12px; color: #64748b; padding: 0; margin: 0;"><?php echo wp_kses_post(nl2br($product['description'])) ?></td>
                   </tr>
                 </table>
               <?php else: ?>
                 <?php echo esc_html(str_replace("\u{200B}", "", $product['name'])) ?>
               <?php endif ?>
             </td>
-            <td colspan="2" style="text-align: center; font-size: 14px; vertical-align: middle;">
+            <td colspan="2" style="text-align: center; font-size: 14px; vertical-align: middle; padding: 0; margin: 0;">
               <?php echo esc_html(invoizeFormatCurrency($currency['name'], $product['unitPrice']))  ?>
             </td>
-            <td style="text-align: center; font-size: 14px; vertical-align: middle;">
+            <td style="text-align: center; font-size: 14px; vertical-align: middle; padding: 0; margin: 0;">
               <?php echo esc_html(invoizeFormatNumber($currency['name'], $product['quantity'])) ?>
             </td>
-            <td colspan="2" style="text-align: right; font-size: 14px; vertical-align: middle;">
+            <td colspan="2" style="text-align: right; font-size: 14px; vertical-align: middle; padding: 0 10px 0 0; margin: 0;">
               <?php echo esc_html(invoizeFormatCurrency($currency['name'], $product['amount']))  ?>
             </td>
           </tr>
@@ -353,10 +333,10 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
     <table style="width: 100%; font-size: 12px; margin-top: 30px; border-collapse: collapse;">
       <tr>
         <!-- Payments -->
-        <td style="width: 50%; vertical-align: baseline;">
+        <td style="width: 50%; vertical-align: baseline; padding: 0; margin: 0;">
           <table style="border-collapse: collapse;">
             <tr>
-              <td colspan="3" style="font-size: 14px; font-weight: bold; padding-bottom: 8px; white-space: nowrap;">
+              <td colspan="3" style="font-size: 14px; font-weight: bold; padding-bottom: 8px; white-space: nowrap; padding-top: 0; padding-left: 0; padding-right: 0; margin: 0;">
                 Payment Method
               </td>
             </tr>
@@ -380,12 +360,12 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
               <!-- Separator -->
               <?php if (count($payments) > 1 && $index > 0) : ?>
                 <tr>
-                  <td style="height: 12px;"></td>
+                  <td style="height: 12px; padding: 0; margin: 0;"></td>
                 </tr>
               <?php endif ?>
 
               <tr>
-                <td colspan="3" style="font-size: 12px; font-weight: bold; vertical-align: baseline;">
+                <td colspan="3" style="font-size: 12px; font-weight: bold; vertical-align: baseline; padding: 0; margin: 0;">
                   <?php echo esc_html(ucfirst($payment['method'])) ?>
                 </td>
               </tr>
@@ -393,14 +373,14 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
               <!-- Bank Payment -->
               <?php if ($payment['method'] == Payment::BANK) : ?>
                 <tr style="vertical-align: baseline;">
-                  <td>Name</td>
-                  <td style="width: 10px; text-align: center;">:</td>
-                  <td><?php echo esc_html(ucfirst($payment['name'])) ?></td>
+                  <td style="padding: 0; margin: 0;">Name</td>
+                  <td style="width: 10px; text-align: center; padding: 0; margin: 0;">:</td>
+                  <td style="padding: 0; margin: 0;"><?php echo esc_html(ucfirst($payment['name'])) ?></td>
                 </tr>
                 <tr style="vertical-align: baseline;">
-                  <td>Detail</td>
-                  <td style="width: 10px; text-align: center;">:</td>
-                  <td><?php echo wp_kses_post(nl2br($payment['detail'])) ?></td>
+                  <td style="padding: 0; margin: 0;">Detail</td>
+                  <td style="width: 10px; text-align: center; padding: 0; margin: 0;">:</td>
+                  <td style="padding: 0; margin: 0;"><?php echo wp_kses_post(nl2br($payment['detail'])) ?></td>
                 </tr>
               <?php endif; ?>
 
@@ -415,20 +395,20 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                   : null;
                 ?>
                 <tr style="vertical-align: baseline;">
-                  <td>Method</td>
-                  <td>:</td>
-                  <td><?php echo esc_html(ucfirst($payment['type'])) ?></td>
+                  <td style="padding: 0; margin: 0;">Method</td>
+                  <td style="padding: 0; margin: 0;">:</td>
+                  <td style="padding: 0; margin: 0;"><?php echo esc_html(ucfirst($payment['type'])) ?></td>
                 </tr>
                 <tr style="vertical-align: baseline;">
-                  <td>Name</td>
-                  <td>:</td>
-                  <td><?php echo esc_html($payment['name']) ?></td>
+                  <td style="padding: 0; margin: 0;">Name</td>
+                  <td style="padding: 0; margin: 0;">:</td>
+                  <td style="padding: 0; margin: 0;"><?php echo esc_html($payment['name']) ?></td>
                 </tr>
                 <?php if ($paypalAutoLink && $paymentStatus == Invoice::UNPAID) : ?>
                   <tr style="vertical-align: baseline;">
-                    <td>Link</td>
-                    <td>:</td>
-                    <td>
+                    <td style="padding: 0; margin: 0;">Link</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;">
                       <a href="<?php echo esc_url($paypalAutoLink) ?>" target="_self" style="color: #2563eb; text-decoration: none;">
                         <?php echo esc_url($paypalAutoLink); ?>
                       </a>
@@ -437,7 +417,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                 <?php endif ?>
                 <?php if (!$paypalAutoLink && !$isRecurring) : ?>
                   <tr>
-                    <td style="color: #ef4444;">Payment link unavailable</td>
+                    <td style="color: #ef4444; padding: 0; margin: 0;">Payment link unavailable</td>
                   </tr>
                 <?php endif ?>
               <?php endif ?>
@@ -445,15 +425,15 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
               <!-- Paypal Direct Payment -->
               <?php if ($payment['method'] == Payment::PAYPAL && $payment['type'] == Payment::DIRECT_PAYMENT) : ?>
                 <tr style="vertical-align: baseline;">
-                  <td>Method</td>
-                  <td>:</td>
-                  <td><?php echo esc_html(ucfirst($payment['type'])) ?></td>
+                  <td style="padding: 0; margin: 0;">Method</td>
+                  <td style="padding: 0; margin: 0;">:</td>
+                  <td style="padding: 0; margin: 0;"><?php echo esc_html(ucfirst($payment['type'])) ?></td>
                 </tr>
                 <?php if ($paymentStatus == Invoice::UNPAID) : ?>
                   <tr style="vertical-align: baseline;">
-                    <td>Link</td>
-                    <td>:</td>
-                    <td>
+                    <td style="padding: 0; margin: 0;">Link</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;">
                       <a href="<?php echo esc_url($payment['name']) ?>" target="_self" style="color: #2563eb; text-decoration: none;">
                         <?php echo esc_url($payment['name']); ?>
                       </a>
@@ -469,18 +449,18 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                   ? $payment['checkout']['invoice_url']
                   : null;
                 ?>
-                <div>(Credit card/other payment method)</div>
+                <div style="padding: 0; margin: 0;">(Credit card/other payment method)</div>
                 <?php if ($xenditLink || !$isRecurring) : ?>
                   <tr style="vertical-align: baseline;">
-                    <td>Total</td>
-                    <td>:</td>
-                    <td><?php echo esc_html(invoizeFormatCurrency("IDR", $payment['total'])) ?></td>
+                    <td style="padding: 0; margin: 0;">Total</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html(invoizeFormatCurrency("IDR", $payment['total'])) ?></td>
                   </tr>
                   <?php if ($xenditLink && $paymentStatus == Invoice::UNPAID) : ?>
                     <tr style="vertical-align: baseline;">
-                      <td>Link</td>
-                      <td>:</td>
-                      <td>
+                      <td style="padding: 0; margin: 0;">Link</td>
+                      <td style="padding: 0; margin: 0;">:</td>
+                      <td style="padding: 0; margin: 0;">
                         <a href="<?php echo esc_url($xenditLink) ?>" target="_self" style="color: #2563eb; text-decoration: none;">
                           <?php echo esc_url($xenditLink); ?>
                         </a>
@@ -490,7 +470,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                 <?php endif ?>
                 <?php if (!$xenditLink && !$isRecurring) : ?>
                   <tr>
-                    <td style="color: #ef4444;">Payment link unavailable</td>
+                    <td style="color: #ef4444; padding: 0; margin: 0;">Payment link unavailable</td>
                   </tr>
                 <?php endif ?>
               <?php endif ?>
@@ -503,55 +483,55 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                     <!-- Separator -->
                     <?php if (count($payment['detail']) > 1 && $index > 0) : ?>
                       <tr>
-                        <td style="height: 4px;"></td>
+                        <td style="height: 4px; padding: 0; margin: 0;"></td>
                       </tr>
                       <tr>
-                        <td colspan="3" style="height: 1px; background-color: #e2e8f0;"></td>
+                        <td colspan="3" style="height: 1px; background-color: #e2e8f0; padding: 0; margin: 0;"></td>
                       </tr>
                       <tr>
-                        <td style="height: 4px;"></td>
+                        <td style="height: 4px; padding: 0; margin: 0;"></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['account_name'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>Account name</td>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['account_name']) ?></td>
+                        <td style="padding: 0; margin: 0;">Account name</td>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['account_name']) ?></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['account_number'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>Account number</td=>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['account_number']) ?></td>
+                        <td style="padding: 0; margin: 0;">Account number</td=>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['account_number']) ?></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['bank_name'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>Bank name</td=>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['bank_name']) ?></td>
+                        <td style="padding: 0; margin: 0;">Bank name</td=>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['bank_name']) ?></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['sort_code'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>Sort code</td>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['sort_code']) ?></td>
+                        <td style="padding: 0; margin: 0;">Sort code</td>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['sort_code']) ?></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['iban'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>IBAN</td>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['iban']) ?></td>
+                        <td style="padding: 0; margin: 0;">IBAN</td>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['iban']) ?></td>
                       </tr>
                     <?php endif ?>
                     <?php if (isset($detail['bic'])) : ?>
                       <tr style="vertical-align: baseline;">
-                        <td>BIC/Swift</td>
-                        <td>:</td>
-                        <td><?php echo esc_html($detail['bic']) ?></td>
+                        <td style="padding: 0; margin: 0;">BIC/Swift</td>
+                        <td style="padding: 0; margin: 0;">:</td>
+                        <td style="padding: 0; margin: 0;"><?php echo esc_html($detail['bic']) ?></td>
                       </tr>
                     <?php endif ?>
                   <?php endforeach ?>
@@ -559,28 +539,28 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                   <!-- Woocommerce Paypal -->
                 <?php elseif ($payment['name'] == 'woocommerce paypal' || $payment['type'] == 'woocommerce paypal') : ?>
                   <tr style="vertical-align: baseline;">
-                    <td>Method</td>
-                    <td>:</td>
-                    <td><?php echo esc_html($payment['name']) ?></td>
+                    <td style="padding: 0; margin: 0;">Method</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html($payment['name']) ?></td>
                   </tr>
                   <tr style="vertical-align: baseline;">
-                    <td>Detail</td>
-                    <td>:</td>
-                    <td><?php echo esc_html($payment['detail']) ?></td>
+                    <td style="padding: 0; margin: 0;">Detail</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html($payment['detail']) ?></td>
                   </tr>
 
                   <!-- Woocommerce other payment -->
                 <?php else : ?>
                   <?php $wcPaymentLink = $payment['checkout'] ?? null; ?>
                   <tr style="vertical-align: baseline;">
-                    <td>Method</td>
-                    <td>:</td>
-                    <td><?php echo esc_html($payment['name']) ?></td>
+                    <td style="padding: 0; margin: 0;">Method</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="padding: 0; margin: 0;"><?php echo esc_html($payment['name']) ?></td>
                   </tr>
                   <tr style="vertical-align: baseline;">
-                    <td>Detail</td>
-                    <td>:</td>
-                    <td style="color: #2563eb; text-decoration: none;">
+                    <td style="padding: 0; margin: 0;">Detail</td>
+                    <td style="padding: 0; margin: 0;">:</td>
+                    <td style="color: #2563eb; text-decoration: none; padding: 0; margin: 0;">
                       <a href="<?php echo esc_url($wcPaymentLink) ?>" target="_self">
                         <?php echo esc_url($wcPaymentLink) ?>
                       </a>
@@ -593,15 +573,15 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
             <?php if (invoizeGetOption('payment.enablePaymentPage') && !$isQuotation) : ?>
               <tr>
-                <td style="height: 12px;"></td>
+                <td style="height: 12px; padding: 0; margin: 0;"></td>
               </tr>
               <tr>
-                <td colspan="3" style="font-size: 12px; font-weight: bold; vertical-align: baseline;">
+                <td colspan="3" style="font-size: 12px; font-weight: bold; vertical-align: baseline; padding: 0; margin: 0;">
                   Payment Link
                 </td>
               </tr>
               <tr style="vertical-align: baseline;">
-                <td colspan="3">
+                <td colspan="3" style="padding: 0; margin: 0;">
                   <a href="<?php echo esc_url($record->getPaymentLink()); ?>" target="_blank">
                     <?php echo esc_url($record->getPaymentLink()); ?>
                   </a>
@@ -612,19 +592,19 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
         </td>
 
         <!-- Summary -->
-        <td style="width: 50%; vertical-align: baseline;">
+        <td style="width: 50%; vertical-align: baseline; padding: 0; margin: 0;">
           <table style="width: 100%;">
             <!-- Subtotal  -->
             <tr>
-              <td style="width: 15%;"></td>
-              <td style="width: 35%; font-size: 14px; font-weight: bold;">Subtotal</td>
-              <td style="width: 50%; font-size: 14px; text-align: right;">
+              <td style="width: 15%; padding: 0; margin: 0;"></td>
+              <td style="width: 35%; font-size: 14px; font-weight: bold; padding: 0; margin: 0;">Subtotal</td>
+              <td style="width: 50%; font-size: 14px; text-align: right; padding: 0; margin: 0;">
                 <?php echo esc_html(invoizeFormatCurrency($currency['name'], $subtotal)) ?>
               </td>
             </tr>
 
             <tr>
-              <td style="height: 8px;"></td>
+              <td style="height: 8px; padding: 0; margin: 0;"></td>
             </tr>
 
             <!-- Discount -->
@@ -635,13 +615,13 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                 : $discount['value'];
               ?>
               <tr style="width: 100%; color: #dc2626;">
-                <td style="width: 15%;"></td>
-                <td style="width: 50%; font-size: 14px;">
+                <td style="width: 15%; padding: 0; margin: 0;"></td>
+                <td style="width: 50%; font-size: 14px; padding: 0; margin: 0;">
                   <?php echo esc_html($discount['name'] . ' ' .  ($discount['type'] == 'percent'
                     ? $discount['value'] . '%'
                     : '')) ?>
                 </td>
-                <td style="width: 50%; font-size: 14px; text-align: right;">
+                <td style="width: 50%; font-size: 14px; text-align: right; padding: 0; margin: 0;">
                   - <?php echo esc_html(invoizeFormatCurrency($currency['name'], $discountValue)) ?>
                 </td>
               </tr>
@@ -649,7 +629,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
             <?php if (count($discounts['data']) > 0) : ?>
               <tr>
-                <td style="height: 8px;"></td>
+                <td style="height: 8px; padding: 0; margin: 0;"></td>
               </tr>
             <?php endif ?>
 
@@ -661,13 +641,13 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
                 : $tax['value'];
               ?>
               <tr>
-                <td style="width: 15%;"></td>
-                <td style="width: 50%; font-size: 14px;">
+                <td style="width: 15%; padding: 0; margin: 0;"></td>
+                <td style="width: 50%; font-size: 14px; padding: 0; margin: 0;">
                   <?php echo esc_html($tax['name'] . ' ' . ($tax['type'] == 'percent'
                     ? $tax['value'] . '%'
                     : '')); ?>
                 </td>
-                <td style="width: 50%; font-size: 14px; text-align: right;">
+                <td style="width: 50%; font-size: 14px; text-align: right; padding: 0; margin: 0;">
                   <?php echo esc_html(invoizeFormatCurrency($currency['name'], $taxValue)) ?>
                 </td>
               </tr>
@@ -675,15 +655,15 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
             <?php if (count($taxes['data']) > 0) : ?>
               <tr>
-                <td style="height: 8px;"></td>
+                <td style="height: 8px; padding: 0; margin: 0;"></td>
               </tr>
             <?php endif ?>
 
             <!-- Total -->
             <tr>
-              <td style="width: 15%;"></td>
-              <td style="width: 35%; font-weight: bold; font-size: 16px;">Total</td>
-              <td style="width: 50%; font-weight: bold; font-size: 16px; text-align: right;">
+              <td style="width: 15%; padding: 0; margin: 0;"></td>
+              <td style="width: 35%; font-weight: bold; font-size: 16px; padding: 0; margin: 0;">Total</td>
+              <td style="width: 50%; font-weight: bold; font-size: 16px; text-align: right; padding: 0; margin: 0;">
                 <?php echo esc_html(invoizeFormatCurrency($currency['name'], $total))  ?>
               </td>
             </tr>
@@ -697,13 +677,13 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
     <table style="width: 100%; border-collapse: collapse;">
       <!-- Note -->
       <tr style="width: 100%;">
-        <td colspan="2">
+        <td colspan="2" style="padding: 0; margin: 0;">
           <table style="width: 100%;">
             <tr style="width: 100%;">
-              <td style="font-size: 14px; font-weight: bold;">Note</td>
+              <td style="font-size: 14px; font-weight: bold; padding: 0; margin: 0;">Note</td>
             </tr>
             <tr>
-              <td style="font-size: 12px; page-break-inside: initial;">
+              <td style="font-size: 12px; page-break-inside: initial; padding: 0; margin: 0;">
                 <?php echo wp_kses_post(!empty($notes['note']) ? nl2br($notes['note']) : '-') ?>
               </td>
             </tr>
@@ -713,27 +693,27 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
 
       <tr style="width: 100%;">
         <!-- Terms & Conditions -->
-        <td style="width: 80%;">
+        <td style="width: 80%; padding: 0; margin: 0;">
           <table>
             <tr>
-              <td style="font-size: 14px; font-weight: bold;">Terms & Conditions</td>
+              <td style="font-size: 14px; font-weight: bold; padding: 0; margin: 0;">Terms & Conditions</td>
             </tr>
             <tr>
-              <td style="font-size: 12px;">
+              <td style="font-size: 12px; padding: 0; margin: 0;">
                 <?php echo wp_kses_post(!empty($notes['terms']) ? nl2br($notes['terms']) : '-') ?>
               </td>
             </tr>
           </table>
         </td>
         <!-- QR Code -->
-        <td style="text-align: right;">
+        <td style="text-align: right; padding: 0; margin: 0;">
           <img src="<?php echo wp_kses_post((new QRCode())->render($previewLink)) ?>" alt="QR Code" width="96px">
         </td>
       </tr>
 
       <!-- Footer link -->
       <tr>
-        <td colspan="2" style="text-align: right; font-size: 12px; padding-top: 20px;">
+        <td colspan="2" style="text-align: right; font-size: 12px; padding-top: 20px; padding-bottom: 0; padding-left: 0; padding-right: 0; margin: 0;">
           <a href="<?php echo esc_url($previewLink) ?>" style="text-decoration: none; color: #64748b; font-style: italic;">
             <?php echo esc_url($previewLink) ?>
           </a>
@@ -741,7 +721,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
       </tr>
       <?php if (!invoize()->is_paying_or_trial()): ?>
         <tr>
-          <td style="text-align: left;font-size: 12px;padding-top: 20px;color:#ddd">
+          <td style="text-align: left; font-size: 12px; padding-top: 20px; padding-bottom: 0; padding-left: 0; padding-right: 0; margin: 0; color:#ddd">
             Invoize by <a href="https://wpsora.com" target="_blank">wpsora.com</a>
           </td>
         </tr>
