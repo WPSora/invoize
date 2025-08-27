@@ -40,8 +40,8 @@ if ($xIncomingCallbackTokenHeader === $xenditXCallbackToken) {
     // This line is to format the raw input into associative array
     $arrRequestInput = json_decode($rawRequestInput, true);
 
-    $id     = $arrRequestInput['external_id'];
-    $status = $arrRequestInput['status'];
+    $id     = isset($arrRequestInput['external_id']) ? sanitize_text_field($arrRequestInput['external_id']) : '';
+    $status = isset($arrRequestInput['status']) ? sanitize_text_field($arrRequestInput['status']) : '';
 
     try {
         $invoice = Invoice::whereHas('metas', function ($metas) use ($id) {

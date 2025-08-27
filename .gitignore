@@ -1,1 +1,7 @@
-./vendor
+/node_modules
+/vendor
+/dist
+.idea/
+.vscode/
+file/
+logs/

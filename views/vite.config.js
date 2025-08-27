@@ -23,7 +23,7 @@ export default defineConfig({
   plugins: [
     svelte({
       onwarn: (warning, handler) => {
-        if (warning.message.includes("'invoize' is not defined")) return;
+        if (warning.message.includes("is not defined")) return;
         handler(warning);
       },
     }),

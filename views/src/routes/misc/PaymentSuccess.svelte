@@ -17,6 +17,7 @@
   let isSuccessUpdateInvoiceStatus = false;
   let isPaymentPending = false;
   let isPaymentExpired = false;
+  let isPaymentError = false;
 
   const getInvoiceDetail = async () => {
     try {
@@ -72,6 +73,7 @@
         isPaymentExpired = true;
       }
     } catch (err) {
+      isPaymentError = true;
       handleError(err);
     }
   };
@@ -87,7 +89,7 @@
 <div class="w-full h-screen bg-gradient-to-tr from-primary to-primary-600 flex justify-center items-center">
   <Card
     class="bg-gradient-to-tr from-slate-100 to-white flex flex-col justify-center items-center sm:w-1/2 w-10/12 h-1/2 relative">
-    {#if !invoice && !isPaymentPending && !isPaymentExpired}
+    {#if !invoice && !isPaymentPending && !isPaymentExpired && !isPaymentError}
       <Loader2 class="h-40 w-40 text-primary animate-spin" strokeWidth="{1}" />
       <div class="text-center">Don't close this page while we process your payment...</div>
     {:else if isPaymentPending}
@@ -99,6 +101,10 @@
     {:else if isPaymentExpired}
       <X class="h-40 w-40 text-destructive" />
       <div class="text-2xl font-bold">Payment has Expired</div>
+      <div>Please contact your merchant.</div>
+    {:else if isPaymentError}
+      <X class="h-40 w-40 text-destructive" />
+      <div class="text-2xl font-bold">There's something wrong with this payment</div>
       <div>Please contact your merchant.</div>
     {:else}
       <BadgeCheck class="h-40 w-40 text-green-600 mb-2" />

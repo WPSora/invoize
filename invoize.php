@@ -16,7 +16,7 @@ use Invoize\InvoizePlugin;
  * Plugin Name:       Invoize
  * Plugin URI:        https://wpsora.com
  * Description:       Simplifies the process of creating, managing, and sending professional invoice
- * Version:           1.11.5
+ * Version:           1.12.0
  * Author:            WP Sora
  * Author URI:        https://wpsora.com/
  * License:           GPLv3
@@ -58,9 +58,8 @@ if ( !function_exists( 'invoize' ) ) {
                 'has_paid_plans'   => true,
                 'is_org_compliant' => true,
                 'menu'             => array(
-                    'slug'       => 'invoize',
-                    'first-path' => 'admin.php?page=invoize-welcome',
-                    'pricing'    => true,
+                    'slug'    => 'invoize',
+                    'pricing' => true,
                 ),
                 'trial'            => array(
                     'days'               => 14,

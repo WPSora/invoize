@@ -653,6 +653,10 @@ class Invoice extends WPPost {
         return $result;
     }
 
+    public static function exists() {
+        return static::query()->first();
+    }
+
     public static function getUnpaidCount() {
         return static::whereHas( 'metas', function ( $meta ) {
             $meta->where( 'meta_key', 'payment_status' )->where( 'meta_value', static::UNPAID )->count();

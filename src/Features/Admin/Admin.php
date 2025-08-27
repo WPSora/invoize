@@ -64,6 +64,7 @@ class Admin implements HasPlugin {
         $this->registerCron( $hookRegistry );
         $this->registerUpdateEmail( $hookRegistry );
         $this->registerScript( $hookRegistry );
+        $this->registerStylesheet( $hookRegistry );
         $hookRegistry->add_filter(
             'script_loader_tag',
             [Assets::getInstance(), 'addTypeAttribute'],
@@ -192,6 +193,10 @@ class Admin implements HasPlugin {
             }
             $wcClientOnInvoize->updateEmail( $user->user_email );
         } );
+    }
+
+    private function registerStylesheet( $hookRegistry ) {
+        wp_enqueue_style( 'invoize-style', $this->plugin->getPluginAssetUrl( 'menu.css' ) );
     }
 
 }

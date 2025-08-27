@@ -3,7 +3,8 @@
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 $plugin = \Invoize\InvoizePlugin::getInstance();
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
+    style="-webkit-font-smoothing: antialiased;">
 
 <head>
     <title></title>
@@ -12,291 +13,11 @@ $plugin = \Invoize\InvoizePlugin::getInstance();
     <!--<![endif]-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <style>
-        #outlook a {
-            padding: 0;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-
-        table,
-        td {
-            border-collapse: collapse;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-
-        img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
-            outline: none;
-            text-decoration: none;
-            -ms-interpolation-mode: bicubic;
-        }
-
-        p {
-            display: block;
-            margin: 13px 0;
-        }
-
-
-        :root {
-            color-scheme: light;
-            supported-color-schemes: light;
-        }
-
-        html {
-            -webkit-font-smoothing: antialiased
-        }
-
-        .heading-title {
-            font-size: 22px;
-            font-weight: 600;
-            margin-top: 10px;
-            margin-bottom: 0;
-            line-height: 1.4
-        }
-
-        .heading-title-secondary {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 0;
-            line-height: 1.4
-        }
-
-        .heading-subtitle {
-            font-size: 16px;
-            font-weight: normal;
-            margin-top: 0;
-            margin-bottom: 0;
-            line-height: 24px;
-            color: #424761;
-        }
-
-        .display-1 {
-            font-size: 24px;
-            font-family: "Poppins", Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-weight: 600;
-        }
-
-        .display-5 {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .text-right {
-            text-align: right !important;
-        }
-
-        .text-subdued {
-            color: #9DA1AF;
-        }
-
-        .text-green {
-            color: #47C186;
-        }
-
-        .text-red {
-            color: #DE3618;
-        }
-
-        .font-weight-medium {
-            font-weight: 500;
-        }
-
-        .white-space-nowrap {
-            white-space: nowrap !important;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        .card-top {
-            background: white;
-            border-radius: 8px 8px 0 0;
-            border: 1px solid #F3F3F3;
-            border-bottom: 0;
-        }
-
-        .card-content {
-            background: white;
-            border-radius: 0 0 8px 8px;
-            border: 1px solid #F3F3F3;
-            border-top: 0;
-            border-bottom-width: 3px;
-            margin-bottom: 20px !important;
-            padding: 14px 0;
-        }
-
-        .card-header {
-            border-bottom: 1px solid #E5E7EF;
-        }
-
-        .card-title {
-            line-height: 1.4;
-            /* color: #9DA1AF; */
-            margin: 4px 0;
-            font-size: 14px;
-            font-weight: 500
-        }
-
-        .overview-incidents-count {
-            font-size: 20px;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .overview-incidents-change {
-            margin: 8px 0 0;
-            font-size: 14px;
-        }
-
-        .table-column {
-            background: white;
-            border-radius: 8px;
-            border: 1px solid #F3F3F3;
-            border-bottom-width: 3px;
-            margin-bottom: 20px !important;
-        }
-
-        .table-column.mb-0 {
-            margin-bottom: 0 !important;
-        }
-
-        .table thead th {
-            color: #9DA1AF;
-            white-space: nowrap;
-            text-align: left;
-            line-height: 1.4;
-            font-weight: 500;
-        }
-
-        .table th,
-        .table td {
-            padding: 14px 6px;
-            color: #424761;
-            font-size: 13px;
-        }
-
-        .table th.first-child,
-        .table td.first-child {
-            padding-left: 20px;
-        }
-
-        .table th.last-child,
-        .table td.last-child {
-            padding-right: 20px;
-        }
-
-        .table tfoot {
-            border-top: 1px solid #E5E7EF;
-        }
-
-        .table strong {
-            font-weight: 600;
-        }
-
-        .table tbody tr {
-            border-top: 1px solid #E5E7EF;
-        }
-
-        .table tbody tr.bt-0 {
-            border-top: 0;
-        }
-
-        .table tbody tr th.highlighted {
-            background: #FAFBFB;
-            border-radius: 0 0 6px 6px;
-            text-align: left;
-            font-weight: normal;
-        }
-
-        .desktop-monitor-name {
-            width: 44%;
-            overflow-wrap: break-word;
-            word-break: break-all;
-        }
-
-        .endpoints-table .day-column {
-            text-align: center;
-        }
-
-        .status-oval {
-            display: block;
-            width: 40px;
-            height: 16px;
-            border-radius: 40px;
-            background: #E0E0E1;
-        }
-
-        .day-column--downtime .status-oval {
-            background: #DE3618;
-        }
-
-        .day-column--operational .status-oval {
-            background: #21B062;
-        }
-
-        .endpoints-table .endpoint-summary-row {
-            border-top: 0;
-        }
-
-        .endpoints-table .endpoint-summary-row td {
-            padding-top: 0;
-            color: #9DA1AF;
-            font-weight: 500
-        }
-
-        .endpoints-table .change-icon {
-            vertical-align: middle;
-            margin-right: 2px;
-        }
-
-        .endpoints-table .icon-explanation {
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        .endpoints-table .main-mobile-row {
-            display: none;
-        }
-
-        .endpoints-table .main-mobile-row td {
-            padding-bottom: 0;
-        }
-
-        .link {
-            color: #0E153A;
-            font-weight: 500;
-        }
-
-        .link--no-decoration {
-            text-decoration: none
-        }
-
-
-        .announcement {
-            font-size: 16px;
-            line-height: 1.6;
-            background: #EEEEF1;
-            border-radius: 10px;
-            padding: 10px 20px;
-        }
-    </style>
-
     <meta content="light" name="color-scheme">
     <meta content="light" name="supported-color-schemes">
 </head>
 
-
-<body style="word-spacing:normal;background-color:#FAFAFA;">
+<body style="word-spacing:normal;background-color:#FAFAFA;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
     <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Dede, your weekly summary is here. See how monthlyreview performed.</div>
     <div style="background-color:#FAFAFA;">
         <div style="background: #B7C0D2; height: 5px; width: 100%; max-width: 660px; margin: 0 auto"></div>
@@ -319,7 +40,7 @@ $plugin = \Invoize\InvoizePlugin::getInstance();
                                                                 <a href="https://wpsora.com" target="_blank">
                                                                     <img alt="WPsora Invoize" height="auto" src="<?php 
 echo esc_url( $plugin->getPluginUrl( 'public/invoize-logo.png' ) );
-?>" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:70%;font-size:13px;" width="120">
+?>" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:70%;font-size:13px;vertical-align:middle;" width="120">
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -349,12 +70,16 @@ echo esc_url( $plugin->getPluginUrl( 'public/invoize-logo.png' ) );
                                         <tr>
                                             <td align="left" class="desktop-pl-0" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div style="font-family:Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif;font-size:13px;line-height:1;text-align:left;color:#0E153A;">
-                                                    <h1 class="heading-title">Monthly report for <?php 
+                                                    <h1 class="heading-title" style="font-size:22px;font-weight:600;margin-top:10px;margin-bottom:0;line-height:1.4;">
+                                                        Monthly report for <?php 
 echo esc_html( $businessName );
-?></h1>
-                                                    <h4 class="heading-subtitle text-subdued"><?php 
+?>
+                                                    </h1>
+                                                    <h4 class="heading-subtitle text-subdued" style="font-size:16px;font-weight:normal;margin-top:0;margin-bottom:0;line-height:24px;color:#9DA1AF;">
+                                                        <?php 
 echo esc_html( gmdate( 'F' ) . ' ' . gmdate( 'Y' ) );
-?></h4>
+?>
+                                                    </h4>
                                                 </div>
                                             </td>
                                         </tr>
@@ -387,7 +112,7 @@ echo wp_kses( $sentences[array_rand( $sentences )], ['span', 'strong'] );
             </table>
         </div>
         <!--[if mso | IE]></td></tr></table><![endif]--><!-- overview --><!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-top-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-        <div class="card-top" style="margin:0px auto;max-width:600px;">
+        <div class="card-top" style="background:white;border-radius:8px 8px 0 0;border:1px solid #F3F3F3;border-bottom:0;margin:0px auto;max-width:600px;">
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                 <tbody>
                     <tr>
@@ -397,10 +122,10 @@ echo wp_kses( $sentences[array_rand( $sentences )], ['span', 'strong'] );
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                     <tbody>
                                         <tr>
-                                            <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                            <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;border-bottom:1px solid #E5E7EF;">
                                                 <div style="font-family:Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif;font-size:13px;line-height:1;text-align:left;">
-                                                    <p class="card-title">Invoice Overview</p>
-                                                    <p style="margin: 0;color:#9DA1AF;font-weight: bold;">
+                                                    <p class="card-title" style="line-height:1.4;margin:4px 0;font-size:14px;font-weight:500;">Invoice Overview</p>
+                                                    <p style="margin:0;color:#9DA1AF;font-weight:bold;">
                                                         Total Transaction: <?php 
 echo esc_html( $transactionsThisMonth );
 ?>
@@ -425,7 +150,7 @@ echo esc_html( abs( $invoiceSummaryPercentage ) );
             </table>
         </div>
         <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="card-content-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-        <div class="card-content" style="margin:0px auto;max-width:600px;">
+        <div class="card-content" style="margin:0px auto;max-width: 600px;background:white;border-radius:0 0 8px 8px;border:1px solid #F3F3F3;border-top:0;border-bottom-width:3px;margin-bottom:20px !important;padding:14px 0;">
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                 <tbody>
                     <tr>
@@ -450,7 +175,7 @@ echo esc_html( abs( $invoiceSummaryPercentage ) );
 foreach ( $invoices as $currency => $data ) {
     ?>
                                                                     <tr>
-                                                                        <td style="width:45%;text-align:left;font-weight: bold;padding-bottom:10px;">
+                                                                        <td style="width:45%;text-align:left;font-weight:bold;padding-bottom:10px;">
                                                                             <?php 
     echo esc_html( $currency );
     ?>
@@ -460,7 +185,7 @@ foreach ( $invoices as $currency => $data ) {
     echo esc_html( $data['symbol'] . ' ' . number_format_i18n( $data['totalNominal'] ) );
     ?>
                                                                         </td>
-                                                                        <td style="text-align:center;vertical-align: middle;padding-bottom:10px;">
+                                                                        <td style="text-align:center;vertical-align:middle;padding-bottom:10px;">
                                                                             <?php 
     if ( is_null( $data['nominalPercentage'] ) ) {
         ?>
@@ -470,16 +195,16 @@ foreach ( $invoices as $currency => $data ) {
         ?>
                                                                                 <table align="right">
                                                                                     <tr>
-                                                                                        <td style="padding:5px;vertical-align: middle;">
+                                                                                        <td style="padding:5px;vertical-align:middle;">
                                                                                             <span style="color: <?php 
         echo esc_attr( ( $data['nominalPercentage'] < 0 ? '#e74c3c' : '#2ecc71' ) );
-        ?>;vertical-align: middle;">
+        ?>;vertical-align:middle;">
                                                                                                 <?php 
         echo esc_html( abs( $data['nominalPercentage'] ) );
         ?>%
                                                                                             </span>
                                                                                         </td>
-                                                                                        <td style="padding:5px;vertical-align: middle;">
+                                                                                        <td style="padding:5px;vertical-align:middle;">
                                                                                             <img src="<?php 
         echo esc_url( $plugin->getPluginAssetUrl( ( $data['nominalPercentage'] < 0 ? 'decrease' : 'increase' ) ) );
         ?>.png" alt="Increase" class="change-icon" width="20px" height="20px">
@@ -511,7 +236,7 @@ foreach ( $invoices as $currency => $data ) {
         </div>
         <!--[if mso | IE]></td></tr></table><![endif]--><!-- monitors table --><!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
         <div style="margin:0px auto;max-width:600px;">
-            <div class="card-top" style="margin:0px auto;max-width:600px;">
+            <div class="card-top" style="background:white;border-radius:8px 8px 0 0;border:1px solid #F3F3F3;border-bottom:0;margin:0px auto;max-width:600px;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                     <tbody>
                         <tr>
@@ -521,13 +246,13 @@ foreach ( $invoices as $currency => $data ) {
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;border-bottom:1px solid #E5E7EF;">
                                                     <div style="font-family:Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif;font-size:13px;line-height:1;text-align:left;color:#0E153A;">
-                                                        <p class="card-title">Recurring Overview</p>
+                                                        <p class="card-title" style="line-height:1.4;margin:4px 0;font-size:14px;font-weight:500;">Recurring Overview</p>
                                                         <?php 
 if ( !is_null( $totalRecurringPercentage ) ) {
     ?>
-                                                            <p style="margin: 0;color:#9DA1AF;font-weight: bold;">
+                                                            <p style="margin:0;color:#9DA1AF;font-weight:bold;">
                                                                 Total Recurring: <?php 
     echo esc_html( $totalRecurringThisMonth );
     ?>
@@ -555,9 +280,9 @@ if ( !is_null( $totalRecurringPercentage ) ) {
                     </tbody>
                 </table>
             </div>
-
         </div>
-        <div class="card-content" style="margin:0px auto;max-width:600px;">
+
+        <div class="card-content" style="margin:0px auto;max-width: 600px;background:white;border-radius:0 0 8px 8px;border:1px solid #F3F3F3;border-top:0;border-bottom-width:3px;margin-bottom:20px !important;padding:14px 0;">
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                 <tbody>
                     <tr>
@@ -646,8 +371,9 @@ if ( !is_null( $totalRecurringPercentage ) ) {
                 </tbody>
             </table>
         </div>
+
         <div style="margin:0px auto;max-width:600px;">
-            <div class="card-top" style="margin:0px auto;max-width:600px;">
+            <div class="card-top" style="margin:0px auto;max-width: 600px;background:white;border-radius:8px 8px 0 0;border:1px solid #F3F3F3;border-bottom:0;margin:0px auto;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                     <tbody>
                         <tr>
@@ -657,9 +383,9 @@ if ( !is_null( $totalRecurringPercentage ) ) {
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;border-bottom:1px solid #E5E7EF;">
                                                     <div style="font-family:Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif;font-size:13px;line-height:1;text-align:left;color:#0E153A;">
-                                                        <p class="card-title">Upcoming Invoices</p>
+                                                        <p class="card-title" style="line-height:1.4;margin:4px 0;font-size:14px;font-weight:500;">Upcoming Invoices</p>
                                                         <p style="margin: 0;color:#9DA1AF">
                                                             Upcoming invoices is a list of invoices that are due in the next 7 days.
                                                         </p>
@@ -676,7 +402,7 @@ if ( !is_null( $totalRecurringPercentage ) ) {
                 </table>
             </div>
         </div>
-        <div class="card-content" style="margin:0px auto;max-width:600px;">
+        <div class="card-content" style="margin:0px auto;max-width: 600px;background:white;border-radius:0 0 8px 8px;border:1px solid #F3F3F3;border-top:0;border-bottom-width:3px;margin-bottom:20px !important;padding:14px 0;">
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                 <tbody>
                     <tr>
@@ -744,7 +470,7 @@ if ( !count( $upcomingExpired ) ) {
             </table>
         </div>
         <div style="margin:0px auto;max-width:600px;">
-            <div class="card-top" style="margin:0px auto;max-width:600px;">
+            <div class="card-top" style="background:white;border-radius:8px 8px 0 0;border:1px solid #F3F3F3;border-bottom:0;margin:0px auto;max-width:600px;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                     <tbody>
                         <tr>
@@ -754,9 +480,9 @@ if ( !count( $upcomingExpired ) ) {
                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                                <td align="left" class="card-header" style="font-size:0px;padding:10px 25px;word-break:break-word;border-bottom:1px solid #E5E7EF;">
                                                     <div style="font-family:Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', sans-serif;font-size:13px;line-height:1;text-align:left;color:#0E153A;">
-                                                        <p class="card-title">Overdue Invoices</p>
+                                                        <p class="card-title" style="line-height:1.4;margin:4px 0;font-size:14px;font-weight:500;">Overdue Invoices</p>
                                                         <p style="margin:0;color: #9DA1AF;">
                                                             Overdue invoice is an invoice that has passed its due date and has not been paid.
                                                         </p>
@@ -773,7 +499,7 @@ if ( !count( $upcomingExpired ) ) {
                 </table>
             </div>
         </div>
-        <div class="card-content" style="margin:0px auto;max-width:600px;">
+        <div class="card-content" style="margin:0px auto;max-width: 600px;background:white;border-radius:0 0 8px 8px;border:1px solid #F3F3F3;border-top:0;border-bottom-width:3px;margin-bottom:20px !important;padding:14px 0;">
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                 <tbody>
                     <tr>
@@ -866,8 +592,8 @@ if ( !count( $expiredThisMonth ) ) {
                                                                 <td style="width:120px;">
                                                                     <a href="https://wpsora.com" target="_blank">
                                                                         <img alt="WPSora Invoize" height="auto" src="<?php 
-esc_url( $plugin->getPluginUrl( 'public/wpsora-logo.png' ) );
-?>" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:70%;font-size:13px;" width="120">
+echo esc_url( $plugin->getPluginUrl( 'public/wpsora-logo.png' ) );
+?>" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:70%;font-size:13px;vertical-align:middle;" width="120">
                                                                     </a>
                                                                 </td>
                                                             </tr>

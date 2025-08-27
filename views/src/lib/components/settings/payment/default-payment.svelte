@@ -230,10 +230,31 @@
           </div>
           <div class="items-top flex space-x-2">
             <Checkbox
+              id="payment-paypal-direct"
+              value="{PaymentMethod.PAYPAL_DIRECT}"
+              checked="{$paymentOnWoocommerce.includes(PaymentMethod.PAYPAL_DIRECT)}"
+              disabled="{isEmptyCheck($directPaypals)}"
+              onCheckedChange="{(isChecked) => {
+                handlePaymentOnWoocommerceChange(PaymentMethod.PAYPAL_DIRECT, isChecked);
+              }}" />
+            <div class="grid gap-1.5 leading-none">
+              <Label
+                for="payment-paypal-direct"
+                class="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 {isEmptyCheck(
+                  $directPaypals,
+                )
+                  ? 'text-gray-500'
+                  : ''}">
+                Paypal (Direct Payment)
+              </Label>
+            </div>
+          </div>
+          <div class="items-top flex space-x-2">
+            <Checkbox
               id="payment-paypal-auto"
               value="{PaymentMethod.PAYPAL_AUTO_CONFIRMATION}"
               checked="{$paymentOnWoocommerce.includes(PaymentMethod.PAYPAL_AUTO_CONFIRMATION)}"
-              disabled="{true}"
+              disabled="{!$isPro}"
               onCheckedChange="{(isChecked) => {
                 handlePaymentOnWoocommerceChange(PaymentMethod.PAYPAL_AUTO_CONFIRMATION, isChecked);
               }}" />
@@ -246,35 +267,9 @@
                   ? 'text-gray-500'
                   : ''}">
                 Paypal (Auto-Confirmation payment)
-                <span class="text-primary"> (Coming Soon) </span>
-                <!-- {#if !$isPro}
+                {#if !$isPro}
                   <span class="text-primary"> (Pro Only) </span>
-                {/if} -->
-              </Label>
-              <p class="text-muted-foreground text-sm">
-                Currently, PayPal Auto-Confirmation is not available on the payment page, but you can still use it
-                without payment page.
-              </p>
-            </div>
-          </div>
-          <div class="items-top flex space-x-2">
-            <Checkbox
-              id="payment-paypal-direct"
-              value="{PaymentMethod.PAYPAL_DIRECT}"
-              checked="{$paymentOnWoocommerce.includes(PaymentMethod.PAYPAL_DIRECT)}"
-              disabled="{isEmptyCheck($directPaypals)}"
-              onCheckedChange="{(isChecked) => {
-                handlePaymentOnWoocommerceChange(PaymentMethod.PAYPAL_DIRECT, isChecked);
-              }}" />
-            <div class="grid gap-1.5 leading-none">
-              <Label
-                for="payment-paypal-direct"
-                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 {isEmptyCheck(
-                  $directPaypals,
-                )
-                  ? 'text-gray-500'
-                  : ''}">
-                Paypal (Direct Payment)
+                {/if}
               </Label>
             </div>
           </div>

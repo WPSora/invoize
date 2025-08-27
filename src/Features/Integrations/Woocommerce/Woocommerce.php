@@ -192,6 +192,8 @@ class Woocommerce implements HasPlugin
                         }
                     }
 
+                    if (!$invoice) return;
+
                     $invoiceState = $invoice->getPaymentState();
 
                     if ($invoiceState instanceof InvoiceUnpaidState) {
@@ -220,6 +222,8 @@ class Woocommerce implements HasPlugin
                         }
                     }
 
+                    if (!$invoice) return;
+
                     $invoiceState = $invoice->getPaymentState();
 
                     if ($invoiceState instanceof InvoiceUnpaidState) {
@@ -235,6 +239,8 @@ class Woocommerce implements HasPlugin
             function ($orderId) {
                 if (isset($this->settings['cancelOnCancelOrder']) && $this->settings['cancelOnCancelOrder'] == 'true') {
                     $invoice = Invoice::findbyOrderId($orderId);
+
+                    if (!$invoice) return;
 
                     $invoiceState = $invoice->getInvoiceState();
                     $invoiceState->cancel();

@@ -388,8 +388,4 @@
   :global(#wpcontent, #wpbody, #wpwrap) {
     background-color: white !important;
   }
-
-  :global(li#toplevel_page_invoize-welcome) {
-    display: none;
-  }
 </style>

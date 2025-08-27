@@ -5,7 +5,7 @@ Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv3
-Stable tag: 1.11.5
+Stable tag: 1.12.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Invoize is an intuitive and user-friendly WordPress plugin designed for effortless invoice creation. With a focus on ease of use.
@@ -28,6 +28,12 @@ Invoize is an intuitive and user-friendly WordPress plugin designed for effortle
 - **Xendit Integration**: Accept payments conveniently via [Xendit](https://www.xendit.co/en-id/), a payment gateway popular in Indonesia that supports various payment methods. Learn more by reviewing their [Terms of Service](https://www.xendit.co/en-id/terms-and-conditions/) and [Privacy Policy](https://www.xendit.co/en-id/privacy-policy/).
 
 == Changelog ==
+
+= 1.12.0 | 27 August 2025 =
+* Added support for paypal auto-confirmation in payment page and also support for woocommerce
+* Fixed hide invoize welcome from menu
+* Fixed error on "Don't create invoize if total woocommerce transaction is 0" feature
+* Fixed monthly report not running
 
 = 1.11.5 | 21 August 2025 =
 * Minor fix

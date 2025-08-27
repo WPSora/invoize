@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --base=/wp-content/plugins/invoize/dist --cors",
-    "build": "vite build --base=/wp-content/plugins/invoize/dist -l=silent",
+    "build": "vite build --base=/openjournaltheme2/wp-content/plugins/invoize/dist -l=silent",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

@@ -52,7 +52,11 @@ class InvoizePlugin extends BasePlugin {
         Reminder::schedule_reminder();
         Log::schedule_clear_log();
         Client::addRoleToWordpress();
-        wp_redirect( "admin.php?page=invoize-welcome" );
+        if ( Invoice::exists() ) {
+            wp_redirect( "admin.php?page=invoize" );
+        } else {
+            wp_redirect( "admin.php?page=invoize-welcome" );
+        }
         exit;
     }
 

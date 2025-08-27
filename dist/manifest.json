@@ -15,10 +15,10 @@
     "file": "assets/Toaster-3a6d0da3.css",
     "src": "Toaster.css"
   },
-  "_App-7c6c0ef0.js": {
+  "_App-06d60677.js": {
     "dynamicImports": [
       "src/routes/dashboard/Dashboard.svelte",
-      "_Setting-e419d8e1.js",
+      "_Setting-942b7244.js",
       "src/routes/invoice/InvoiceList.svelte",
       "src/routes/quotation/QuotationList.svelte",
       "src/routes/quotation/CreateQuotation.svelte",
@@ -38,249 +38,249 @@
       "src/routes/product/product.svelte",
       "src/routes/misc/NotFound.svelte"
     ],
-    "file": "assets/App-7c6c0ef0.js",
+    "file": "assets/App-06d60677.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_ProBadge-35078e4e.js",
-      "_card-description-e849d062.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_ProBadge-06425ff7.js",
+      "_card-description-236c99a6.js",
       "src/main.js",
-      "_index-2f32262e.js",
-      "_Toaster-907ac0b8.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-0984da6d.js"
+      "_index-99d0c2fd.js",
+      "_Toaster-b2d3c457.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-838f84b3.js"
     ],
     "isDynamicEntry": true
   },
-  "_BaseCreateInvoice-58c95b20.js": {
+  "_BaseCreateInvoice-a9e5214d.js": {
     "dynamicImports": [
       "src/lib/components/invoice/send-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateInvoice-58c95b20.js",
+    "file": "assets/BaseCreateInvoice-a9e5214d.js",
     "imports": [
       "src/main.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_invoice-store-89da11de.js",
-      "_index-0984da6d.js",
-      "_index-2f32262e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_invoice-store-eba4366e.js",
+      "_index-838f84b3.js",
+      "_index-99d0c2fd.js",
       "_styles-e7e55f44.js",
-      "_options-89ca2928.js",
+      "_options-1651b5d0.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_errorHelper-eef9e97b.js",
+      "_errorHelper-39e9d1d7.js",
       "_enum-9d62bdc6.js",
       "_moment-a9aaa855.js",
-      "_Select-aaeb8f73.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_Breadcrumb-8a216a28.js",
-      "_Options-60264e68.js",
-      "_checkbox-3eb65d0a.js",
-      "_send-e1cefc13.js"
+      "_Select-70747da0.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_Options-40a61ab3.js",
+      "_checkbox-ac399b75.js",
+      "_send-2227b51e.js"
     ]
   },
-  "_BaseCreateRecurring-e1036462.js": {
+  "_BaseCreateRecurring-5b22a73d.js": {
     "dynamicImports": [
       "src/lib/components/recurring/create-invoice-modal.svelte"
     ],
-    "file": "assets/BaseCreateRecurring-e1036462.js",
+    "file": "assets/BaseCreateRecurring-5b22a73d.js",
     "imports": [
       "src/main.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_invoice-store-89da11de.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-0984da6d.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_invoice-store-eba4366e.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-838f84b3.js",
       "_enum-9d62bdc6.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_recurring-store-e654427c.js",
-      "_index-2f32262e.js",
-      "_index-7095afc4.js",
-      "_separator-d7b15c7c.js",
-      "_label-7d3a217f.js",
+      "_recurring-store-561539e7.js",
+      "_index-99d0c2fd.js",
+      "_index-210676e1.js",
+      "_separator-95c0d010.js",
+      "_label-e50396f8.js",
       "_styles-e7e55f44.js",
-      "_options-89ca2928.js",
-      "_input-342b31a9.js",
-      "_header-title-a9af6ef4.js",
-      "_Options-60264e68.js",
-      "_Breadcrumb-8a216a28.js",
-      "_plus-a3b54817.js"
+      "_options-1651b5d0.js",
+      "_input-ab223ce3.js",
+      "_header-title-695fb230.js",
+      "_Options-40a61ab3.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_plus-24a3e3c4.js"
     ]
   },
-  "_Breadcrumb-8a216a28.js": {
-    "file": "assets/Breadcrumb-8a216a28.js",
+  "_Breadcrumb-87f5fc70.js": {
+    "file": "assets/Breadcrumb-87f5fc70.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_ProBadge-35078e4e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_ProBadge-06425ff7.js",
       "_enum-9d62bdc6.js"
     ]
   },
-  "_Check-fa20f0eb.js": {
-    "file": "assets/Check-fa20f0eb.js",
+  "_Check-a4797a61.js": {
+    "file": "assets/Check-a4797a61.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_CreateRecurringModal-63416434.js": {
-    "file": "assets/CreateRecurringModal-63416434.js",
+  "_CreateRecurringModal-3aee3a57.js": {
+    "file": "assets/CreateRecurringModal-3aee3a57.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_index-7095afc4.js",
-      "_options-89ca2928.js",
-      "_index-2f32262e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_index-210676e1.js",
+      "_options-1651b5d0.js",
+      "_index-99d0c2fd.js",
       "_setDefaultRecurring-f1d67430.js"
     ]
   },
-  "_CustomCurrencyInput-d3541a18.js": {
+  "_CustomCurrencyInput-e534ba6a.js": {
     "css": [
       "assets/CustomCurrencyInput-eaeb1b03.css"
     ],
-    "file": "assets/CustomCurrencyInput-d3541a18.js",
+    "file": "assets/CustomCurrencyInput-e534ba6a.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_DeleteButton-e1801510.js": {
-    "file": "assets/DeleteButton-e1801510.js",
+  "_DeleteButton-afa0db44.js": {
+    "file": "assets/DeleteButton-afa0db44.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js"
     ]
   },
-  "_EditButton-28be910f.js": {
-    "file": "assets/EditButton-28be910f.js",
+  "_EditButton-6a4bd082.js": {
+    "file": "assets/EditButton-6a4bd082.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-d3c8ba18.js",
-      "_pencil-15e1e778.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-700ffd0e.js",
+      "_pencil-dd28d128.js"
     ]
   },
-  "_MiniStar-4e4614b7.js": {
-    "file": "assets/MiniStar-4e4614b7.js",
+  "_MiniStar-8026f138.js": {
+    "file": "assets/MiniStar-8026f138.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js"
     ]
   },
-  "_MultilineText-07aaf54e.js": {
-    "file": "assets/MultilineText-07aaf54e.js",
+  "_MultilineText-89cdd008.js": {
+    "file": "assets/MultilineText-89cdd008.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_Options-60264e68.js": {
+  "_Options-40a61ab3.js": {
     "css": [
       "assets/Options-7b78f89d.css"
     ],
-    "file": "assets/Options-60264e68.js",
+    "file": "assets/Options-40a61ab3.js",
     "imports": [
-      "_invoice-store-89da11de.js",
-      "_errorHelper-eef9e97b.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_separator-d7b15c7c.js",
-      "_MiniStar-4e4614b7.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
+      "_invoice-store-eba4366e.js",
+      "_errorHelper-39e9d1d7.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_separator-95c0d010.js",
+      "_MiniStar-8026f138.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
       "_styles-e7e55f44.js",
-      "_options-89ca2928.js",
+      "_options-1651b5d0.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
+      "_saveToStoreHelper-31a463b7.js",
       "_enum-9d62bdc6.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_customer-modal-96845865.js",
-      "_product-modal-3f3c8373.js",
-      "_index-7095afc4.js",
-      "_switch-b7e944c0.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_customer-modal-284e029d.js",
+      "_product-modal-e47dc535.js",
+      "_index-210676e1.js",
+      "_switch-8efa315f.js",
       "_capitalHelper-77c0a756.js",
-      "_search-b20aeeac.js",
-      "_x-e55b9835.js",
-      "_checkbox-3eb65d0a.js",
+      "_search-e03ceb6e.js",
+      "_x-416feb5b.js",
+      "_checkbox-ac399b75.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_index-4f0b7d19.js",
-      "_action-39728114.js",
-      "_updater-cbd8223a.js",
-      "_helpers-9268112f.js",
-      "_card-description-e849d062.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_index-88943f30.js",
+      "_action-a5acf0e9.js",
+      "_updater-00e9e1bb.js",
+      "_helpers-9eb8762f.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js"
+      "_add-discount-modal-079529d2.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js"
     ]
   },
-  "_PageTitle-5aeb5b6f.js": {
-    "file": "assets/PageTitle-5aeb5b6f.js",
+  "_PageTitle-d8cd5813.js": {
+    "file": "assets/PageTitle-d8cd5813.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_separator-d7b15c7c.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_separator-95c0d010.js"
     ]
   },
-  "_Pagination-325e8fb0.js": {
-    "file": "assets/Pagination-325e8fb0.js",
+  "_Pagination-4ae1f064.js": {
+    "file": "assets/Pagination-4ae1f064.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-7095afc4.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-210676e1.js",
+      "_errorHelper-39e9d1d7.js",
       "_enum-9d62bdc6.js",
-      "_index-2f32262e.js",
-      "_updater-cbd8223a.js"
+      "_index-99d0c2fd.js",
+      "_updater-00e9e1bb.js"
     ]
   },
-  "_Plus-e1a813d4.js": {
-    "file": "assets/Plus-e1a813d4.js",
+  "_Plus-3897747b.js": {
+    "file": "assets/Plus-3897747b.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_ProBadge-35078e4e.js": {
-    "file": "assets/ProBadge-35078e4e.js",
+  "_ProBadge-06425ff7.js": {
+    "file": "assets/ProBadge-06425ff7.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_ProgressBar.svelte_svelte_type_style_lang-acfafe0f.js": {
+  "_ProgressBar.svelte_svelte_type_style_lang-417b71c3.js": {
     "css": [
       "assets/ProgressBar-5dbe98d7.css"
     ],
-    "file": "assets/ProgressBar.svelte_svelte_type_style_lang-acfafe0f.js",
+    "file": "assets/ProgressBar.svelte_svelte_type_style_lang-417b71c3.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_SearchBar-139f3fc2.js": {
-    "file": "assets/SearchBar-139f3fc2.js",
+  "_SearchBar-3dca9103.js": {
+    "file": "assets/SearchBar-3dca9103.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_input-342b31a9.js",
-      "_search-b20aeeac.js",
-      "_refresh-ccw-0ff8dd89.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_input-ab223ce3.js",
+      "_search-e03ceb6e.js",
+      "_refresh-ccw-68900eb6.js"
     ]
   },
-  "_Select-aaeb8f73.js": {
-    "file": "assets/Select-aaeb8f73.js",
+  "_Select-70747da0.js": {
+    "file": "assets/Select-70747da0.js",
     "imports": [
-      "_options-89ca2928.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-7095afc4.js",
-      "_label-7d3a217f.js",
-      "_separator-d7b15c7c.js"
+      "_options-1651b5d0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-210676e1.js",
+      "_label-e50396f8.js",
+      "_separator-95c0d010.js"
     ]
   },
-  "_Setting-e419d8e1.js": {
+  "_Setting-942b7244.js": {
     "dynamicImports": [
       "src/lib/components/settings/quotation/quotation.svelte",
       "src/lib/components/settings/invoices/invoices.svelte",
@@ -290,102 +290,102 @@
       "src/lib/components/settings/integration/integration.svelte",
       "src/lib/components/settings/other/other.svelte"
     ],
-    "file": "assets/Setting-e419d8e1.js",
+    "file": "assets/Setting-942b7244.js",
     "imports": [
       "src/main.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_index-4f0b7d19.js",
-      "_index-fcd26607.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_index-88943f30.js",
+      "_index-99c4996b.js",
       "_styles-e7e55f44.js",
-      "_errorHelper-eef9e97b.js",
-      "_App-7c6c0ef0.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_Breadcrumb-8a216a28.js",
-      "_index-e2de6100.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_ProgressBar.svelte_svelte_type_style_lang-acfafe0f.js",
-      "_Plus-e1a813d4.js",
-      "_EditButton-28be910f.js",
-      "_separator-d7b15c7c.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_MiniStar-4e4614b7.js",
-      "_MultilineText-07aaf54e.js",
-      "_mail-5f9f688b.js",
-      "_dialog-description-42b79c51.js",
-      "_circle-dollar-sign-0af52bca.js"
+      "_errorHelper-39e9d1d7.js",
+      "_App-06d60677.js",
+      "_PageTitle-d8cd5813.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_index-181f90bd.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_ProgressBar.svelte_svelte_type_style_lang-417b71c3.js",
+      "_Plus-3897747b.js",
+      "_EditButton-6a4bd082.js",
+      "_separator-95c0d010.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_MiniStar-8026f138.js",
+      "_MultilineText-89cdd008.js",
+      "_mail-d47cd623.js",
+      "_dialog-description-624b4ce9.js",
+      "_circle-dollar-sign-d92ea701.js"
     ],
     "isDynamicEntry": true
   },
-  "_Tab-5d24525b.js": {
-    "file": "assets/Tab-5d24525b.js",
+  "_Tab-a3e2cf04.js": {
+    "file": "assets/Tab-a3e2cf04.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Pagination-325e8fb0.js",
-      "_table-row-9bf80d0a.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-2f32262e.js",
-      "_App-7c6c0ef0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Pagination-4ae1f064.js",
+      "_table-row-f15328e9.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-99d0c2fd.js",
+      "_App-06d60677.js"
     ]
   },
-  "_Toaster-907ac0b8.js": {
-    "file": "assets/Toaster-907ac0b8.js",
+  "_Toaster-b2d3c457.js": {
+    "file": "assets/Toaster-b2d3c457.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js": {
+  "_Toaster.svelte_svelte_type_style_lang-89e761ff.js": {
     "css": [
       "assets/Toaster-3a6d0da3.css"
     ],
-    "file": "assets/Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+    "file": "assets/Toaster.svelte_svelte_type_style_lang-89e761ff.js"
   },
-  "_Trash-c1f21d44.js": {
-    "file": "assets/Trash-c1f21d44.js",
+  "_Trash-4a47b42d.js": {
+    "file": "assets/Trash-4a47b42d.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_UpgradeToProButton-e020fdbc.js": {
-    "file": "assets/UpgradeToProButton-e020fdbc.js",
+  "_UpgradeToProButton-1dc6d5d7.js": {
+    "file": "assets/UpgradeToProButton-1dc6d5d7.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_card-description-e849d062.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_card-description-236c99a6.js"
     ]
   },
   "__commonjsHelpers-725317a4.js": {
     "file": "assets/_commonjsHelpers-725317a4.js"
   },
-  "_action-39728114.js": {
-    "file": "assets/action-39728114.js",
+  "_action-a5acf0e9.js": {
+    "file": "assets/action-a5acf0e9.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_helpers-9268112f.js",
-      "_options-89ca2928.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_helpers-9eb8762f.js",
+      "_options-1651b5d0.js"
     ]
   },
-  "_action-history-6aa79567.js": {
+  "_action-history-0128e979.js": {
     "css": [
       "assets/action-history-961e3856.css"
     ],
-    "file": "assets/action-history-6aa79567.js",
+    "file": "assets/action-history-0128e979.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-footer-7cfda621.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_separator-d7b15c7c.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-footer-08d9ee18.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_separator-95c0d010.js",
       "_capitalHelper-77c0a756.js",
       "_enum-9d62bdc6.js",
-      "_MultilineText-07aaf54e.js",
+      "_MultilineText-89cdd008.js",
       "_decimalFormatter-88348579.js",
-      "_woocommerce-cbeb8447.js",
+      "_woocommerce-516f13b0.js",
       "__commonjsHelpers-725317a4.js",
       "_pluralHelper-a32d0151.js",
-      "_index-4f0b7d19.js",
+      "_index-88943f30.js",
       "_moment-a9aaa855.js"
     ]
   },
@@ -395,204 +395,204 @@
       "_enum-9d62bdc6.js"
     ]
   },
-  "_add-discount-modal-7bc175c5.js": {
-    "file": "assets/add-discount-modal-7bc175c5.js",
+  "_add-discount-modal-079529d2.js": {
+    "file": "assets/add-discount-modal-079529d2.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_index-7095afc4.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_index-210676e1.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_errorHelper-39e9d1d7.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_MiniStar-4e4614b7.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_invoice-store-89da11de.js",
-      "_index-0984da6d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js"
+      "_MiniStar-8026f138.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_invoice-store-eba4366e.js",
+      "_index-838f84b3.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js"
     ]
   },
-  "_add-reminder-modal-6c4f373e.js": {
-    "file": "assets/add-reminder-modal-6c4f373e.js",
+  "_add-reminder-modal-0bbf6d3f.js": {
+    "file": "assets/add-reminder-modal-0bbf6d3f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_index-7095afc4.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_index-210676e1.js",
+      "_errorHelper-39e9d1d7.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js"
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js"
     ]
   },
-  "_add-tax-modal-c2b7393b.js": {
-    "file": "assets/add-tax-modal-c2b7393b.js",
+  "_add-tax-modal-3fd5671f.js": {
+    "file": "assets/add-tax-modal-3fd5671f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_index-7095afc4.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_index-210676e1.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_errorHelper-39e9d1d7.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_MiniStar-4e4614b7.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js"
+      "_MiniStar-8026f138.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js"
     ]
   },
-  "_alert-circle-114bd275.js": {
-    "file": "assets/alert-circle-114bd275.js",
+  "_alert-circle-64366352.js": {
+    "file": "assets/alert-circle-64366352.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
   "_arrays-9d05857f.js": {
     "file": "assets/arrays-9d05857f.js"
   },
-  "_badge-check-09e42ec2.js": {
-    "file": "assets/badge-check-09e42ec2.js",
+  "_badge-check-96fb268f.js": {
+    "file": "assets/badge-check-96fb268f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_bank-054bdd20.js": {
-    "file": "assets/bank-054bdd20.js",
+  "_bank-5347e298.js": {
+    "file": "assets/bank-5347e298.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-e2de6100.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_options-89ca2928.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-footer-7cfda621.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_index-7095afc4.js",
-      "_separator-d7b15c7c.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-181f90bd.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_options-1651b5d0.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-footer-08d9ee18.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_index-210676e1.js",
+      "_separator-95c0d010.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_index-2f32262e.js",
-      "_MiniStar-4e4614b7.js",
-      "_DeleteButton-e1801510.js",
-      "_EditButton-28be910f.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-description-776c5d22.js",
-      "_plus-a3b54817.js",
-      "_check-f7986a1f.js"
+      "_index-99d0c2fd.js",
+      "_MiniStar-8026f138.js",
+      "_DeleteButton-afa0db44.js",
+      "_EditButton-6a4bd082.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-description-ca00c0bf.js",
+      "_plus-24a3e3c4.js",
+      "_check-ce36e405.js"
     ]
   },
-  "_book-x-b02f1a0b.js": {
-    "file": "assets/book-x-b02f1a0b.js",
+  "_book-x-4f0ad8fe.js": {
+    "file": "assets/book-x-4f0ad8fe.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
   "_capitalHelper-77c0a756.js": {
     "file": "assets/capitalHelper-77c0a756.js"
   },
-  "_card-description-e849d062.js": {
-    "file": "assets/card-description-e849d062.js",
+  "_card-description-236c99a6.js": {
+    "file": "assets/card-description-236c99a6.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_card-footer-7cfda621.js": {
-    "file": "assets/card-footer-7cfda621.js",
+  "_card-footer-08d9ee18.js": {
+    "file": "assets/card-footer-08d9ee18.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_check-f7986a1f.js": {
-    "file": "assets/check-f7986a1f.js",
+  "_check-ce36e405.js": {
+    "file": "assets/check-ce36e405.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_checkbox-3eb65d0a.js": {
-    "file": "assets/checkbox-3eb65d0a.js",
+  "_checkbox-ac399b75.js": {
+    "file": "assets/checkbox-ac399b75.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-2f32262e.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99d0c2fd.js",
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js"
     ]
   },
-  "_chevron-down-a8868dd9.js": {
-    "file": "assets/chevron-down-a8868dd9.js",
+  "_chevron-down-2b9a232f.js": {
+    "file": "assets/chevron-down-2b9a232f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_circle-dollar-sign-0af52bca.js": {
-    "file": "assets/circle-dollar-sign-0af52bca.js",
+  "_circle-dollar-sign-d92ea701.js": {
+    "file": "assets/circle-dollar-sign-d92ea701.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_copy-ff133ef6.js": {
-    "file": "assets/copy-ff133ef6.js",
+  "_copy-84b22898.js": {
+    "file": "assets/copy-84b22898.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_create-e552ce8d.js": {
-    "file": "assets/create-e552ce8d.js",
+  "_create-9e47477b.js": {
+    "file": "assets/create-9e47477b.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_customer-modal-96845865.js": {
-    "file": "assets/customer-modal-96845865.js",
+  "_customer-modal-284e029d.js": {
+    "file": "assets/customer-modal-284e029d.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_invoice-store-89da11de.js",
-      "_switch-b7e944c0.js",
-      "_MiniStar-4e4614b7.js",
-      "_errorHelper-eef9e97b.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_invoice-store-eba4366e.js",
+      "_switch-8efa315f.js",
+      "_MiniStar-8026f138.js",
+      "_errorHelper-39e9d1d7.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js"
     ]
   },
   "_decimalFormatter-88348579.js": {
     "file": "assets/decimalFormatter-88348579.js"
   },
-  "_dialog-description-42b79c51.js": {
-    "file": "assets/dialog-description-42b79c51.js",
+  "_dialog-description-624b4ce9.js": {
+    "file": "assets/dialog-description-624b4ce9.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js"
     ]
   },
-  "_dialog-description-776c5d22.js": {
-    "file": "assets/dialog-description-776c5d22.js",
+  "_dialog-description-ca00c0bf.js": {
+    "file": "assets/dialog-description-ca00c0bf.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_dialog-description-42b79c51.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_dialog-description-624b4ce9.js"
     ]
   },
-  "_dialog-footer-e40dcf9d.js": {
-    "file": "assets/dialog-footer-e40dcf9d.js",
+  "_dialog-footer-37c988b6.js": {
+    "file": "assets/dialog-footer-37c988b6.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_dialog-header-208ee491.js": {
-    "file": "assets/dialog-header-208ee491.js",
+  "_dialog-header-5fe8b5ad.js": {
+    "file": "assets/dialog-header-5fe8b5ad.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_download-21aefe34.js": {
-    "file": "assets/download-21aefe34.js",
+  "_download-0bb4e811.js": {
+    "file": "assets/download-0bb4e811.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
       "__commonjsHelpers-725317a4.js"
     ]
   },
@@ -602,275 +602,275 @@
   "_enum-9d62bdc6.js": {
     "file": "assets/enum-9d62bdc6.js"
   },
-  "_errorHelper-eef9e97b.js": {
-    "file": "assets/errorHelper-eef9e97b.js",
+  "_errorHelper-39e9d1d7.js": {
+    "file": "assets/errorHelper-39e9d1d7.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_eye-c27fcad4.js": {
-    "file": "assets/eye-c27fcad4.js",
+  "_eye-e2edbb22.js": {
+    "file": "assets/eye-e2edbb22.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_frown-a83b243b.js": {
-    "file": "assets/frown-a83b243b.js",
+  "_frown-c41c9b47.js": {
+    "file": "assets/frown-c41c9b47.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_header-title-a9af6ef4.js": {
-    "file": "assets/header-title-a9af6ef4.js",
+  "_header-title-695fb230.js": {
+    "file": "assets/header-title-695fb230.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-2f32262e.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99d0c2fd.js"
     ]
   },
-  "_helpers-9268112f.js": {
-    "file": "assets/helpers-9268112f.js",
+  "_helpers-9eb8762f.js": {
+    "file": "assets/helpers-9eb8762f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_history-71cd67db.js": {
-    "file": "assets/history-71cd67db.js",
+  "_history-c581ae9c.js": {
+    "file": "assets/history-c581ae9c.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_id-cell-05587cea.js": {
-    "file": "assets/id-cell-05587cea.js",
+  "_id-cell-72c46c9c.js": {
+    "file": "assets/id-cell-72c46c9c.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_index-0984da6d.js": {
-    "file": "assets/index-0984da6d.js",
+  "_index-181f90bd.js": {
+    "file": "assets/index-181f90bd.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_options-1651b5d0.js"
     ]
   },
-  "_index-2f32262e.js": {
-    "file": "assets/index-2f32262e.js",
+  "_index-210676e1.js": {
+    "file": "assets/index-210676e1.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_arrays-9d05857f.js",
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js",
+      "_index-99d0c2fd.js",
+      "_options-1651b5d0.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
+      "_helpers-9eb8762f.js"
     ]
   },
-  "_index-4f0b7d19.js": {
-    "file": "assets/index-4f0b7d19.js",
+  "_index-700ffd0e.js": {
+    "file": "assets/index-700ffd0e.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-2f32262e.js",
-      "_updater-cbd8223a.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_options-1651b5d0.js",
+      "_helpers-9eb8762f.js"
+    ]
+  },
+  "_index-838f84b3.js": {
+    "file": "assets/index-838f84b3.js",
+    "imports": [
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
+    ]
+  },
+  "_index-88943f30.js": {
+    "file": "assets/index-88943f30.js",
+    "imports": [
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99d0c2fd.js",
+      "_updater-00e9e1bb.js",
       "_arrays-9d05857f.js"
     ]
   },
-  "_index-7095afc4.js": {
-    "file": "assets/index-7095afc4.js",
+  "_index-99c4996b.js": {
+    "file": "assets/index-99c4996b.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_arrays-9d05857f.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js",
-      "_index-2f32262e.js",
-      "_options-89ca2928.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
-      "_helpers-9268112f.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_index-99d0c2fd.js"
     ]
   },
-  "_index-d3c8ba18.js": {
-    "file": "assets/index-d3c8ba18.js",
+  "_index-99d0c2fd.js": {
+    "file": "assets/index-99d0c2fd.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_options-89ca2928.js",
-      "_helpers-9268112f.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_index-dac4cf97.js": {
-    "file": "assets/index-dac4cf97.js",
+  "_index-b0fc9309.js": {
+    "file": "assets/index-b0fc9309.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_index-7095afc4.js",
-      "_options-89ca2928.js",
-      "_action-39728114.js",
-      "_separator-d7b15c7c.js",
-      "_helpers-9268112f.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_index-210676e1.js",
+      "_options-1651b5d0.js",
+      "_action-a5acf0e9.js",
+      "_separator-95c0d010.js",
+      "_helpers-9eb8762f.js"
     ]
   },
-  "_index-e2de6100.js": {
-    "file": "assets/index-e2de6100.js",
+  "_input-ab223ce3.js": {
+    "file": "assets/input-ab223ce3.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_options-89ca2928.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_index-fcd26607.js": {
-    "file": "assets/index-fcd26607.js",
+  "_invoice-all-tab-table-column-fc06d976.js": {
+    "file": "assets/invoice-all-tab-table-column-fc06d976.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_index-2f32262e.js"
-    ]
-  },
-  "_input-342b31a9.js": {
-    "file": "assets/input-342b31a9.js",
-    "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
-    ]
-  },
-  "_invoice-all-tab-table-column-ad7b4d9a.js": {
-    "file": "assets/invoice-all-tab-table-column-ad7b4d9a.js",
-    "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Pagination-325e8fb0.js",
-      "_Tab-5d24525b.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Pagination-4ae1f064.js",
+      "_Tab-a3e2cf04.js",
+      "_errorHelper-39e9d1d7.js",
       "_moment-a9aaa855.js",
-      "_Check-fa20f0eb.js",
-      "_index-dac4cf97.js",
-      "_index-e2de6100.js",
+      "_Check-a4797a61.js",
+      "_index-b0fc9309.js",
+      "_index-181f90bd.js",
       "_actionHelper-40ee3d39.js",
       "_enum-9d62bdc6.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_CreateRecurringModal-63416434.js",
-      "_eye-c27fcad4.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_history-71cd67db.js",
-      "_pencil-15e1e778.js",
-      "_send-e1cefc13.js",
-      "_circle-dollar-sign-0af52bca.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_CreateRecurringModal-3aee3a57.js",
+      "_eye-e2edbb22.js",
+      "_refresh-ccw-68900eb6.js",
+      "_history-c581ae9c.js",
+      "_pencil-dd28d128.js",
+      "_send-2227b51e.js",
+      "_circle-dollar-sign-d92ea701.js",
       "_capitalHelper-77c0a756.js",
-      "_id-cell-05587cea.js",
+      "_id-cell-72c46c9c.js",
       "_decimalFormatter-88348579.js"
     ]
   },
-  "_invoice-list-store-3ca58dd7.js": {
-    "file": "assets/invoice-list-store-3ca58dd7.js",
+  "_invoice-list-store-0e2f6016.js": {
+    "file": "assets/invoice-list-store-0e2f6016.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_invoice-store-89da11de.js": {
-    "file": "assets/invoice-store-89da11de.js",
+  "_invoice-store-eba4366e.js": {
+    "file": "assets/invoice-store-eba4366e.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_invoiceErrorHelper-13369b1f.js": {
-    "file": "assets/invoiceErrorHelper-13369b1f.js",
+  "_invoiceErrorHelper-d5e44338.js": {
+    "file": "assets/invoiceErrorHelper-d5e44338.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_label-7d3a217f.js": {
-    "file": "assets/label-7d3a217f.js",
+  "_label-e50396f8.js": {
+    "file": "assets/label-e50396f8.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_create-e552ce8d.js",
-      "_updater-cbd8223a.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_create-9e47477b.js",
+      "_updater-00e9e1bb.js"
     ]
   },
-  "_mail-5f9f688b.js": {
-    "file": "assets/mail-5f9f688b.js",
+  "_mail-d47cd623.js": {
+    "file": "assets/mail-d47cd623.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
   "_moment-a9aaa855.js": {
     "file": "assets/moment-a9aaa855.js"
   },
-  "_options-89ca2928.js": {
-    "file": "assets/options-89ca2928.js",
+  "_options-1651b5d0.js": {
+    "file": "assets/options-1651b5d0.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js"
     ]
   },
-  "_pencil-15e1e778.js": {
-    "file": "assets/pencil-15e1e778.js",
+  "_pencil-dd28d128.js": {
+    "file": "assets/pencil-dd28d128.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
   "_pluralHelper-a32d0151.js": {
     "file": "assets/pluralHelper-a32d0151.js"
   },
-  "_plus-a3b54817.js": {
-    "file": "assets/plus-a3b54817.js",
+  "_plus-24a3e3c4.js": {
+    "file": "assets/plus-24a3e3c4.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_product-modal-3f3c8373.js": {
-    "file": "assets/product-modal-3f3c8373.js",
+  "_product-modal-e47dc535.js": {
+    "file": "assets/product-modal-e47dc535.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_errorHelper-eef9e97b.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_MiniStar-4e4614b7.js",
-      "_index-7095afc4.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_errorHelper-39e9d1d7.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_MiniStar-8026f138.js",
+      "_index-210676e1.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js"
     ]
   },
-  "_quotation-c2fcfef8.js": {
-    "file": "assets/quotation-c2fcfef8.js",
+  "_quotation-2da453b9.js": {
+    "file": "assets/quotation-2da453b9.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_recurring-store-e654427c.js": {
-    "file": "assets/recurring-store-e654427c.js",
+  "_recurring-store-561539e7.js": {
+    "file": "assets/recurring-store-561539e7.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_refresh-ccw-0ff8dd89.js": {
-    "file": "assets/refresh-ccw-0ff8dd89.js",
+  "_refresh-ccw-68900eb6.js": {
+    "file": "assets/refresh-ccw-68900eb6.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_saveToStoreHelper-e7988ee0.js": {
-    "file": "assets/saveToStoreHelper-e7988ee0.js",
+  "_saveToStoreHelper-31a463b7.js": {
+    "file": "assets/saveToStoreHelper-31a463b7.js",
     "imports": [
-      "_errorHelper-eef9e97b.js",
-      "_invoice-store-89da11de.js"
+      "_errorHelper-39e9d1d7.js",
+      "_invoice-store-eba4366e.js"
     ]
   },
-  "_search-b20aeeac.js": {
-    "file": "assets/search-b20aeeac.js",
+  "_search-e03ceb6e.js": {
+    "file": "assets/search-e03ceb6e.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_send-e1cefc13.js": {
-    "file": "assets/send-e1cefc13.js",
+  "_send-2227b51e.js": {
+    "file": "assets/send-2227b51e.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_separator-d7b15c7c.js": {
-    "file": "assets/separator-d7b15c7c.js",
+  "_separator-95c0d010.js": {
+    "file": "assets/separator-95c0d010.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_updater-cbd8223a.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_updater-00e9e1bb.js"
     ]
   },
   "_setDefaultRecurring-f1d67430.js": {
@@ -879,80 +879,80 @@
       "_moment-a9aaa855.js"
     ]
   },
-  "_settings-3be4102a.js": {
-    "file": "assets/settings-3be4102a.js",
+  "_settings-e565ac59.js": {
+    "file": "assets/settings-e565ac59.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_saveToStoreHelper-e7988ee0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_saveToStoreHelper-31a463b7.js"
     ]
   },
   "_styles-e7e55f44.js": {
     "file": "assets/styles-e7e55f44.js"
   },
-  "_switch-b7e944c0.js": {
-    "file": "assets/switch-b7e944c0.js",
+  "_switch-8efa315f.js": {
+    "file": "assets/switch-8efa315f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-2f32262e.js",
-      "_updater-cbd8223a.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99d0c2fd.js",
+      "_updater-00e9e1bb.js"
     ]
   },
-  "_table-caption-e98eddd2.js": {
-    "file": "assets/table-caption-e98eddd2.js",
+  "_table-caption-151089df.js": {
+    "file": "assets/table-caption-151089df.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_table-row-9bf80d0a.js": {
-    "file": "assets/table-row-9bf80d0a.js",
+  "_table-row-f15328e9.js": {
+    "file": "assets/table-row-f15328e9.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_triggerTabUpdateHelper-54f25315.js": {
-    "file": "assets/triggerTabUpdateHelper-54f25315.js",
+  "_triggerTabUpdateHelper-d930696b.js": {
+    "file": "assets/triggerTabUpdateHelper-d930696b.js",
     "imports": [
       "_enum-9d62bdc6.js",
-      "_invoice-list-store-3ca58dd7.js"
+      "_invoice-list-store-0e2f6016.js"
     ]
   },
-  "_updater-cbd8223a.js": {
-    "file": "assets/updater-cbd8223a.js",
+  "_updater-00e9e1bb.js": {
+    "file": "assets/updater-00e9e1bb.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_upgrade-to-pro-699224b4.js": {
-    "file": "assets/upgrade-to-pro-699224b4.js",
+  "_upgrade-to-pro-4e95da11.js": {
+    "file": "assets/upgrade-to-pro-4e95da11.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-footer-7cfda621.js",
-      "_index-2f32262e.js",
-      "_separator-d7b15c7c.js",
-      "_options-89ca2928.js",
-      "_ProBadge-35078e4e.js",
-      "_card-description-e849d062.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-footer-08d9ee18.js",
+      "_index-99d0c2fd.js",
+      "_separator-95c0d010.js",
+      "_options-1651b5d0.js",
+      "_ProBadge-06425ff7.js",
+      "_card-description-236c99a6.js"
     ]
   },
-  "_woocommerce-cbeb8447.js": {
-    "file": "assets/woocommerce-cbeb8447.js",
+  "_woocommerce-516f13b0.js": {
+    "file": "assets/woocommerce-516f13b0.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
       "_enum-9d62bdc6.js",
-      "_separator-d7b15c7c.js"
+      "_separator-95c0d010.js"
     ]
   },
-  "_x-circle-cf56b721.js": {
-    "file": "assets/x-circle-cf56b721.js",
+  "_x-416feb5b.js": {
+    "file": "assets/x-416feb5b.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
-  "_x-e55b9835.js": {
-    "file": "assets/x-e55b9835.js",
+  "_x-circle-4037c352.js": {
+    "file": "assets/x-circle-4037c352.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ]
   },
   "action-history.css": {
@@ -968,119 +968,119 @@
     "src": "node_modules/.pnpm/svelte-apexcharts@1.0.2_apexcharts@3.54.1/node_modules/svelte-apexcharts/src/index.js"
   },
   "src/PaymentPage.svelte": {
-    "file": "assets/PaymentPage-de550df6.js",
+    "file": "assets/PaymentPage-7130754e.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_label-7d3a217f.js",
-      "_Toaster-907ac0b8.js",
-      "_MultilineText-07aaf54e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_label-e50396f8.js",
+      "_Toaster-b2d3c457.js",
+      "_MultilineText-89cdd008.js",
       "_enum-9d62bdc6.js",
-      "_woocommerce-cbeb8447.js",
-      "_badge-check-09e42ec2.js",
-      "_alert-circle-114bd275.js",
-      "_create-e552ce8d.js",
-      "_updater-cbd8223a.js",
-      "_separator-d7b15c7c.js"
+      "_woocommerce-516f13b0.js",
+      "_badge-check-96fb268f.js",
+      "_alert-circle-64366352.js",
+      "_create-9e47477b.js",
+      "_updater-00e9e1bb.js",
+      "_separator-95c0d010.js"
     ],
     "isDynamicEntry": true,
     "src": "src/PaymentPage.svelte"
   },
   "src/WelcomePage.css": {
-    "file": "assets/WelcomePage-70059e9e.css",
+    "file": "assets/WelcomePage-65fe8e51.css",
     "src": "src/WelcomePage.css"
   },
   "src/WelcomePage.svelte": {
     "css": [
-      "assets/WelcomePage-70059e9e.css"
+      "assets/WelcomePage-65fe8e51.css"
     ],
-    "file": "assets/WelcomePage-c99abce5.js",
+    "file": "assets/WelcomePage-2aa8b820.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_ProgressBar.svelte_svelte_type_style_lang-acfafe0f.js",
-      "_Toaster-907ac0b8.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_ProgressBar.svelte_svelte_type_style_lang-417b71c3.js",
+      "_Toaster-b2d3c457.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
       "__commonjsHelpers-725317a4.js",
       "src/lib/components/settings/invoices/currency.svelte",
       "src/lib/components/settings/invoices/general.svelte",
       "src/lib/components/settings/integration/integration.svelte",
-      "_bank-054bdd20.js",
-      "_index-fcd26607.js",
-      "_create-e552ce8d.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_Trash-c1f21d44.js",
+      "_bank-5347e298.js",
+      "_index-99c4996b.js",
+      "_create-9e47477b.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_Trash-4a47b42d.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_check-f7986a1f.js",
-      "_DeleteButton-e1801510.js",
-      "_index-d3c8ba18.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_Select-aaeb8f73.js",
-      "_index-7095afc4.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_check-ce36e405.js",
+      "_DeleteButton-afa0db44.js",
+      "_index-700ffd0e.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_Select-70747da0.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_separator-d7b15c7c.js",
+      "_Check-a4797a61.js",
+      "_separator-95c0d010.js",
       "_styles-e7e55f44.js",
-      "_invoice-store-89da11de.js",
-      "_settings-3be4102a.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_switch-b7e944c0.js",
-      "_index-e2de6100.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_card-footer-7cfda621.js",
-      "_EditButton-28be910f.js",
-      "_pencil-15e1e778.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_plus-a3b54817.js"
+      "_invoice-store-eba4366e.js",
+      "_settings-e565ac59.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_switch-8efa315f.js",
+      "_index-181f90bd.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_card-footer-08d9ee18.js",
+      "_EditButton-6a4bd082.js",
+      "_pencil-dd28d128.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_plus-24a3e3c4.js"
     ],
     "isDynamicEntry": true,
     "src": "src/WelcomePage.svelte"
   },
   "src/lib/components/invoice/send-invoice-modal.svelte": {
-    "file": "assets/send-invoice-modal-c5c38164.js",
+    "file": "assets/send-invoice-modal-4d460aac.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_MiniStar-4e4614b7.js",
-      "_dialog-description-776c5d22.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
-      "_dialog-description-42b79c51.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_MiniStar-8026f138.js",
+      "_dialog-description-ca00c0bf.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
+      "_dialog-description-624b4ce9.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/invoice/send-invoice-modal.svelte"
   },
   "src/lib/components/recurring/create-invoice-modal.svelte": {
-    "file": "assets/create-invoice-modal-7ec7cfec.js",
+    "file": "assets/create-invoice-modal-f4a8dd79.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_MiniStar-4e4614b7.js",
-      "_dialog-description-776c5d22.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
-      "_Check-fa20f0eb.js",
-      "_create-e552ce8d.js",
-      "_dialog-description-42b79c51.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_MiniStar-8026f138.js",
+      "_dialog-description-ca00c0bf.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
+      "_Check-a4797a61.js",
+      "_create-9e47477b.js",
+      "_dialog-description-624b4ce9.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/recurring/create-invoice-modal.svelte"
@@ -1093,151 +1093,151 @@
     "css": [
       "assets/email-7e57f38f.css"
     ],
-    "file": "assets/email-322195ca.js",
+    "file": "assets/email-f170e03b.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_index-fcd26607.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_index-99c4996b.js",
       "_styles-e7e55f44.js",
-      "_options-89ca2928.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_EditButton-28be910f.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-description-776c5d22.js",
-      "_checkbox-3eb65d0a.js",
-      "_index-0984da6d.js",
-      "_updater-cbd8223a.js",
-      "_x-e55b9835.js",
-      "_create-e552ce8d.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_pencil-15e1e778.js",
-      "_dialog-description-42b79c51.js",
-      "_Check-fa20f0eb.js"
+      "_options-1651b5d0.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_EditButton-6a4bd082.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-description-ca00c0bf.js",
+      "_checkbox-ac399b75.js",
+      "_index-838f84b3.js",
+      "_updater-00e9e1bb.js",
+      "_x-416feb5b.js",
+      "_create-9e47477b.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_pencil-dd28d128.js",
+      "_dialog-description-624b4ce9.js",
+      "_Check-a4797a61.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/email/email.svelte"
   },
   "src/lib/components/settings/integration/integration.svelte": {
-    "file": "assets/integration-04d14ee6.js",
+    "file": "assets/integration-713ea2ee.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-7095afc4.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_switch-b7e944c0.js",
-      "_label-7d3a217f.js",
-      "_saveToStoreHelper-e7988ee0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-210676e1.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_switch-8efa315f.js",
+      "_label-e50396f8.js",
+      "_saveToStoreHelper-31a463b7.js",
       "_arrays-9d05857f.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_invoice-store-89da11de.js"
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_invoice-store-eba4366e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/integration/integration.svelte"
   },
   "src/lib/components/settings/invoices/currency.svelte": {
-    "file": "assets/currency-d5e5147d.js",
+    "file": "assets/currency-42de97fc.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_Trash-c1f21d44.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_Trash-4a47b42d.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_options-89ca2928.js",
-      "_action-39728114.js",
-      "_updater-cbd8223a.js",
-      "_helpers-9268112f.js",
-      "_check-f7986a1f.js",
-      "_DeleteButton-e1801510.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_x-e55b9835.js",
-      "_index-d3c8ba18.js"
+      "_options-1651b5d0.js",
+      "_action-a5acf0e9.js",
+      "_updater-00e9e1bb.js",
+      "_helpers-9eb8762f.js",
+      "_check-ce36e405.js",
+      "_DeleteButton-afa0db44.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_x-416feb5b.js",
+      "_index-700ffd0e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/currency.svelte"
   },
   "src/lib/components/settings/invoices/discount.svelte": {
-    "file": "assets/discount-9c6c7af6.js",
+    "file": "assets/discount-3f424f0c.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-e2de6100.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_Plus-e1a813d4.js",
-      "_separator-d7b15c7c.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-181f90bd.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_Plus-3897747b.js",
+      "_separator-95c0d010.js",
       "_emptyDataHelper-b583dd0c.js",
       "_decimalFormatter-88348579.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_DeleteButton-e1801510.js",
-      "_EditButton-28be910f.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_pencil-15e1e778.js",
-      "_index-7095afc4.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_DeleteButton-afa0db44.js",
+      "_EditButton-6a4bd082.js",
+      "_add-discount-modal-079529d2.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_pencil-dd28d128.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_invoice-store-89da11de.js",
-      "_index-0984da6d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js"
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_invoice-store-eba4366e.js",
+      "_index-838f84b3.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/discount.svelte"
   },
   "src/lib/components/settings/invoices/general.svelte": {
-    "file": "assets/general-627f8741.js",
+    "file": "assets/general-f2ec5e79.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_Select-aaeb8f73.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_Select-70747da0.js",
+      "_errorHelper-39e9d1d7.js",
       "_styles-e7e55f44.js",
-      "_options-89ca2928.js",
-      "_invoice-store-89da11de.js",
-      "_MiniStar-4e4614b7.js",
-      "_settings-3be4102a.js",
-      "_create-e552ce8d.js",
-      "_updater-cbd8223a.js",
-      "_index-7095afc4.js",
+      "_options-1651b5d0.js",
+      "_invoice-store-eba4366e.js",
+      "_MiniStar-8026f138.js",
+      "_settings-e565ac59.js",
+      "_create-9e47477b.js",
+      "_updater-00e9e1bb.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_index-2f32262e.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_separator-d7b15c7c.js",
-      "_x-e55b9835.js",
-      "_saveToStoreHelper-e7988ee0.js"
+      "_Check-a4797a61.js",
+      "_index-99d0c2fd.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_separator-95c0d010.js",
+      "_x-416feb5b.js",
+      "_saveToStoreHelper-31a463b7.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/general.svelte"
@@ -1250,248 +1250,248 @@
       "src/lib/components/settings/invoices/reminder.svelte",
       "src/lib/components/settings/invoices/tax.svelte"
     ],
-    "file": "assets/invoices-6efbf1f5.js",
+    "file": "assets/invoices-3fa98e50.js",
     "imports": [
       "src/main.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Setting-e419d8e1.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Setting-942b7244.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
       "_styles-e7e55f44.js",
-      "_index-fcd26607.js",
-      "_options-89ca2928.js",
-      "_updater-cbd8223a.js",
-      "_x-e55b9835.js",
-      "_index-4f0b7d19.js",
+      "_index-99c4996b.js",
+      "_options-1651b5d0.js",
+      "_updater-00e9e1bb.js",
+      "_x-416feb5b.js",
+      "_index-88943f30.js",
       "_arrays-9d05857f.js",
-      "_App-7c6c0ef0.js",
-      "_ProBadge-35078e4e.js",
-      "_Toaster-907ac0b8.js",
-      "_index-0984da6d.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_separator-d7b15c7c.js",
-      "_Breadcrumb-8a216a28.js",
+      "_App-06d60677.js",
+      "_ProBadge-06425ff7.js",
+      "_Toaster-b2d3c457.js",
+      "_index-838f84b3.js",
+      "_PageTitle-d8cd5813.js",
+      "_separator-95c0d010.js",
+      "_Breadcrumb-87f5fc70.js",
       "_enum-9d62bdc6.js",
-      "_index-e2de6100.js",
-      "_ProgressBar.svelte_svelte_type_style_lang-acfafe0f.js",
-      "_Plus-e1a813d4.js",
-      "_EditButton-28be910f.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_pencil-15e1e778.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_create-e552ce8d.js",
-      "_MiniStar-4e4614b7.js",
-      "_MultilineText-07aaf54e.js",
-      "_mail-5f9f688b.js",
-      "_dialog-description-42b79c51.js",
-      "_circle-dollar-sign-0af52bca.js"
+      "_index-181f90bd.js",
+      "_ProgressBar.svelte_svelte_type_style_lang-417b71c3.js",
+      "_Plus-3897747b.js",
+      "_EditButton-6a4bd082.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_pencil-dd28d128.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_create-9e47477b.js",
+      "_MiniStar-8026f138.js",
+      "_MultilineText-89cdd008.js",
+      "_mail-d47cd623.js",
+      "_dialog-description-624b4ce9.js",
+      "_circle-dollar-sign-d92ea701.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/invoices.svelte"
   },
   "src/lib/components/settings/invoices/reminder.svelte": {
-    "file": "assets/reminder-dd7c4f57.js",
+    "file": "assets/reminder-de118f65.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-e2de6100.js",
-      "_separator-d7b15c7c.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_Plus-e1a813d4.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-181f90bd.js",
+      "_separator-95c0d010.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_Plus-3897747b.js",
       "_emptyDataHelper-b583dd0c.js",
       "_pluralHelper-a32d0151.js",
-      "_DeleteButton-e1801510.js",
-      "_EditButton-28be910f.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_options-89ca2928.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_checkbox-3eb65d0a.js",
-      "_MiniStar-4e4614b7.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_check-f7986a1f.js",
-      "_updater-cbd8223a.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_pencil-15e1e778.js",
-      "_index-7095afc4.js",
+      "_DeleteButton-afa0db44.js",
+      "_EditButton-6a4bd082.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_options-1651b5d0.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_checkbox-ac399b75.js",
+      "_MiniStar-8026f138.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_check-ce36e405.js",
+      "_updater-00e9e1bb.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_pencil-dd28d128.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
-      "_x-e55b9835.js"
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
+      "_x-416feb5b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/reminder.svelte"
   },
   "src/lib/components/settings/invoices/tax.svelte": {
-    "file": "assets/tax-730cebf0.js",
+    "file": "assets/tax-a806183a.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-e2de6100.js",
-      "_separator-d7b15c7c.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_Plus-e1a813d4.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-181f90bd.js",
+      "_separator-95c0d010.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_Plus-3897747b.js",
       "_emptyDataHelper-b583dd0c.js",
       "_decimalFormatter-88348579.js",
-      "_DeleteButton-e1801510.js",
-      "_EditButton-28be910f.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_index-0984da6d.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_pencil-15e1e778.js",
-      "_index-7095afc4.js",
+      "_DeleteButton-afa0db44.js",
+      "_EditButton-6a4bd082.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_index-838f84b3.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_pencil-dd28d128.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js"
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/invoices/tax.svelte"
   },
   "src/lib/components/settings/other/other.svelte": {
-    "file": "assets/other-9709ac11.js",
+    "file": "assets/other-83d29bcd.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-7095afc4.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_label-7d3a217f.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_checkbox-3eb65d0a.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-210676e1.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_label-e50396f8.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_checkbox-ac399b75.js",
       "_arrays-9d05857f.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_invoice-store-89da11de.js"
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_invoice-store-eba4366e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/other/other.svelte"
   },
   "src/lib/components/settings/payment/payment.svelte": {
-    "file": "assets/payment-6acad3c8.js",
+    "file": "assets/payment-1d28561d.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-fcd26607.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99c4996b.js",
+      "_errorHelper-39e9d1d7.js",
       "_styles-e7e55f44.js",
-      "_index-7095afc4.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_label-7d3a217f.js",
-      "_checkbox-3eb65d0a.js",
+      "_index-210676e1.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_label-e50396f8.js",
+      "_checkbox-ac399b75.js",
       "_emptyDataHelper-b583dd0c.js",
       "_enum-9d62bdc6.js",
-      "_separator-d7b15c7c.js",
-      "_invoice-store-89da11de.js",
-      "_bank-054bdd20.js",
-      "_card-footer-7cfda621.js",
-      "_DeleteButton-e1801510.js",
-      "_index-e2de6100.js",
-      "_options-89ca2928.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-description-776c5d22.js",
-      "_ProBadge-35078e4e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_plus-a3b54817.js",
-      "_eye-c27fcad4.js",
-      "_EditButton-28be910f.js",
-      "_copy-ff133ef6.js",
+      "_separator-95c0d010.js",
+      "_invoice-store-eba4366e.js",
+      "_bank-5347e298.js",
+      "_card-footer-08d9ee18.js",
+      "_DeleteButton-afa0db44.js",
+      "_index-181f90bd.js",
+      "_options-1651b5d0.js",
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-description-ca00c0bf.js",
+      "_ProBadge-06425ff7.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_plus-24a3e3c4.js",
+      "_eye-e2edbb22.js",
+      "_EditButton-6a4bd082.js",
+      "_copy-84b22898.js",
       "_decimalFormatter-88348579.js",
-      "_check-f7986a1f.js",
-      "_upgrade-to-pro-699224b4.js",
-      "_updater-cbd8223a.js",
+      "_check-ce36e405.js",
+      "_upgrade-to-pro-4e95da11.js",
+      "_updater-00e9e1bb.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_table-row-9bf80d0a.js",
-      "_table-caption-e98eddd2.js",
-      "_MultilineText-07aaf54e.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js",
-      "_x-e55b9835.js",
-      "_dialog-description-42b79c51.js",
-      "_pencil-15e1e778.js"
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_table-row-f15328e9.js",
+      "_table-caption-151089df.js",
+      "_MultilineText-89cdd008.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js",
+      "_x-416feb5b.js",
+      "_dialog-description-624b4ce9.js",
+      "_pencil-dd28d128.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/payment/payment.svelte"
   },
   "src/lib/components/settings/quotation/quotation.svelte": {
-    "file": "assets/quotation-64efa773.js",
+    "file": "assets/quotation-6c575f90.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_create-e552ce8d.js",
-      "_updater-cbd8223a.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_create-9e47477b.js",
+      "_updater-00e9e1bb.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/quotation/quotation.svelte"
   },
   "src/lib/components/settings/receipt/receipt.svelte": {
-    "file": "assets/receipt-2cd326ad.js",
+    "file": "assets/receipt-3b906129.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-description-e849d062.js",
-      "_index-2f32262e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-description-236c99a6.js",
+      "_index-99d0c2fd.js",
       "_styles-e7e55f44.js",
-      "_MiniStar-4e4614b7.js",
-      "_label-7d3a217f.js",
-      "_input-342b31a9.js",
-      "_options-89ca2928.js",
-      "_updater-cbd8223a.js",
-      "_x-e55b9835.js",
-      "_create-e552ce8d.js"
+      "_MiniStar-8026f138.js",
+      "_label-e50396f8.js",
+      "_input-ab223ce3.js",
+      "_options-1651b5d0.js",
+      "_updater-00e9e1bb.js",
+      "_x-416feb5b.js",
+      "_create-9e47477b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/lib/components/settings/receipt/receipt.svelte"
   },
   "src/main.css": {
-    "file": "assets/main-482cdd01.css",
+    "file": "assets/main-7b2943d9.css",
     "src": "src/main.css"
   },
   "src/main.js": {
     "css": [
-      "assets/main-482cdd01.css"
+      "assets/main-7b2943d9.css"
     ],
     "dynamicImports": [
       "src/PaymentPage.svelte",
@@ -1500,56 +1500,56 @@
       "src/routes/invoice/preview/Preview.svelte",
       "src/routes/misc/PaymentSuccess.svelte",
       "src/routes/misc/PaymentFailed.svelte",
-      "_App-7c6c0ef0.js"
+      "_App-06d60677.js"
     ],
-    "file": "assets/main-380bbcc3.js",
+    "file": "assets/main-f1d8723f.js",
     "isEntry": true,
     "src": "src/main.js"
   },
   "src/routes/customer/client.svelte": {
-    "file": "assets/client-4ed9bec5.js",
+    "file": "assets/client-35a3610f.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-e2de6100.js",
-      "_table-row-9bf80d0a.js",
-      "_Pagination-325e8fb0.js",
-      "_index-0984da6d.js",
-      "_invoice-store-89da11de.js",
-      "_errorHelper-eef9e97b.js",
-      "_checkbox-3eb65d0a.js",
-      "_customer-modal-96845865.js",
-      "_index-2f32262e.js",
-      "_DeleteButton-e1801510.js",
-      "_EditButton-28be910f.js",
-      "_id-cell-05587cea.js",
-      "_label-7d3a217f.js",
-      "_SearchBar-139f3fc2.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-181f90bd.js",
+      "_table-row-f15328e9.js",
+      "_Pagination-4ae1f064.js",
+      "_index-838f84b3.js",
+      "_invoice-store-eba4366e.js",
+      "_errorHelper-39e9d1d7.js",
+      "_checkbox-ac399b75.js",
+      "_customer-modal-284e029d.js",
+      "_index-99d0c2fd.js",
+      "_DeleteButton-afa0db44.js",
+      "_EditButton-6a4bd082.js",
+      "_id-cell-72c46c9c.js",
+      "_label-e50396f8.js",
+      "_SearchBar-3dca9103.js",
       "_moment-a9aaa855.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_book-x-b02f1a0b.js",
-      "_plus-a3b54817.js",
-      "_frown-a83b243b.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_index-7095afc4.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_book-x-4f0ad8fe.js",
+      "_plus-24a3e3c4.js",
+      "_frown-c41c9b47.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
       "_enum-9d62bdc6.js",
-      "_switch-b7e944c0.js",
-      "_MiniStar-4e4614b7.js",
-      "_input-342b31a9.js",
-      "_Trash-c1f21d44.js",
-      "_index-d3c8ba18.js",
-      "_pencil-15e1e778.js",
-      "_search-b20aeeac.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_ProBadge-35078e4e.js",
-      "_separator-d7b15c7c.js"
+      "_switch-8efa315f.js",
+      "_MiniStar-8026f138.js",
+      "_input-ab223ce3.js",
+      "_Trash-4a47b42d.js",
+      "_index-700ffd0e.js",
+      "_pencil-dd28d128.js",
+      "_search-e03ceb6e.js",
+      "_refresh-ccw-68900eb6.js",
+      "_ProBadge-06425ff7.js",
+      "_separator-95c0d010.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/customer/client.svelte"
@@ -1558,217 +1558,217 @@
     "dynamicImports": [
       "node_modules/.pnpm/svelte-apexcharts@1.0.2_apexcharts@3.54.1/node_modules/svelte-apexcharts/src/index.js"
     ],
-    "file": "assets/Dashboard-1485191e.js",
+    "file": "assets/Dashboard-62d15155.js",
     "imports": [
       "src/main.js",
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Plus-e1a813d4.js",
-      "_separator-d7b15c7c.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-d3c8ba18.js",
-      "_Breadcrumb-8a216a28.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Plus-3897747b.js",
+      "_separator-95c0d010.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-700ffd0e.js",
+      "_Breadcrumb-87f5fc70.js",
       "_moment-a9aaa855.js",
-      "_index-2f32262e.js",
-      "_chevron-down-a8868dd9.js",
-      "_UpgradeToProButton-e020fdbc.js",
+      "_index-99d0c2fd.js",
+      "_chevron-down-2b9a232f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
       "_decimalFormatter-88348579.js",
-      "_history-71cd67db.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_helpers-9268112f.js",
-      "_ProBadge-35078e4e.js",
+      "_history-c581ae9c.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_helpers-9eb8762f.js",
+      "_ProBadge-06425ff7.js",
       "_enum-9d62bdc6.js",
-      "_card-description-e849d062.js"
+      "_card-description-236c99a6.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/dashboard/Dashboard.svelte"
   },
   "src/routes/invoice/InvoiceList.svelte": {
-    "file": "assets/InvoiceList-dff34399.js",
+    "file": "assets/InvoiceList-87834b6a.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_invoice-list-store-3ca58dd7.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_invoice-list-store-0e2f6016.js",
       "_styles-e7e55f44.js",
-      "_Pagination-325e8fb0.js",
-      "_index-fcd26607.js",
-      "_index-7095afc4.js",
-      "_Plus-e1a813d4.js",
+      "_Pagination-4ae1f064.js",
+      "_index-99c4996b.js",
+      "_index-210676e1.js",
+      "_Plus-3897747b.js",
       "_enum-9d62bdc6.js",
-      "_invoice-all-tab-table-column-ad7b4d9a.js",
-      "_id-cell-05587cea.js",
-      "_Tab-5d24525b.js",
-      "_errorHelper-eef9e97b.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_SearchBar-139f3fc2.js",
-      "_index-2f32262e.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
+      "_invoice-all-tab-table-column-fc06d976.js",
+      "_id-cell-72c46c9c.js",
+      "_Tab-a3e2cf04.js",
+      "_errorHelper-39e9d1d7.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_SearchBar-3dca9103.js",
+      "_index-99d0c2fd.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
       "_moment-a9aaa855.js",
-      "_index-dac4cf97.js",
-      "_separator-d7b15c7c.js",
-      "_index-e2de6100.js",
+      "_index-b0fc9309.js",
+      "_separator-95c0d010.js",
+      "_index-181f90bd.js",
       "_actionHelper-40ee3d39.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_CreateRecurringModal-63416434.js",
-      "_input-342b31a9.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_CreateRecurringModal-3aee3a57.js",
+      "_input-ab223ce3.js",
       "_setDefaultRecurring-f1d67430.js",
-      "_eye-c27fcad4.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_history-71cd67db.js",
-      "_pencil-15e1e778.js",
-      "_send-e1cefc13.js",
-      "_circle-dollar-sign-0af52bca.js",
+      "_eye-e2edbb22.js",
+      "_refresh-ccw-68900eb6.js",
+      "_history-c581ae9c.js",
+      "_pencil-dd28d128.js",
+      "_send-2227b51e.js",
+      "_circle-dollar-sign-d92ea701.js",
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
-      "_table-row-9bf80d0a.js",
-      "_App-7c6c0ef0.js",
-      "_ProBadge-35078e4e.js",
-      "_card-description-e849d062.js",
+      "_table-row-f15328e9.js",
+      "_App-06d60677.js",
+      "_ProBadge-06425ff7.js",
+      "_card-description-236c99a6.js",
       "src/main.js",
-      "_Toaster-907ac0b8.js",
-      "_index-0984da6d.js",
-      "_search-b20aeeac.js"
+      "_Toaster-b2d3c457.js",
+      "_index-838f84b3.js",
+      "_search-e03ceb6e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/invoice/InvoiceList.svelte"
   },
   "src/routes/invoice/create/CreateInvoice.svelte": {
-    "file": "assets/CreateInvoice-3b7ad224.js",
+    "file": "assets/CreateInvoice-fb80d7e1.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_triggerTabUpdateHelper-54f25315.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_triggerTabUpdateHelper-d930696b.js",
       "_enum-9d62bdc6.js",
-      "_errorHelper-eef9e97b.js",
-      "_invoice-store-89da11de.js",
-      "_invoiceErrorHelper-13369b1f.js",
-      "_Options-60264e68.js",
-      "_BaseCreateInvoice-58c95b20.js",
+      "_errorHelper-39e9d1d7.js",
+      "_invoice-store-eba4366e.js",
+      "_invoiceErrorHelper-d5e44338.js",
+      "_Options-40a61ab3.js",
+      "_BaseCreateInvoice-a9e5214d.js",
       "_moment-a9aaa855.js",
-      "_invoice-list-store-3ca58dd7.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_helpers-9268112f.js",
-      "_separator-d7b15c7c.js",
-      "_MiniStar-4e4614b7.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_create-e552ce8d.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
-      "_index-7095afc4.js",
+      "_invoice-list-store-0e2f6016.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_helpers-9eb8762f.js",
+      "_separator-95c0d010.js",
+      "_MiniStar-8026f138.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_create-9e47477b.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
       "_styles-e7e55f44.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_customer-modal-96845865.js",
-      "_switch-b7e944c0.js",
-      "_product-modal-3f3c8373.js",
-      "_CustomCurrencyInput-d3541a18.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_customer-modal-284e029d.js",
+      "_switch-8efa315f.js",
+      "_product-modal-e47dc535.js",
+      "_CustomCurrencyInput-e534ba6a.js",
       "_capitalHelper-77c0a756.js",
-      "_search-b20aeeac.js",
-      "_checkbox-3eb65d0a.js",
+      "_search-e03ceb6e.js",
+      "_checkbox-ac399b75.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_index-4f0b7d19.js",
-      "_card-description-e849d062.js",
+      "_index-88943f30.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_index-0984da6d.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js",
+      "_add-discount-modal-079529d2.js",
+      "_index-838f84b3.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js",
       "src/main.js",
-      "_Breadcrumb-8a216a28.js",
-      "_ProBadge-35078e4e.js",
-      "_send-e1cefc13.js"
+      "_Breadcrumb-87f5fc70.js",
+      "_ProBadge-06425ff7.js",
+      "_send-2227b51e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/invoice/create/CreateInvoice.svelte"
   },
   "src/routes/invoice/edit/EditInvoice.svelte": {
-    "file": "assets/EditInvoice-b0c355ee.js",
+    "file": "assets/EditInvoice-a64cd822.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_invoice-store-89da11de.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_invoice-store-eba4366e.js",
       "_enum-9d62bdc6.js",
-      "_options-89ca2928.js",
-      "_Options-60264e68.js",
-      "_triggerTabUpdateHelper-54f25315.js",
-      "_invoiceErrorHelper-13369b1f.js",
-      "_BaseCreateInvoice-58c95b20.js",
+      "_options-1651b5d0.js",
+      "_Options-40a61ab3.js",
+      "_triggerTabUpdateHelper-d930696b.js",
+      "_invoiceErrorHelper-d5e44338.js",
+      "_BaseCreateInvoice-a9e5214d.js",
       "_moment-a9aaa855.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_helpers-9268112f.js",
-      "_separator-d7b15c7c.js",
-      "_MiniStar-4e4614b7.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_create-e552ce8d.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
-      "_index-7095afc4.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_helpers-9eb8762f.js",
+      "_separator-95c0d010.js",
+      "_MiniStar-8026f138.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_create-9e47477b.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
       "_styles-e7e55f44.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_customer-modal-96845865.js",
-      "_switch-b7e944c0.js",
-      "_product-modal-3f3c8373.js",
-      "_CustomCurrencyInput-d3541a18.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_customer-modal-284e029d.js",
+      "_switch-8efa315f.js",
+      "_product-modal-e47dc535.js",
+      "_CustomCurrencyInput-e534ba6a.js",
       "_capitalHelper-77c0a756.js",
-      "_search-b20aeeac.js",
-      "_checkbox-3eb65d0a.js",
+      "_search-e03ceb6e.js",
+      "_checkbox-ac399b75.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_index-4f0b7d19.js",
-      "_card-description-e849d062.js",
+      "_index-88943f30.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_index-0984da6d.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js",
-      "_invoice-list-store-3ca58dd7.js",
+      "_add-discount-modal-079529d2.js",
+      "_index-838f84b3.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js",
+      "_invoice-list-store-0e2f6016.js",
       "src/main.js",
-      "_Breadcrumb-8a216a28.js",
-      "_ProBadge-35078e4e.js",
-      "_send-e1cefc13.js"
+      "_Breadcrumb-87f5fc70.js",
+      "_ProBadge-06425ff7.js",
+      "_send-2227b51e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/invoice/edit/EditInvoice.svelte"
@@ -1781,144 +1781,144 @@
     "css": [
       "assets/PreviewQuotation-721a34af.css"
     ],
-    "file": "assets/Preview-3d54ad0a.js",
+    "file": "assets/Preview-7c22de11.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
       "_enum-9d62bdc6.js",
-      "_triggerTabUpdateHelper-54f25315.js",
-      "_errorHelper-eef9e97b.js",
-      "_action-history-6aa79567.js",
-      "_Breadcrumb-8a216a28.js",
-      "_index-0984da6d.js",
-      "_alert-circle-114bd275.js",
-      "_options-89ca2928.js",
-      "_index-2f32262e.js",
-      "_dialog-header-208ee491.js",
-      "_x-circle-cf56b721.js",
-      "_badge-check-09e42ec2.js",
-      "_x-e55b9835.js",
-      "_check-f7986a1f.js",
-      "_separator-d7b15c7c.js",
+      "_triggerTabUpdateHelper-d930696b.js",
+      "_errorHelper-39e9d1d7.js",
+      "_action-history-0128e979.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_index-838f84b3.js",
+      "_alert-circle-64366352.js",
+      "_options-1651b5d0.js",
+      "_index-99d0c2fd.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_x-circle-4037c352.js",
+      "_badge-check-96fb268f.js",
+      "_x-416feb5b.js",
+      "_check-ce36e405.js",
+      "_separator-95c0d010.js",
       "_actionHelper-40ee3d39.js",
-      "_index-d3c8ba18.js",
-      "_history-71cd67db.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_pencil-15e1e778.js",
-      "_CreateRecurringModal-63416434.js",
-      "_send-e1cefc13.js",
-      "_circle-dollar-sign-0af52bca.js",
-      "_download-21aefe34.js",
+      "_index-700ffd0e.js",
+      "_history-c581ae9c.js",
+      "_refresh-ccw-68900eb6.js",
+      "_pencil-dd28d128.js",
+      "_CreateRecurringModal-3aee3a57.js",
+      "_send-2227b51e.js",
+      "_circle-dollar-sign-d92ea701.js",
+      "_download-0bb4e811.js",
       "_moment-a9aaa855.js",
       "_capitalHelper-77c0a756.js",
-      "_index-e2de6100.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_invoice-list-store-3ca58dd7.js",
-      "_card-footer-7cfda621.js",
-      "_table-row-9bf80d0a.js",
-      "_MultilineText-07aaf54e.js",
+      "_index-181f90bd.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_invoice-list-store-0e2f6016.js",
+      "_card-footer-08d9ee18.js",
+      "_table-row-f15328e9.js",
+      "_MultilineText-89cdd008.js",
       "_decimalFormatter-88348579.js",
-      "_woocommerce-cbeb8447.js",
+      "_woocommerce-516f13b0.js",
       "__commonjsHelpers-725317a4.js",
       "_pluralHelper-a32d0151.js",
-      "_index-4f0b7d19.js",
-      "_updater-cbd8223a.js",
+      "_index-88943f30.js",
+      "_updater-00e9e1bb.js",
       "_arrays-9d05857f.js",
-      "_ProBadge-35078e4e.js",
-      "_helpers-9268112f.js",
-      "_input-342b31a9.js",
-      "_index-7095afc4.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
+      "_ProBadge-06425ff7.js",
+      "_helpers-9eb8762f.js",
+      "_input-ab223ce3.js",
+      "_index-210676e1.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
       "_setDefaultRecurring-f1d67430.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/invoice/preview/Preview.svelte"
   },
   "src/routes/misc/NotFound.svelte": {
-    "file": "assets/NotFound-a4ddf95b.js",
+    "file": "assets/NotFound-2b7c65b4.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js"
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/misc/NotFound.svelte"
   },
   "src/routes/misc/PaymentFailed.svelte": {
-    "file": "assets/PaymentFailed-9d67d342.js",
+    "file": "assets/PaymentFailed-99e2f5cb.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-footer-7cfda621.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-footer-08d9ee18.js",
       "_decimalFormatter-88348579.js",
-      "_x-circle-cf56b721.js",
-      "_x-e55b9835.js"
+      "_x-circle-4037c352.js",
+      "_x-416feb5b.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/misc/PaymentFailed.svelte"
   },
   "src/routes/misc/PaymentSuccess.svelte": {
-    "file": "assets/PaymentSuccess-946334e3.js",
+    "file": "assets/PaymentSuccess-74d4bfa3.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_card-footer-7cfda621.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_card-footer-08d9ee18.js",
       "_decimalFormatter-88348579.js",
-      "_badge-check-09e42ec2.js",
-      "_x-e55b9835.js",
-      "_check-f7986a1f.js"
+      "_badge-check-96fb268f.js",
+      "_x-416feb5b.js",
+      "_check-ce36e405.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/misc/PaymentSuccess.svelte"
   },
   "src/routes/product/product.svelte": {
-    "file": "assets/product-057680a1.js",
+    "file": "assets/product-c29fbb85.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Pagination-325e8fb0.js",
-      "_label-7d3a217f.js",
-      "_index-0984da6d.js",
-      "_errorHelper-eef9e97b.js",
-      "_table-row-9bf80d0a.js",
-      "_index-2f32262e.js",
-      "_product-modal-3f3c8373.js",
-      "_index-e2de6100.js",
-      "_index-d3c8ba18.js",
-      "_Trash-c1f21d44.js",
-      "_pencil-15e1e778.js",
-      "_id-cell-05587cea.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Pagination-4ae1f064.js",
+      "_label-e50396f8.js",
+      "_index-838f84b3.js",
+      "_errorHelper-39e9d1d7.js",
+      "_table-row-f15328e9.js",
+      "_index-99d0c2fd.js",
+      "_product-modal-e47dc535.js",
+      "_index-181f90bd.js",
+      "_index-700ffd0e.js",
+      "_Trash-4a47b42d.js",
+      "_pencil-dd28d128.js",
+      "_id-cell-72c46c9c.js",
       "_decimalFormatter-88348579.js",
-      "_SearchBar-139f3fc2.js",
+      "_SearchBar-3dca9103.js",
       "_moment-a9aaa855.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_settings-3be4102a.js",
-      "_book-x-b02f1a0b.js",
-      "_plus-a3b54817.js",
-      "_frown-a83b243b.js",
-      "_index-7095afc4.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_settings-e565ac59.js",
+      "_book-x-4f0ad8fe.js",
+      "_plus-24a3e3c4.js",
+      "_frown-c41c9b47.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
       "_enum-9d62bdc6.js",
-      "_input-342b31a9.js",
-      "_MiniStar-4e4614b7.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_search-b20aeeac.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_ProBadge-35078e4e.js",
-      "_separator-d7b15c7c.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_invoice-store-89da11de.js"
+      "_input-ab223ce3.js",
+      "_MiniStar-8026f138.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_search-e03ceb6e.js",
+      "_refresh-ccw-68900eb6.js",
+      "_ProBadge-06425ff7.js",
+      "_separator-95c0d010.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_invoice-store-eba4366e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/product/product.svelte"
@@ -1927,66 +1927,66 @@
     "dynamicImports": [
       "src/lib/components/invoice/send-invoice-modal.svelte"
     ],
-    "file": "assets/CreateQuotation-4a91b295.js",
+    "file": "assets/CreateQuotation-f287b54c.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_triggerTabUpdateHelper-54f25315.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_triggerTabUpdateHelper-d930696b.js",
       "_enum-9d62bdc6.js",
-      "_errorHelper-eef9e97b.js",
-      "_invoice-store-89da11de.js",
-      "_invoiceErrorHelper-13369b1f.js",
-      "_Options-60264e68.js",
+      "_errorHelper-39e9d1d7.js",
+      "_invoice-store-eba4366e.js",
+      "_invoiceErrorHelper-d5e44338.js",
+      "_Options-40a61ab3.js",
       "src/main.js",
-      "_index-0984da6d.js",
-      "_index-2f32262e.js",
+      "_index-838f84b3.js",
+      "_index-99d0c2fd.js",
       "_styles-e7e55f44.js",
       "_emptyDataHelper-b583dd0c.js",
       "_moment-a9aaa855.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_Breadcrumb-8a216a28.js",
-      "_send-e1cefc13.js",
-      "_invoice-list-store-3ca58dd7.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_helpers-9268112f.js",
-      "_separator-d7b15c7c.js",
-      "_MiniStar-4e4614b7.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
-      "_index-7095afc4.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_send-2227b51e.js",
+      "_invoice-list-store-0e2f6016.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_helpers-9eb8762f.js",
+      "_separator-95c0d010.js",
+      "_MiniStar-8026f138.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_create-e552ce8d.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_create-9e47477b.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_customer-modal-96845865.js",
-      "_switch-b7e944c0.js",
-      "_product-modal-3f3c8373.js",
-      "_CustomCurrencyInput-d3541a18.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_customer-modal-284e029d.js",
+      "_switch-8efa315f.js",
+      "_product-modal-e47dc535.js",
+      "_CustomCurrencyInput-e534ba6a.js",
       "_capitalHelper-77c0a756.js",
-      "_search-b20aeeac.js",
-      "_checkbox-3eb65d0a.js",
-      "_index-4f0b7d19.js",
-      "_card-description-e849d062.js",
+      "_search-e03ceb6e.js",
+      "_checkbox-ac399b75.js",
+      "_index-88943f30.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js",
-      "_ProBadge-35078e4e.js"
+      "_add-discount-modal-079529d2.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js",
+      "_ProBadge-06425ff7.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/quotation/CreateQuotation.svelte"
@@ -1999,387 +1999,387 @@
     "css": [
       "assets/PreviewQuotation-721a34af.css"
     ],
-    "file": "assets/PreviewQuotation-136ff2bc.js",
+    "file": "assets/PreviewQuotation-fa97f826.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-2f32262e.js",
-      "_download-21aefe34.js",
-      "_action-history-6aa79567.js",
-      "_Breadcrumb-8a216a28.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-99d0c2fd.js",
+      "_download-0bb4e811.js",
+      "_action-history-0128e979.js",
+      "_Breadcrumb-87f5fc70.js",
       "_moment-a9aaa855.js",
-      "_separator-d7b15c7c.js",
+      "_separator-95c0d010.js",
       "_capitalHelper-77c0a756.js",
-      "_quotation-c2fcfef8.js",
-      "_copy-ff133ef6.js",
-      "_mail-5f9f688b.js",
+      "_quotation-2da453b9.js",
+      "_copy-84b22898.js",
+      "_mail-d47cd623.js",
       "__commonjsHelpers-725317a4.js",
-      "_card-footer-7cfda621.js",
-      "_table-row-9bf80d0a.js",
+      "_card-footer-08d9ee18.js",
+      "_table-row-f15328e9.js",
       "_enum-9d62bdc6.js",
-      "_MultilineText-07aaf54e.js",
+      "_MultilineText-89cdd008.js",
       "_decimalFormatter-88348579.js",
-      "_woocommerce-cbeb8447.js",
+      "_woocommerce-516f13b0.js",
       "_pluralHelper-a32d0151.js",
-      "_index-4f0b7d19.js",
-      "_updater-cbd8223a.js",
+      "_index-88943f30.js",
+      "_updater-00e9e1bb.js",
       "_arrays-9d05857f.js",
-      "_ProBadge-35078e4e.js"
+      "_ProBadge-06425ff7.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/quotation/PreviewQuotation.svelte"
   },
   "src/routes/quotation/QuotationList.svelte": {
-    "file": "assets/QuotationList-220ded79.js",
+    "file": "assets/QuotationList-35efd3ca.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_Tab-5d24525b.js",
-      "_Pagination-325e8fb0.js",
-      "_index-dac4cf97.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_Tab-a3e2cf04.js",
+      "_Pagination-4ae1f064.js",
+      "_index-b0fc9309.js",
+      "_errorHelper-39e9d1d7.js",
       "_moment-a9aaa855.js",
-      "_quotation-c2fcfef8.js",
-      "_eye-c27fcad4.js",
-      "_send-e1cefc13.js",
-      "_refresh-ccw-0ff8dd89.js",
+      "_quotation-2da453b9.js",
+      "_eye-e2edbb22.js",
+      "_send-2227b51e.js",
+      "_refresh-ccw-68900eb6.js",
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
-      "_index-7095afc4.js",
-      "_index-fcd26607.js",
+      "_index-210676e1.js",
+      "_index-99c4996b.js",
       "_styles-e7e55f44.js",
-      "_Plus-e1a813d4.js",
+      "_Plus-3897747b.js",
       "_enum-9d62bdc6.js",
-      "_upgrade-to-pro-699224b4.js",
-      "_ProBadge-35078e4e.js",
-      "_separator-d7b15c7c.js",
-      "_updater-cbd8223a.js",
-      "_table-row-9bf80d0a.js",
-      "_index-2f32262e.js",
-      "_App-7c6c0ef0.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_card-description-e849d062.js",
+      "_upgrade-to-pro-4e95da11.js",
+      "_ProBadge-06425ff7.js",
+      "_separator-95c0d010.js",
+      "_updater-00e9e1bb.js",
+      "_table-row-f15328e9.js",
+      "_index-99d0c2fd.js",
+      "_App-06d60677.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_card-description-236c99a6.js",
       "src/main.js",
-      "_Toaster-907ac0b8.js",
-      "_index-0984da6d.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
+      "_Toaster-b2d3c457.js",
+      "_index-838f84b3.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_create-e552ce8d.js",
-      "_card-footer-7cfda621.js"
+      "_Check-a4797a61.js",
+      "_create-9e47477b.js",
+      "_card-footer-08d9ee18.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/quotation/QuotationList.svelte"
   },
   "src/routes/receipt/ReceiptList.svelte": {
-    "file": "assets/ReceiptList-c38de41a.js",
+    "file": "assets/ReceiptList-c1ebcba9.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
       "_styles-e7e55f44.js",
-      "_index-fcd26607.js",
-      "_index-7095afc4.js",
-      "_Pagination-325e8fb0.js",
-      "_Tab-5d24525b.js",
-      "_errorHelper-eef9e97b.js",
+      "_index-99c4996b.js",
+      "_index-210676e1.js",
+      "_Pagination-4ae1f064.js",
+      "_Tab-a3e2cf04.js",
+      "_errorHelper-39e9d1d7.js",
       "_moment-a9aaa855.js",
       "_enum-9d62bdc6.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_SearchBar-139f3fc2.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_SearchBar-3dca9103.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_table-row-9bf80d0a.js",
-      "_App-7c6c0ef0.js",
-      "_ProBadge-35078e4e.js",
-      "_card-description-e849d062.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_table-row-f15328e9.js",
+      "_App-06d60677.js",
+      "_ProBadge-06425ff7.js",
+      "_card-description-236c99a6.js",
       "src/main.js",
-      "_Toaster-907ac0b8.js",
-      "_index-0984da6d.js",
-      "_separator-d7b15c7c.js",
-      "_input-342b31a9.js",
-      "_search-b20aeeac.js",
-      "_refresh-ccw-0ff8dd89.js"
+      "_Toaster-b2d3c457.js",
+      "_index-838f84b3.js",
+      "_separator-95c0d010.js",
+      "_input-ab223ce3.js",
+      "_search-e03ceb6e.js",
+      "_refresh-ccw-68900eb6.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/receipt/ReceiptList.svelte"
   },
   "src/routes/recurring/RecurringClientList.svelte": {
-    "file": "assets/RecurringClientList-78b2d626.js",
+    "file": "assets/RecurringClientList-8bc82a38.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_table-row-9bf80d0a.js",
-      "_Pagination-325e8fb0.js",
-      "_recurring-store-e654427c.js",
-      "_errorHelper-eef9e97b.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_table-row-f15328e9.js",
+      "_Pagination-4ae1f064.js",
+      "_recurring-store-561539e7.js",
+      "_errorHelper-39e9d1d7.js",
       "_decimalFormatter-88348579.js",
       "_moment-a9aaa855.js",
-      "_index-0984da6d.js",
-      "_index-2f32262e.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_SearchBar-139f3fc2.js",
-      "_upgrade-to-pro-699224b4.js",
+      "_index-838f84b3.js",
+      "_index-99d0c2fd.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_SearchBar-3dca9103.js",
+      "_upgrade-to-pro-4e95da11.js",
       "_enum-9d62bdc6.js",
-      "_App-7c6c0ef0.js",
-      "_plus-a3b54817.js",
-      "_frown-a83b243b.js",
-      "_index-7095afc4.js",
+      "_App-06d60677.js",
+      "_plus-24a3e3c4.js",
+      "_frown-c41c9b47.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_updater-cbd8223a.js",
-      "_Check-fa20f0eb.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_ProBadge-35078e4e.js",
-      "_separator-d7b15c7c.js",
-      "_input-342b31a9.js",
-      "_search-b20aeeac.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_card-footer-7cfda621.js",
-      "_card-description-e849d062.js",
+      "_updater-00e9e1bb.js",
+      "_Check-a4797a61.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_ProBadge-06425ff7.js",
+      "_separator-95c0d010.js",
+      "_input-ab223ce3.js",
+      "_search-e03ceb6e.js",
+      "_refresh-ccw-68900eb6.js",
+      "_card-footer-08d9ee18.js",
+      "_card-description-236c99a6.js",
       "src/main.js",
-      "_Toaster-907ac0b8.js"
+      "_Toaster-b2d3c457.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/recurring/RecurringClientList.svelte"
   },
   "src/routes/recurring/create/CreateRecurring.svelte": {
-    "file": "assets/CreateRecurring-0b37cd9e.js",
+    "file": "assets/CreateRecurring-bb4d9b46.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_triggerTabUpdateHelper-54f25315.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_triggerTabUpdateHelper-d930696b.js",
       "_enum-9d62bdc6.js",
-      "_invoice-store-89da11de.js",
-      "_recurring-store-e654427c.js",
-      "_invoiceErrorHelper-13369b1f.js",
-      "_Options-60264e68.js",
-      "_errorHelper-eef9e97b.js",
-      "_BaseCreateRecurring-e1036462.js",
+      "_invoice-store-eba4366e.js",
+      "_recurring-store-561539e7.js",
+      "_invoiceErrorHelper-d5e44338.js",
+      "_Options-40a61ab3.js",
+      "_errorHelper-39e9d1d7.js",
+      "_BaseCreateRecurring-5b22a73d.js",
       "_setDefaultRecurring-f1d67430.js",
-      "_invoice-list-store-3ca58dd7.js",
-      "_index-2f32262e.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_helpers-9268112f.js",
-      "_separator-d7b15c7c.js",
-      "_MiniStar-4e4614b7.js",
-      "_input-342b31a9.js",
-      "_label-7d3a217f.js",
-      "_create-e552ce8d.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
-      "_index-7095afc4.js",
+      "_invoice-list-store-0e2f6016.js",
+      "_index-99d0c2fd.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_helpers-9eb8762f.js",
+      "_separator-95c0d010.js",
+      "_MiniStar-8026f138.js",
+      "_input-ab223ce3.js",
+      "_label-e50396f8.js",
+      "_create-9e47477b.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
       "_styles-e7e55f44.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_customer-modal-96845865.js",
-      "_switch-b7e944c0.js",
-      "_product-modal-3f3c8373.js",
-      "_CustomCurrencyInput-d3541a18.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_customer-modal-284e029d.js",
+      "_switch-8efa315f.js",
+      "_product-modal-e47dc535.js",
+      "_CustomCurrencyInput-e534ba6a.js",
       "_capitalHelper-77c0a756.js",
-      "_search-b20aeeac.js",
-      "_checkbox-3eb65d0a.js",
+      "_search-e03ceb6e.js",
+      "_checkbox-ac399b75.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_index-4f0b7d19.js",
-      "_card-description-e849d062.js",
+      "_index-88943f30.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_index-0984da6d.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js",
+      "_add-discount-modal-079529d2.js",
+      "_index-838f84b3.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js",
       "src/main.js",
-      "_header-title-a9af6ef4.js",
-      "_Breadcrumb-8a216a28.js",
-      "_ProBadge-35078e4e.js",
-      "_plus-a3b54817.js",
+      "_header-title-695fb230.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_ProBadge-06425ff7.js",
+      "_plus-24a3e3c4.js",
       "_moment-a9aaa855.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/recurring/create/CreateRecurring.svelte"
   },
   "src/routes/recurring/detail/RecurringList.svelte": {
-    "file": "assets/RecurringList-85725faa.js",
+    "file": "assets/RecurringList-d84a1de7.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_index-fcd26607.js",
-      "_recurring-store-e654427c.js",
-      "_invoice-store-89da11de.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_index-99c4996b.js",
+      "_recurring-store-561539e7.js",
+      "_invoice-store-eba4366e.js",
       "_styles-e7e55f44.js",
-      "_Pagination-325e8fb0.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-dac4cf97.js",
-      "_index-e2de6100.js",
+      "_Pagination-4ae1f064.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-b0fc9309.js",
+      "_index-181f90bd.js",
       "_actionHelper-40ee3d39.js",
       "_enum-9d62bdc6.js",
-      "_triggerTabUpdateHelper-54f25315.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_eye-c27fcad4.js",
-      "_refresh-ccw-0ff8dd89.js",
-      "_pencil-15e1e778.js",
-      "_plus-a3b54817.js",
-      "_CreateRecurringModal-63416434.js",
-      "_card-description-e849d062.js",
+      "_triggerTabUpdateHelper-d930696b.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_eye-e2edbb22.js",
+      "_refresh-ccw-68900eb6.js",
+      "_pencil-dd28d128.js",
+      "_plus-24a3e3c4.js",
+      "_CreateRecurringModal-3aee3a57.js",
+      "_card-description-236c99a6.js",
       "_moment-a9aaa855.js",
       "_capitalHelper-77c0a756.js",
       "_decimalFormatter-88348579.js",
-      "_invoice-all-tab-table-column-ad7b4d9a.js",
-      "_Tab-5d24525b.js",
-      "_Breadcrumb-8a216a28.js",
-      "_PageTitle-5aeb5b6f.js",
-      "_SearchBar-139f3fc2.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
-      "_index-7095afc4.js",
+      "_invoice-all-tab-table-column-fc06d976.js",
+      "_Tab-a3e2cf04.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_PageTitle-d8cd5813.js",
+      "_SearchBar-3dca9103.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_separator-d7b15c7c.js",
-      "_invoice-list-store-3ca58dd7.js",
-      "_input-342b31a9.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_separator-95c0d010.js",
+      "_invoice-list-store-0e2f6016.js",
+      "_input-ab223ce3.js",
       "_setDefaultRecurring-f1d67430.js",
-      "_history-71cd67db.js",
-      "_send-e1cefc13.js",
-      "_circle-dollar-sign-0af52bca.js",
-      "_id-cell-05587cea.js",
-      "_table-row-9bf80d0a.js",
-      "_App-7c6c0ef0.js",
-      "_ProBadge-35078e4e.js",
+      "_history-c581ae9c.js",
+      "_send-2227b51e.js",
+      "_circle-dollar-sign-d92ea701.js",
+      "_id-cell-72c46c9c.js",
+      "_table-row-f15328e9.js",
+      "_App-06d60677.js",
+      "_ProBadge-06425ff7.js",
       "src/main.js",
-      "_Toaster-907ac0b8.js",
-      "_index-0984da6d.js",
-      "_search-b20aeeac.js"
+      "_Toaster-b2d3c457.js",
+      "_index-838f84b3.js",
+      "_search-e03ceb6e.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/recurring/detail/RecurringList.svelte"
   },
   "src/routes/recurring/detail/preview/RecurringPreview.svelte": {
-    "file": "assets/RecurringPreview-a493d74a.js",
+    "file": "assets/RecurringPreview-47798254.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_errorHelper-eef9e97b.js",
-      "_index-2f32262e.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_errorHelper-39e9d1d7.js",
+      "_index-99d0c2fd.js",
       "_enum-9d62bdc6.js",
       "_actionHelper-40ee3d39.js",
-      "_index-e2de6100.js",
-      "_checkbox-3eb65d0a.js",
-      "_label-7d3a217f.js",
-      "_Breadcrumb-8a216a28.js",
-      "_header-title-a9af6ef4.js",
-      "_action-history-6aa79567.js",
+      "_index-181f90bd.js",
+      "_checkbox-ac399b75.js",
+      "_label-e50396f8.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_header-title-695fb230.js",
+      "_action-history-0128e979.js",
       "_pluralHelper-a32d0151.js",
       "_capitalHelper-77c0a756.js",
       "_moment-a9aaa855.js",
-      "_updater-cbd8223a.js",
-      "_options-89ca2928.js",
-      "_x-e55b9835.js",
-      "_Check-fa20f0eb.js",
-      "_create-e552ce8d.js",
-      "_ProBadge-35078e4e.js",
-      "_card-footer-7cfda621.js",
-      "_table-row-9bf80d0a.js",
-      "_separator-d7b15c7c.js",
-      "_MultilineText-07aaf54e.js",
+      "_updater-00e9e1bb.js",
+      "_options-1651b5d0.js",
+      "_x-416feb5b.js",
+      "_Check-a4797a61.js",
+      "_create-9e47477b.js",
+      "_ProBadge-06425ff7.js",
+      "_card-footer-08d9ee18.js",
+      "_table-row-f15328e9.js",
+      "_separator-95c0d010.js",
+      "_MultilineText-89cdd008.js",
       "_decimalFormatter-88348579.js",
-      "_woocommerce-cbeb8447.js",
+      "_woocommerce-516f13b0.js",
       "__commonjsHelpers-725317a4.js",
-      "_index-4f0b7d19.js",
+      "_index-88943f30.js",
       "_arrays-9d05857f.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/recurring/detail/preview/RecurringPreview.svelte"
   },
   "src/routes/recurring/edit/EditRecurring.svelte": {
-    "file": "assets/EditRecurring-32df4850.js",
+    "file": "assets/EditRecurring-bc3144c6.js",
     "imports": [
-      "_Toaster.svelte_svelte_type_style_lang-3086cbd0.js",
-      "_options-89ca2928.js",
-      "_BaseCreateRecurring-e1036462.js",
-      "_errorHelper-eef9e97b.js",
-      "_invoice-store-89da11de.js",
-      "_recurring-store-e654427c.js",
+      "_Toaster.svelte_svelte_type_style_lang-89e761ff.js",
+      "_options-1651b5d0.js",
+      "_BaseCreateRecurring-5b22a73d.js",
+      "_errorHelper-39e9d1d7.js",
+      "_invoice-store-eba4366e.js",
+      "_recurring-store-561539e7.js",
       "_enum-9d62bdc6.js",
       "_capitalHelper-77c0a756.js",
-      "_Options-60264e68.js",
-      "_updater-cbd8223a.js",
-      "_index-2f32262e.js",
-      "_x-e55b9835.js",
+      "_Options-40a61ab3.js",
+      "_updater-00e9e1bb.js",
+      "_index-99d0c2fd.js",
+      "_x-416feb5b.js",
       "src/main.js",
-      "_index-0984da6d.js",
+      "_index-838f84b3.js",
       "_emptyDataHelper-b583dd0c.js",
-      "_index-7095afc4.js",
+      "_index-210676e1.js",
       "_arrays-9d05857f.js",
-      "_Check-fa20f0eb.js",
-      "_action-39728114.js",
-      "_helpers-9268112f.js",
-      "_create-e552ce8d.js",
-      "_separator-d7b15c7c.js",
-      "_label-7d3a217f.js",
+      "_Check-a4797a61.js",
+      "_action-a5acf0e9.js",
+      "_helpers-9eb8762f.js",
+      "_create-9e47477b.js",
+      "_separator-95c0d010.js",
+      "_label-e50396f8.js",
       "_styles-e7e55f44.js",
-      "_input-342b31a9.js",
-      "_header-title-a9af6ef4.js",
-      "_Breadcrumb-8a216a28.js",
-      "_ProBadge-35078e4e.js",
-      "_plus-a3b54817.js",
-      "_table-row-9bf80d0a.js",
-      "_card-footer-7cfda621.js",
-      "_index-d3c8ba18.js",
-      "_MiniStar-4e4614b7.js",
-      "_Plus-e1a813d4.js",
-      "_Trash-c1f21d44.js",
-      "_Select-aaeb8f73.js",
+      "_input-ab223ce3.js",
+      "_header-title-695fb230.js",
+      "_Breadcrumb-87f5fc70.js",
+      "_ProBadge-06425ff7.js",
+      "_plus-24a3e3c4.js",
+      "_table-row-f15328e9.js",
+      "_card-footer-08d9ee18.js",
+      "_index-700ffd0e.js",
+      "_MiniStar-8026f138.js",
+      "_Plus-3897747b.js",
+      "_Trash-4a47b42d.js",
+      "_Select-70747da0.js",
       "_decimalFormatter-88348579.js",
-      "_saveToStoreHelper-e7988ee0.js",
-      "_MultilineText-07aaf54e.js",
-      "_dialog-header-208ee491.js",
-      "_dialog-footer-e40dcf9d.js",
-      "_dialog-description-776c5d22.js",
-      "_dialog-description-42b79c51.js",
-      "_customer-modal-96845865.js",
-      "_switch-b7e944c0.js",
-      "_product-modal-3f3c8373.js",
-      "_CustomCurrencyInput-d3541a18.js",
-      "_search-b20aeeac.js",
-      "_checkbox-3eb65d0a.js",
-      "_index-4f0b7d19.js",
-      "_card-description-e849d062.js",
+      "_saveToStoreHelper-31a463b7.js",
+      "_MultilineText-89cdd008.js",
+      "_dialog-header-5fe8b5ad.js",
+      "_dialog-footer-37c988b6.js",
+      "_dialog-description-ca00c0bf.js",
+      "_dialog-description-624b4ce9.js",
+      "_customer-modal-284e029d.js",
+      "_switch-8efa315f.js",
+      "_product-modal-e47dc535.js",
+      "_CustomCurrencyInput-e534ba6a.js",
+      "_search-e03ceb6e.js",
+      "_checkbox-ac399b75.js",
+      "_index-88943f30.js",
+      "_card-description-236c99a6.js",
       "_pluralHelper-a32d0151.js",
-      "_add-discount-modal-7bc175c5.js",
-      "_add-tax-modal-c2b7393b.js",
-      "_add-reminder-modal-6c4f373e.js",
-      "_UpgradeToProButton-e020fdbc.js",
-      "_chevron-down-a8868dd9.js"
+      "_add-discount-modal-079529d2.js",
+      "_add-tax-modal-3fd5671f.js",
+      "_add-reminder-modal-0bbf6d3f.js",
+      "_UpgradeToProButton-1dc6d5d7.js",
+      "_chevron-down-2b9a232f.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/recurring/edit/EditRecurring.svelte"

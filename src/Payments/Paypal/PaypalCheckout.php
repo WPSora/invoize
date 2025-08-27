@@ -23,6 +23,7 @@ class PaypalCheckout extends Checkout
 {
     public const INTENT_CAPTURE = 'CAPTURE';
     public const USER_ACTION_PAY_NOW = 'PAY_NOW';
+    public const PAYER_ACTION_REQUIRED = "PAYER_ACTION_REQUIRED";
     public const SANDBOX_API_URL = "https://api-m.sandbox.paypal.com";
     public const LIVE_API_URL = "https://api-m.paypal.com";
 
@@ -235,9 +236,9 @@ class PaypalCheckout extends Checkout
         $code = wp_remote_retrieve_response_code($result);
         $message = wp_remote_retrieve_response_message($result);
 
-        if ($code != 200 || $code != 201) {
+        if ($code != 200 && $code != 201) {
             $errorName = isset($bodyDecode['name']) ? $bodyDecode['name'] : $message;
-            Log::error('Failed to capture Paypal payment. ' . '. ' . $errorName . '. ' . $message . '. ' . $body);
+            Log::error('Failed to capture Paypal payment. ' . ' -- ' . $errorName . ' -- Message: ' . $message . ' -- Body: ' . $body . ' -- Code:' . $code);
             throw new \Exception(esc_html("$errorName: $body", $code));
         }
 
@@ -259,7 +260,6 @@ class PaypalCheckout extends Checkout
                     "payment_source" => [
                         "paypal" => [
                             "experience_context" => [
-                                // 'brand_name' => "Open Journal Team", // get from option
                                 'user_action' => static::USER_ACTION_PAY_NOW,
                                 'return_url' => home_url(
                                     'invoize-preview/' . $this->invoiceToken

@@ -35,7 +35,7 @@ class Payment implements HasPlugin
                         $banks          = invoizeGetOption('payment.banks', []);
 
                         if (!$banks) continue;
-                        
+
                         $defaultBank    = Setting::key('payment.defaultBank')->value('option_value');
                         $defaultBank    = array_filter($banks, function ($bank) use ($defaultBank) {
                             return $bank['id'] == $defaultBank;
@@ -62,6 +62,29 @@ class Payment implements HasPlugin
 
 
             add_action("wp_enqueue_scripts", function () use ($invoice) {
+                $options = array_map(function ($record) {
+                    if (
+                        $record['method'] == ModelsPayment::PAYPAL &&
+                        $record['type'] == ModelsPayment::DIRECT_PAYMENT
+                    ) {
+                        $record['name'] = "Paypal (Direct Transfer)";
+                        $record['method'] = ModelsPayment::PAYPAL_DIRECT;
+                    }
+
+                    if (
+                        $record['method'] == ModelsPayment::PAYPAL &&
+                        $record['type'] == ModelsPayment::AUTO_CONFIRMATION
+                    ) {
+                        $record['name'] = 'Paypal (Auto Confirmation)';
+                        $record['method'] = ModelsPayment::PAYPAL_AUTO_CONFIRMATION;
+                    }
+
+                    return [
+                        'label' => $record['name'],
+                        'value' => $record['method'],
+                    ];
+                }, $invoice['payments']);
+
                 $columns = [
                     [
                         'name'  => 'invoice_number',
@@ -74,16 +97,7 @@ class Payment implements HasPlugin
                         'label'         => 'Payment Methods',
                         'type'          => 'options',
                         'description'   => 'Choose your payment',
-                        'value'         => array_map(function ($record) {
-
-                            if ($record['method'] == ModelsPayment::PAYPAL && $record['type'] == 'direct payment') {
-                                $record['name'] = "Paypal (Direct Transfer)";
-                            }
-                            return [
-                                'label' => $record['name'],
-                                'value' => $record['method']
-                            ];
-                        }, $invoice['payments'])
+                        'value'         => $options
                     ],
                 ];
 
@@ -97,24 +111,28 @@ class Payment implements HasPlugin
 
                 $bankInfo = array_filter($invoice['payments'], fn($data) => $data['method'] == ModelsPayment::BANK);
                 $bankInfo = reset($bankInfo);
-                
-                $paypalInfo = array_filter($invoice['payments'], fn ($data) => ($data['method'] === ModelsPayment::PAYPAL && $data['type'] === 'direct payment') || $data['method'] === ModelsPayment::PAYPAL_DIRECT);
-                $paypalInfo = reset($paypalInfo);
+
+                $directPaypalInfo = array_filter($invoice['payments'], function ($data) {
+                    return ($data['method'] === ModelsPayment::PAYPAL
+                        && $data['type'] === ModelsPayment::DIRECT_PAYMENT)
+                        || $data['method'] === ModelsPayment::PAYPAL_DIRECT;
+                });
+                $directPaypalInfo = reset($directPaypalInfo);
 
                 // if from woocommerce, add payment link from setting
-                if ($paypalInfo['method'] == ModelsPayment::PAYPAL_DIRECT) {
+                if ($directPaypalInfo['method'] == ModelsPayment::PAYPAL_DIRECT) {
                     $paymentLink = invoizeGetOption('payment.directPaypals');
                     if (!$paymentLink) {
-                        $paypalInfo = null;
+                        $directPaypalInfo = null;
                         $columns[1]['value'] = array_values(array_filter($columns[1]['value'], function ($data) {
                             return $data['value'] !== 'paypal-direct';
                         }));
                     } else {
-                        $paypalInfo['name'] = reset($paymentLink);
+                        $directPaypalInfo['name'] = reset($paymentLink);
                     }
                 }
-                
-                $woocommerceInfo = array_filter($invoice['payments'], fn ($data) => $data['method'] == ModelsPayment::WOOCOMMERCE_TRANSACTION);
+
+                $woocommerceInfo = array_filter($invoice['payments'], fn($data) => $data['method'] == ModelsPayment::WOOCOMMERCE_TRANSACTION);
                 $woocommerceInfo = reset($woocommerceInfo);
 
                 wp_localize_script(
@@ -125,11 +143,7 @@ class Payment implements HasPlugin
                     "invoize_payment",
                     [
                         'token' => $invoice['token'],
-                        'default_payment' => apply_filters(
-                            'invoize_payment_default_payment',
-                            $invoice['payments'][0]['method'],
-                            $invoice
-                        ),
+                        'default_payment' => $options[0]['value'],
                         'business' => [
                             'name' => $invoice['business']['business_name'] ?? '',
                             'logo' => $invoice['business']['logo'] ?? '',
@@ -137,7 +151,7 @@ class Payment implements HasPlugin
                         'payment_status' => $invoice['paymentStatus'],
                         'invoice_status' => $invoice['invoiceStatus'],
                         'bank_information' => isset($bankInfo['detail']) ? $bankInfo['detail'] : null,
-                        'paypal_information' => $paypalInfo['name'],
+                        'paypal_information' => $directPaypalInfo['name'],
                         'woocommerce_information' => $woocommerceInfo,
                         'columns'  => apply_filters(
                             'invoize_payment_columns',
@@ -151,7 +165,7 @@ class Payment implements HasPlugin
                         ),
                         'subheading_text' => apply_filters(
                             'invoize_payment_subheading_text',
-                            'Select your payment below',
+                            'Select your payment method',
                             $invoice
                         ),
                         'footer_text' => apply_filters(

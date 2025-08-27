@@ -166,7 +166,8 @@
         $isXenditChecked = true;
       }
     });
-    $billedTo = data.invoice.billedTo;
+    
+    $billedTo = { name: data.invoice?.billedTo?.name, detail: data.invoice?.billedTo?.detail } ;
     $billedToSameAsClient = data.invoice.billedToSameAsClient;
     $note = data.invoice.invoiceNote.note;
     $termsAndConditionsInvoice = data.invoice.invoiceNote.terms;
@@ -272,6 +273,7 @@
   };
 
   const setPayload = (payments, recurring, dueDate) => {
+    // console.log($billedTo);
     return {
       id: id,
       business: $selectedBusiness,

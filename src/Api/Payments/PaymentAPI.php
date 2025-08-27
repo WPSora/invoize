@@ -8,6 +8,7 @@ use Invoize\Classes\Log;
 use Invoize\Models\Invoice;
 use Invoize\Models\Payment;
 use Invoize\Models\Setting;
+use Invoize\Payments\Paypal\PaypalCheckout;
 
 class PaymentAPI extends Api
 {
@@ -57,7 +58,6 @@ class PaymentAPI extends Api
             });
 
             $xenditDetail = reset($xenditDetail);
-
             if (
                 isset($xenditDetail['checkout']['status']) &&
                 $xenditDetail['checkout']['status'] == 'PENDING' &&
@@ -140,7 +140,75 @@ class PaymentAPI extends Api
             return $this->response(['link' => $xendit['invoice_url']]);
         }
 
+
         if ($payment == Payment::PAYPAL_AUTO_CONFIRMATION) {
+            $paypalDetail = array_filter($invoice['payments'], function ($data) {
+                return $data['method'] == Payment::PAYPAL && $data['type'] == Payment::AUTO_CONFIRMATION;
+            });
+            $paypalDetail = reset($paypalDetail);
+
+            if (
+                isset($paypalDetail['checkout']['status']) &&
+                $paypalDetail['checkout']['status'] == PaypalCheckout::PAYER_ACTION_REQUIRED &&
+                isset($paypalDetail['checkout']['links'])
+            ) {
+                $paypalLink = array_filter($paypalDetail['checkout']['links'], function ($link) {
+                    return $link['rel'] === 'payer-action';
+                });
+                $paypalLink = reset($paypalLink);
+
+                if (isset($paypalLink['href'])) {
+                    Log::action('Returning existing Paypal payment url: ' . $paypalLink['href']);
+                    return $this->response([
+                        'link' => $paypalLink['href']
+                    ]);
+                }
+            }
+
+            if (isset($paypalDetail['checkout']['links'])) {
+                $paypalLink = array_filter($paypalDetail['checkout']['links'], function ($link) {
+                    return $link['rel'] === 'payer-action';
+                });
+                $paypalLink = reset($paypalLink);
+
+                if (isset($paypalLink['href'])) {
+                    Log::action('Returning existing Paypal payment url: ' . $paypalLink['href']);
+                    return $this->response([
+                        'link' => $paypalLink['href']
+                    ]);
+                }
+            }
+
+            Log::action('Creating Paypal payment from PaymentAPI. ID:' . $invoice['id']);
+            $checkout = Payment::createPaypalPayment__premium_only(
+                $invoice['invoiceNumber'] ?? $invoice['id'],
+                $invoice['token'],
+                $invoice['currency']['name'],
+                $invoice['total'],
+            );
+
+            if (!$paypalDetail) {
+                $invoice['payments'][] = [
+                    'name'     => Payment::PAYPAL,
+                    'method'   => Payment::PAYPAL,
+                    'type'     => Payment::AUTO_CONFIRMATION,
+                    'checkout' => $checkout,
+                ];
+            } else {
+                $invoice['payments'] = array_map(function ($record) use ($checkout) {
+                    if ($record['method'] == Payment::PAYPAL && $record['type'] == Payment::AUTO_CONFIRMATION) {
+                        $record['checkout'] = $checkout;
+                    }
+                    return $record;
+                }, $invoice['payments']);
+            }
+
+            $invoiceObj->updateMeta(['payments' => $invoice['payments']]);
+
+            $link = array_filter($checkout['links'], fn($link) => $link['rel'] == 'payer-action');
+            $link = reset($link);
+
+            return $this->response(['link' => $link['href']]);
         }
     }
 
