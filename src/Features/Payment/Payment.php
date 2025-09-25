@@ -2,6 +2,7 @@
 
 namespace Invoize\Features\Payment;
 
+use Carbon\Carbon;
 use Invoize\Interfaces\HasPlugin;
 use Invoize\Models\Invoice;
 use Invoize\Models\Payment as ModelsPayment;
@@ -23,67 +24,28 @@ class Payment implements HasPlugin
         Routes::map('invoize/payment/:token', function ($params) {
             $invoice = Invoice::findByToken($params['token']);
             $invoice = $invoice->detail();
+            $allPayments = ModelsPayment::getAllAvailablePayments();
 
             $paymentOnWoocommerce = invoizeGetOption('payment.paymentOnWoocommerce');
-            $paymentOnWoocommerce = is_serialized($paymentOnWoocommerce) ? invoize_mb_unserialize($paymentOnWoocommerce) : $paymentOnWoocommerce;
+            $paymentOnWoocommerce = is_serialized($paymentOnWoocommerce)
+                ? invoize_mb_unserialize($paymentOnWoocommerce)
+                : $paymentOnWoocommerce;
             $paymentOnWoocommerce = array_filter($paymentOnWoocommerce);
 
-            if (strpos($invoice['payments'][0]['method'], 'woocommerce') !== false && $paymentOnWoocommerce) {
-                $payments = [];
-                foreach ($paymentOnWoocommerce as $paymentOnWc) {
-                    if ($paymentOnWc == ModelsPayment::BANK) {
-                        $banks          = invoizeGetOption('payment.banks', []);
-
-                        if (!$banks) continue;
-
-                        $defaultBank    = Setting::key('payment.defaultBank')->value('option_value');
-                        $defaultBank    = array_filter($banks, function ($bank) use ($defaultBank) {
-                            return $bank['id'] == $defaultBank;
-                        });
-
-                        $defaultBank = reset($defaultBank);
-
-                        // Should set the default bank
-                        if (!$defaultBank) continue;
-                        $payments[] = [
-                            'name' => $defaultBank['name'],
-                            'method' => ModelsPayment::BANK,
-                            'currency' => $defaultBank['currency']['name'],
-                            'type' => $defaultBank['type'],
-                            'detail' => $defaultBank['detail'],
-                        ];
-                    } else {
-                        $payments[] = ['method' => $paymentOnWc, 'name' => $paymentOnWc];
-                    }
-
-                    $invoice['payments'] = $payments;
-                }
+            // only add payment method based on checked value in settings if it is woocommerce order
+            if ($invoice['isWoocommerce'] && $paymentOnWoocommerce) {
+                $allPayments = array_values(array_filter($allPayments, function ($payment) use ($paymentOnWoocommerce) {
+                    return in_array($payment['method'], $paymentOnWoocommerce);
+                }));
             }
 
-
-            add_action("wp_enqueue_scripts", function () use ($invoice) {
+            add_action("wp_enqueue_scripts", function () use ($invoice, $allPayments) {
                 $options = array_map(function ($record) {
-                    if (
-                        $record['method'] == ModelsPayment::PAYPAL &&
-                        $record['type'] == ModelsPayment::DIRECT_PAYMENT
-                    ) {
-                        $record['name'] = "Paypal (Direct Transfer)";
-                        $record['method'] = ModelsPayment::PAYPAL_DIRECT;
-                    }
-
-                    if (
-                        $record['method'] == ModelsPayment::PAYPAL &&
-                        $record['type'] == ModelsPayment::AUTO_CONFIRMATION
-                    ) {
-                        $record['name'] = 'Paypal (Auto Confirmation)';
-                        $record['method'] = ModelsPayment::PAYPAL_AUTO_CONFIRMATION;
-                    }
-
                     return [
                         'label' => $record['name'],
                         'value' => $record['method'],
                     ];
-                }, $invoice['payments']);
+                }, $allPayments);
 
                 $columns = [
                     [
@@ -109,31 +71,12 @@ class Payment implements HasPlugin
                     ]
                 ];
 
-                $bankInfo = array_filter($invoice['payments'], fn($data) => $data['method'] == ModelsPayment::BANK);
-                $bankInfo = reset($bankInfo);
+                $bankInfo = reset(array_filter($allPayments, fn($data) => $data['method'] == ModelsPayment::BANK));
 
-                $directPaypalInfo = array_filter($invoice['payments'], function ($data) {
-                    return ($data['method'] === ModelsPayment::PAYPAL
-                        && $data['type'] === ModelsPayment::DIRECT_PAYMENT)
-                        || $data['method'] === ModelsPayment::PAYPAL_DIRECT;
-                });
-                $directPaypalInfo = reset($directPaypalInfo);
-
-                // if from woocommerce, add payment link from setting
-                if ($directPaypalInfo['method'] == ModelsPayment::PAYPAL_DIRECT) {
-                    $paymentLink = invoizeGetOption('payment.directPaypals');
-                    if (!$paymentLink) {
-                        $directPaypalInfo = null;
-                        $columns[1]['value'] = array_values(array_filter($columns[1]['value'], function ($data) {
-                            return $data['value'] !== 'paypal-direct';
-                        }));
-                    } else {
-                        $directPaypalInfo['name'] = reset($paymentLink);
-                    }
-                }
-
-                $woocommerceInfo = array_filter($invoice['payments'], fn($data) => $data['method'] == ModelsPayment::WOOCOMMERCE_TRANSACTION);
-                $woocommerceInfo = reset($woocommerceInfo);
+                $directPaypalInfo = reset(array_filter(
+                    $allPayments,
+                    fn($data) => $data['method'] === ModelsPayment::PAYPAL_DIRECT
+                ));
 
                 wp_localize_script(
                     // enable for build
@@ -142,37 +85,25 @@ class Payment implements HasPlugin
                     // "invoize-vite-main-js",
                     "invoize_payment",
                     [
-                        'token' => $invoice['token'],
+                        'token'           => $invoice['token'],
                         'default_payment' => $options[0]['value'],
                         'business' => [
                             'name' => $invoice['business']['business_name'] ?? '',
                             'logo' => $invoice['business']['logo'] ?? '',
                         ],
-                        'payment_status' => $invoice['paymentStatus'],
-                        'invoice_status' => $invoice['invoiceStatus'],
-                        'bank_information' => isset($bankInfo['detail']) ? $bankInfo['detail'] : null,
-                        'paypal_information' => $directPaypalInfo['name'],
-                        'woocommerce_information' => $woocommerceInfo,
-                        'columns'  => apply_filters(
-                            'invoize_payment_columns',
-                            $columns,
-                            $invoice
-                        ),
-                        'highlight_columns'  => apply_filters(
-                            'invoize_payment_highlight_columns',
-                            $highlighColumns,
-                            $invoice
-                        ),
-                        'subheading_text' => apply_filters(
-                            'invoize_payment_subheading_text',
-                            'Select your payment method',
-                            $invoice
-                        ),
-                        'footer_text' => apply_filters(
-                            'invoize_payment_footer_text',
-                            'By clicking “Proceed to Payment,” you will be redirected to the payment page.',
-                            $invoice
-                        ),
+                        'payment_status'          => $invoice['paymentStatus'],
+                        'paid_information'        => [
+                            'date'   => Carbon::parse($invoice['paidDate'])->format('d-M-Y'),
+                            'method' => ucfirst($invoice['paidMethod'])
+                        ],
+                        'invoice_status'          => $invoice['invoiceStatus'],
+                        'bank_information'        => isset($bankInfo['detail']) ? $bankInfo['detail'] : null,
+                        'paypal_information'      => $directPaypalInfo['checkout'],
+                        'woocommerce_information' => null,
+                        'columns'                 => $columns,
+                        'highlight_columns'       => $highlighColumns,
+                        'subheading_text'         => 'Select your payment method',
+                        'footer_text'             => 'By clicking “Proceed to Payment,” you will be redirected to the payment page.',
                     ]
                 );
             });

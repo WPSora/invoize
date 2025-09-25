@@ -8,17 +8,17 @@ use Invoize\Models\Invoice;
 
 class InvoiceUnpaidState extends BasePaymentState
 {
-    public function pay(bool $sendEmail = false)
+    public function pay(bool $sendEmail = false, ?string $paidMethod = null)
     {
         $invoice = $this->invoice;
         $invoice->paymentStatus = Invoice::PAID;
         $invoice->updateTab(Invoice::PAID);
         $invoice->updatePaymentStatus(Invoice::PAID);
-        $invoice->togglePaidDate(true);
+        $invoice->togglePaidDate(true, $paidMethod);
         $invoice->createReceipt($invoice->ID);
         $invoice->updateSummary(Invoice::PAID, false);
         $invoice->saveActionHistory(Invoice::UNPAID, Invoice::PAID, 'mark this invoice as paid');
-        $invoice->updateWcOrderToComplete($sendEmail);
+        $invoice->updateWcOrder($sendEmail);
         Log::action('Invoice changed to paid. ID: ' . $invoice->ID);
     }
 }

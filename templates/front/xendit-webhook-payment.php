@@ -5,6 +5,7 @@ if (! defined('ABSPATH')) exit; // Exit if accessed directly
 use Invoize\Classes\Log;
 use Invoize\Models\Setting;
 use Invoize\Models\Invoice;
+use Invoize\Models\Payment;
 use Invoize\Models\States\Invoice\PaymentState\InvoicePaidState;
 use Invoize\Models\States\Invoice\PaymentState\InvoiceUnpaidState;
 
@@ -60,7 +61,7 @@ if ($xIncomingCallbackTokenHeader === $xenditXCallbackToken) {
         $paymentState = $invoice->getPaymentState();
 
         if ($paymentState instanceof InvoiceUnpaidState && $status === "PAID") {
-            $paymentState->pay();
+            $paymentState->pay(false, Payment::XENDIT);
             Invoice::sendMail($invoice->ID, Invoice::PAID);
         } else if ($paymentState instanceof InvoicePaidState) {
             Log::error('Xendit webhook failed: Invoice is already paid');

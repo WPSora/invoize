@@ -28,7 +28,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="font-family: 'Arial', sans-serif;">
+<body style="font-family: 'DejaVu Sans', sans-serif;">
   <div style="min-height: 900px;">
     <!-- Header -->
     <table style="width: 100%;">
@@ -235,6 +235,21 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
           <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
           <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
             <?php echo esc_html(invoizeFormatDate($record->getPaidDate(), $dateFormat)); ?>
+          </td>
+        <?php endif ?>
+      </tr>
+
+      <tr>
+        <td style="width: 50%; font-size: 12px; color: #64748b; padding: 0; margin: 0;">
+
+        </td>
+        <?php if ($paymentStatus == Invoice::PAID) : ?>
+          <!-- Paid date -->
+          <td style="width: 7.5%; padding: 0; margin: 0;"></td>
+          <td style="width: 17.5%; padding: 0; margin: 0;">Paid using</td>
+          <td style="width: 2%; text-align: center; padding: 0; margin: 0;">:</td>
+          <td style="width: 23%; text-align: right; padding: 0; margin: 0;">
+            <?php echo esc_html($record->getPaidMethod() ?: '-'); ?>
           </td>
         <?php endif ?>
       </tr>
@@ -577,7 +592,7 @@ $previewLink    = get_site_url() . ($isQuotation ? '/invoize-quotation/' : '/inv
               </tr>
               <tr>
                 <td colspan="3" style="font-size: 12px; font-weight: bold; vertical-align: baseline; padding: 0; margin: 0;">
-                  Payment Link
+                  Payment Link <span style="color:#64748b; font-size: 11px; font-weight: normal;">(Other payment method available here)</span>
                 </td>
               </tr>
               <tr style="vertical-align: baseline;">

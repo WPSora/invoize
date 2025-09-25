@@ -20,7 +20,7 @@ class InvoiceExpiredState extends BaseInvoiceState
         $inv->createReceipt($inv->ID);
         $inv->updateSummary(Invoice::PAID, false);
         $inv->saveActionHistory(Invoice::UNPAID, Invoice::PAID, 'mark this invoice as paid');
-        $inv->updateWcOrderToComplete(false);
+        $inv->updateWcOrder(false);
         Log::action('Invoice changed to paid. ID: ' . $inv->ID);
     }
 

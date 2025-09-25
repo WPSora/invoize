@@ -62,6 +62,7 @@ class PDFInvoice
 
         $engine = new Dompdf($options);
         $html   = $this->getHtml($type, $isSmallPaper);
+        $html   = mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8');
 
         $engine->loadHtml($html);
         $engine->setPaper($paper, 'portrait');

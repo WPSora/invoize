@@ -27,8 +27,12 @@ class DownloadAPI extends Api
             return $this->response(['message' => 'Invoice not found'], 404);
         }
 
+        if (!extension_loaded('intl')) {
+            return $this->response(['message' => 'INTL extension is not installed'], 500);
+        }
+
         return $this->response([
-            'filename' => "{$inv->getInvoiceNumber()} - {$inv->getClient()['name']}.pdf",
+            'filename' => "{$inv->getInvoiceNumber()} - Invoice.pdf",
             'content' => base64_encode($inv->getPdf())
         ]);
     }
@@ -51,8 +55,13 @@ class DownloadAPI extends Api
         if ($inv->isPaymentStatusUnpaid()) {
             return $this->response(['message' => 'Receipt not found'], 404);
         }
+
+        if (!extension_loaded('intl')) {
+            return $this->response(['message' => 'INTL extension is not installed'], 500);
+        }
+
         return $this->response([
-            'filename' => "{$inv->receipt->getReceiptNumber()} - {$inv->getClient()['name']}.pdf",
+            'filename' => "{$inv->receipt->getReceiptNumber()} - Receipt.pdf",
             'content' => base64_encode($inv->receipt->getPdf())
         ]);
     }
@@ -70,8 +79,12 @@ class DownloadAPI extends Api
             return $this->response(['message' => 'Quotation not found'], 404);
         }
 
+        if (!extension_loaded('intl')) {
+            return $this->response(['message' => 'INTL extension is not installed'], 500);
+        }
+
         return $this->response([
-            'filename' => "{$quotation->getQuotationNumber()} - {$quotation->getClient()['name']}.pdf",
+            'filename' => "{$quotation->getQuotationNumber()} - Quotation.pdf",
             'content' => base64_encode($quotation->getPdf())
         ]);
     }

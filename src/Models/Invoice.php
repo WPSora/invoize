@@ -111,6 +111,7 @@ class Invoice extends WPPost {
             'paymentStatus'        => $this->getPaymentStatus(),
             'invoiceStatus'        => $this->getInvoiceStatus(),
             'paidDate'             => $this->getPaidDate(),
+            'paidMethod'           => $this->getPaidMethod(),
             'tab'                  => $this->getMeta( 'tab' ),
             'user'                 => invoize_mb_unserialize( $this->getMeta( 'user' ) ),
             'actionHistory'        => invoize_mb_unserialize( $this->getMeta( 'action_history' ) ),
@@ -185,6 +186,10 @@ class Invoice extends WPPost {
 
     public function getPaidDate() {
         return $this->getMeta( 'paid_date' );
+    }
+
+    public function getPaidMethod() {
+        return $this->getMeta( 'paid_method' );
     }
 
     public function getNotes() {
@@ -375,18 +380,28 @@ class Invoice extends WPPost {
             $newMeta = $meta->replicate();
             $newMeta->post_id = $newInvoice->ID;
             if ( $newMeta->meta_key == 'payments' ) {
-                if ( !invoizeGetOption( 'payment.enablePaymentPage', false ) ) {
-                    $paymentParameter = PaymentParameter::instance()->setId( $this->ID )->setToken( $this->getToken() )->setCurrency( $this->getCurrency()['name'] )->setTotal( $this->getTotal() )->setDueDate( $this->getDueDate() )->setCustomer( $this->getClient() );
-                    $newPayments = Payments::instance()->setParameter( $paymentParameter )->setContent( $this->getPayments() )->checkError()->getContent();
-                    $newMeta->meta_value = serialize( $newPayments );
-                } else {
-                    $payments = invoize_mb_unserialize( $meta->meta_value );
-                    $payments = array_map( function ( $payment ) {
-                        unset($payment['checkout']);
-                        return $payment;
-                    }, $payments );
-                    $newMeta->meta_value = serialize( $payments );
-                }
+                // if (!invoizeGetOption('payment.enablePaymentPage', false)) {
+                //     $paymentParameter = PaymentParameter::instance()
+                //         ->setId($this->ID)
+                //         ->setToken($this->getToken())
+                //         ->setCurrency($this->getCurrency()['name'])
+                //         ->setTotal($this->getTotal())
+                //         ->setDueDate($this->getDueDate())
+                //         ->setCustomer($this->getClient());
+                //     $newPayments = Payments::instance()
+                //         ->setParameter($paymentParameter)
+                //         ->setContent($this->getPayments())
+                //         ->checkError()
+                //         ->getContent();
+                //     $newMeta->meta_value = serialize($newPayments);
+                // } else {
+                $payments = invoize_mb_unserialize( $meta->meta_value );
+                $payments = array_map( function ( $payment ) {
+                    unset($payment['checkout']);
+                    return $payment;
+                }, $payments );
+                $newMeta->meta_value = serialize( $payments );
+                // }
             }
             if ( $newMeta->meta_key == 'business' ) {
                 $newMeta->meta_value = serialize( InvoiceBusiness::instance()->setContentByDefault()->getContent() );
@@ -445,12 +460,41 @@ class Invoice extends WPPost {
         ] );
     }
 
-    public function togglePaidDate( bool $isAdd ) {
-        ( $isAdd ? $this->metas()->updateOrCreate( [
-            'meta_key' => 'paid_date',
+    public function togglePaidDate( bool $isAdd, ?string $paidMethod = null ) {
+        if ( $isAdd ) {
+            $this->metas()->updateOrCreate( [
+                'meta_key' => 'paid_date',
+            ], [
+                'meta_value' => Carbon::now()->toDateString(),
+            ] );
+            if ( $paidMethod ) {
+                $this->metas()->updateOrCreate( [
+                    'meta_key' => 'paid_method',
+                ], [
+                    'meta_value' => $paidMethod,
+                ] );
+            } else {
+                $payment = $this->getPayments();
+                if ( isset( $payment[0]['method'] ) ) {
+                    $this->metas()->updateOrCreate( [
+                        'meta_key' => 'paid_method',
+                    ], [
+                        'meta_value' => $payment[0]['method'],
+                    ] );
+                }
+            }
+        } else {
+            $this->metas()->where( 'meta_key', 'paid_date' )->delete();
+            $this->metas()->where( 'meta_key', 'paid_method' )->delete();
+        }
+    }
+
+    public function updatePaidMethod( string $method ) {
+        $this->metas()->updateOrCreate( [
+            'meta_key' => 'paid_method',
         ], [
-            'meta_value' => Carbon::now()->toDateString(),
-        ] ) : $this->metas()->where( 'meta_key', 'paid_date' )->delete() );
+            'meta_value' => $method,
+        ] );
     }
 
     public function updateSummary() {
@@ -483,25 +527,44 @@ class Invoice extends WPPost {
         }
     }
 
-    public function updateWcOrderToComplete( bool $isSendEmail ) {
+    public function updateWcOrder( bool $isSendEmail ) {
         $wcOrderId = $this->metas()->where( 'meta_key', 'wc_order_id' )->value( 'meta_value' );
         if ( !$wcOrderId ) {
             return;
         }
+        $wcOptions = Setting::key( 'integration.woocommerce' )->value( 'option_value' );
+        $wcOptions = ( is_serialized( $wcOptions ) ? unserialize( $wcOptions ) : $wcOptions );
+        $this->setWcOrderToComplete( $isSendEmail, $wcOrderId, $wcOptions );
+        $this->reduceWcProductStock( $wcOrderId, $wcOptions );
+    }
+
+    private function setWcOrderToComplete( bool $isSendEmail, $wcOrderId, $wcOptions ) {
         $order = new WC_Order($wcOrderId);
         $order->update_status( "completed" );
-        $wcOptions = Setting::key( 'integration.woocommerce' )->value( 'option_value' );
-        if ( !$wcOptions ) {
-            return;
-        }
-        $wcOptions = unserialize( $wcOptions );
         $sendOnPaid = $wcOptions['sendOnPaid'];
         // whether to send email if from setting is true or send email by trigger_pay_and_send in AddGenerateInvoiceAction
         if ( $sendOnPaid == 'true' || $isSendEmail ) {
             try {
                 Invoice::sendMail( $this->ID, Invoice::PAID );
             } catch ( \Exception $e ) {
-                // error_log("Failed to send email. InvoiceID: {$this->ID}. WoocommerceOrderID: {$wcOrderId}. Message: {$e->getMessage()}");
+                Log::emailError( $e->getMessage() );
+            }
+        }
+    }
+
+    private function reduceWcProductStock( $wcOrderId, $wcOptions ) {
+        $setting = $wcOptions['decreaseWcProductStockOnPaid'] ?? 'true';
+        if ( $setting != 'true' ) {
+            return;
+        }
+        $order = new WC_Order($wcOrderId);
+        foreach ( $order->get_items() as $item_id => $item ) {
+            if ( $item instanceof WC_Order_Item_Product ) {
+                $product = $item->get_product();
+                if ( $product && !$product->is_virtual() && !$product->is_downloadable() ) {
+                    wc_reduce_stock_levels( $wcOrderId );
+                    break;
+                }
             }
         }
     }
@@ -1057,101 +1120,101 @@ class Invoice extends WPPost {
         }
         $discounts = $discounts->setTotal( $order->get_total_discount() )->getContent();
         $payments = [];
-        $paymentMethod = $order->get_payment_method();
-        $paymentMethodTitle = $order->get_payment_method_title();
+        // $paymentMethod      = $order->get_payment_method();
+        // $paymentMethodTitle = $order->get_payment_method_title();
         // empty payment method mean the order is created manually from admin, therefore use Invoize default payment setting.
         // if $isAutoCreate true mean it's created automatic when order woocommerce also created, then use the order payment method
-        if ( empty( $paymentMethod ) ) {
-            $defaultPayment = Setting::key( 'payment.default' )->value( 'option_value' );
-            if ( !$defaultPayment ) {
-                throw new \Exception('No default payment saved', 404);
+        // if (empty($paymentMethod)) {
+        $defaultPayment = Setting::key( 'payment.default' )->value( 'option_value' );
+        if ( !$defaultPayment ) {
+            throw new \Exception('No default payment saved', 404);
+        }
+        $defaultPayment = invoize_mb_unserialize( $defaultPayment );
+        // Bank payment
+        if ( $defaultPayment['value'] == Payment::BANK ) {
+            $banks = Setting::key( 'payment.banks' )->value( 'option_value' );
+            if ( !$banks ) {
+                throw new \Exception('No bank account exist in settings', 404);
             }
-            $defaultPayment = invoize_mb_unserialize( $defaultPayment );
-            // Bank payment
-            if ( $defaultPayment['value'] == Payment::BANK ) {
-                $banks = Setting::key( 'payment.banks' )->value( 'option_value' );
-                if ( !$banks ) {
-                    throw new \Exception('No bank account exist in settings', 404);
-                }
-                $banks = invoize_mb_unserialize( $banks );
-                $defaultBank = Setting::key( 'payment.defaultBank' )->value( 'option_value' );
-                if ( !$defaultBank ) {
-                    throw new \Exception('No default bank account exist in settings', 404);
-                }
-                $bank = array_values( array_filter( $banks, function ( $bank ) use($defaultBank) {
-                    return $bank['id'] == $defaultBank;
-                } ) );
-                if ( empty( $bank ) ) {
-                    throw new \Exception('Bank account not found', 404);
-                }
-                $bank = $bank[0];
-                $payments[] = [
-                    'id'       => $bank['id'],
-                    'currency' => $bank['currency']['name'],
-                    'detail'   => $bank['detail'],
-                    'method'   => Payment::BANK,
-                    'name'     => $bank['name'],
-                    'type'     => $bank['type'],
-                ];
-                // Paypal Direct Payment
-            } else {
-                if ( $defaultPayment['value'] == Payment::PAYPAL_DIRECT ) {
-                    $paypal = Setting::key( 'payment.directPaypals' )->value( 'option_value' );
-                    if ( !$paypal ) {
-                        throw new \Exception('No paypal payment exist in settings', 404);
-                    }
-                    $paypal = ( is_serialized( $paypal ) ? invoize_mb_unserialize( $paypal )[0] : $paypal );
-                    $payments[] = [
-                        'method' => Payment::PAYPAL,
-                        'type'   => 'direct payment',
-                        'name'   => $paypal,
-                    ];
-                    // Paypal Auto Confirmation Payment
-                } else {
-                    if ( $defaultPayment['value'] == Payment::PAYPAL_AUTO_CONFIRMATION ) {
-                        // Xendit payment
-                    } else {
-                        if ( $defaultPayment['value'] == Payment::XENDIT ) {
-                        } else {
-                            throw new \Exception('No payment method found', 404);
-                        }
-                    }
-                }
+            $banks = invoize_mb_unserialize( $banks );
+            $defaultBank = Setting::key( 'payment.defaultBank' )->value( 'option_value' );
+            if ( !$defaultBank ) {
+                throw new \Exception('No default bank account exist in settings', 404);
             }
-            // use payment method chosen by woocommerce customer
+            $bank = array_values( array_filter( $banks, function ( $bank ) use($defaultBank) {
+                return $bank['id'] == $defaultBank;
+            } ) );
+            if ( empty( $bank ) ) {
+                throw new \Exception('Bank account not found', 404);
+            }
+            $bank = $bank[0];
+            $payments[] = [
+                'id'       => $bank['id'],
+                'currency' => $bank['currency']['name'],
+                'detail'   => $bank['detail'],
+                'method'   => Payment::BANK,
+                'name'     => $bank['name'],
+                'type'     => $bank['type'],
+            ];
+            // Paypal Direct Payment
         } else {
-            // if bank is chosen, use bank list from woocommerce
-            if ( $paymentMethod == Payment::WOOCOMMERCE_BANK_CODE ) {
-                $wcBanks = get_option( 'woocommerce_bacs_accounts' );
-                if ( is_array( $wcBanks ) && count( $wcBanks ) > 0 ) {
-                    $wcBankPayment = [
-                        'method' => Payment::WOOCOMMERCE_TRANSACTION,
-                        'type'   => Payment::WOOCOMMERCE_BANK,
-                        'name'   => $paymentMethodTitle,
-                        'detail' => [],
-                    ];
-                    foreach ( $wcBanks as $bank ) {
-                        $detail = [];
-                        foreach ( $bank as $key => $value ) {
-                            if ( !empty( $value ) ) {
-                                $detail[$key] = $value;
-                            }
-                        }
-                        $wcBankPayment['detail'][] = $detail;
-                    }
-                    $payments[] = $wcBankPayment;
+            if ( $defaultPayment['value'] == Payment::PAYPAL_DIRECT ) {
+                $paypal = Setting::key( 'payment.directPaypals' )->value( 'option_value' );
+                if ( !$paypal ) {
+                    throw new \Exception('No paypal payment exist in settings', 404);
                 }
-                // if other payment, show link to order history
-            } else {
-                $orderListUrl = wc_get_endpoint_url( 'orders', '', wc_get_page_permalink( 'myaccount' ) );
+                $paypal = ( is_serialized( $paypal ) ? invoize_mb_unserialize( $paypal )[0] : $paypal );
                 $payments[] = [
-                    'method'   => Payment::WOOCOMMERCE . ' transaction',
-                    'name'     => $paymentMethodTitle,
-                    'detail'   => $orderListUrl,
-                    'checkout' => $orderListUrl,
+                    'method' => Payment::PAYPAL,
+                    'type'   => Payment::DIRECT_PAYMENT,
+                    'name'   => $paypal,
                 ];
+                // Paypal Auto Confirmation Payment
+            } else {
+                if ( $defaultPayment['value'] == Payment::PAYPAL_AUTO_CONFIRMATION ) {
+                    // Xendit payment
+                } else {
+                    if ( $defaultPayment['value'] == Payment::XENDIT ) {
+                    } else {
+                        throw new \Exception('No payment method found', 404);
+                    }
+                }
             }
         }
+        // use payment method chosen by woocommerce customer
+        // } else {
+        //     // if bank is chosen, use bank list from woocommerce
+        //     if ($paymentMethod == Payment::WOOCOMMERCE_BANK_CODE) {
+        //         $wcBanks = get_option('woocommerce_bacs_accounts');
+        //         if (is_array($wcBanks) && count($wcBanks) > 0) {
+        //             $wcBankPayment = [
+        //                 'method'    => Payment::WOOCOMMERCE_TRANSACTION,
+        //                 'type'      => Payment::WOOCOMMERCE_BANK,
+        //                 'name'      => $paymentMethodTitle,
+        //                 'detail'    => [],
+        //             ];
+        //             foreach ($wcBanks as $bank) {
+        //                 $detail = [];
+        //                 foreach ($bank as $key => $value) {
+        //                     if (!empty($value)) {
+        //                         $detail[$key] = $value;
+        //                     }
+        //                 }
+        //                 $wcBankPayment['detail'][] = $detail;
+        //             }
+        //             $payments[] = $wcBankPayment;
+        //         }
+        //         // if other payment, show link to order history
+        //     } else {
+        //         $orderListUrl = wc_get_endpoint_url('orders', '', wc_get_page_permalink('myaccount'));
+        //         $payments[] = [
+        //             'method'    => Payment::WOOCOMMERCE . ' transaction',
+        //             'name'      => $paymentMethodTitle,
+        //             'detail'    => $orderListUrl,
+        //             'checkout'  => $orderListUrl,
+        //         ];
+        //     }
+        // }
         $invoiceId = static::generateInvoice( [
             'id'            => $id,
             'prefix'        => $prefix,

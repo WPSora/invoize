@@ -6,6 +6,7 @@ use Invoize\Api\Api;
 use Invoize\Classes\Log;
 use Invoize\InvoizePlugin;
 use Invoize\Models\Invoice;
+use Invoize\Models\Payment;
 use Invoize\Models\Setting;
 use Invoize\Payments\Paypal\PaypalCheckout;
 use WP_REST_Request;
@@ -33,6 +34,7 @@ class PaypalAPI extends Api
 
         try {
             $captureCheckout = PaypalCheckout::init($orderToken)->capture();
+            $invoice->updatePaidMethod(Payment::PAYPAL_AUTO_CONFIRMATION);
         } catch (\Exception $e) {
             return wp_send_json_error([
                 'message' => $e->getMessage()

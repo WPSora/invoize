@@ -110,13 +110,18 @@ class PaymentAPI extends Api
                 $convertedTotal = $data['convertedTotal'];
             }
             Log::action('Creating Xendit payment from PaymentAPI. ID:' . $invoice['id']);
-            $xendit = Payment::createXenditPayment__premium_only(
-                $invoice['invoiceNumber'] ?? $invoice['id'],
-                $invoice['token'],
-                $convertedTotal,
-                $data['due_date'],
-                $invoice['client']
-            );
+
+            try {
+                $xendit = Payment::createXenditPayment__premium_only(
+                    $invoice['invoiceNumber'] ?? $invoice['id'],
+                    $invoice['token'],
+                    $convertedTotal,
+                    $data['due_date'],
+                    $invoice['client']
+                );
+            } catch (Exception $e) {
+                return $this->response(['message' => $e->getMessage()], 500);
+            }
 
             if (!$xenditDetail) {
                 $invoice['payments'][] = [
@@ -180,12 +185,17 @@ class PaymentAPI extends Api
             }
 
             Log::action('Creating Paypal payment from PaymentAPI. ID:' . $invoice['id']);
-            $checkout = Payment::createPaypalPayment__premium_only(
-                $invoice['invoiceNumber'] ?? $invoice['id'],
-                $invoice['token'],
-                $invoice['currency']['name'],
-                $invoice['total'],
-            );
+
+            try {
+                $checkout = Payment::createPaypalPayment__premium_only(
+                    $invoice['invoiceNumber'] ?? $invoice['id'],
+                    $invoice['token'],
+                    $invoice['currency']['name'],
+                    $invoice['total'],
+                );
+            } catch (Exception $e) {
+                return $this->response(['message' => $e->getMessage()], 500);
+            }
 
             if (!$paypalDetail) {
                 $invoice['payments'][] = [

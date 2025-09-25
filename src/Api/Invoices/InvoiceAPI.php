@@ -280,26 +280,26 @@ class InvoiceAPI extends Api
 
         $payments = $invoice['payments'];
 
-        if (!invoizeGetOption('payment.enablePaymentPage', false)) {
-            $paymentParameter = PaymentParameter::instance()
-                ->setId($id)
-                ->setToken($token)
-                ->setCurrency($currency['name'])
-                ->setTotal($total)
-                ->setDueDate($dueDate)
-                ->setCustomer($client);
+        // if (!invoizeGetOption('payment.enablePaymentPage', false)) {
+        //     $paymentParameter = PaymentParameter::instance()
+        //         ->setId($id)
+        //         ->setToken($token)
+        //         ->setCurrency($currency['name'])
+        //         ->setTotal($total)
+        //         ->setDueDate($dueDate)
+        //         ->setCustomer($client);
 
-            try {
-                $payments = Payments::instance()
-                    ->setParameter($paymentParameter)
-                    ->setContent($invoice['payments'])
-                    ->checkError()
-                    ->getContent();
-            } catch (\Exception $e) {
-                Log::error($e->getMessage());
-                return $this->response(['message' => $e->getMessage()], $e->getCode());
-            }
-        }
+        //     try {
+        //         $payments = Payments::instance()
+        //             ->setParameter($paymentParameter)
+        //             ->setContent($invoice['payments'])
+        //             ->checkError()
+        //             ->getContent();
+        //     } catch (\Exception $e) {
+        //         Log::error($e->getMessage());
+        //         return $this->response(['message' => $e->getMessage()], $e->getCode());
+        //     }
+        // }
 
         try {
             $invoiceId = Invoice::generateInvoice([
